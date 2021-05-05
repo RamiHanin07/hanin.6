@@ -1,4 +1,33 @@
 OSS: Beginning Process
 OSS: Displaying Resource Table
 OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
-OSS: Remaining Resources: 9   8   8   3   2   9   4   1   7   10  7   8   4   1   1   3   10  4   5   2   
+OSS: Maximum Resources:   9   5   5   10  4   3   4   10  10  4   6   1   5   5   9   1   5   6   5   2   
+OSS: Resources In Use:    0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Resources Remaining: 9   5   5   10  4   3   4   10  10  4   6   1   5   5   9   1   5   6   5   2   
+OSS: Generating process with PID 20685 at time: 0 s : 813ns 
+USER: Process: 20685 is releasing a resource at time: 0s, 10701ns
+USER: Process: 20685 is releasing a resource at time: 0s, 10994ns
+USER: Process: 20685 is requesting a resource at time: 0s, 11098ns
+USER: Process: 20685 is requesting a resource at time: 0s, 11224ns
+USER: Process: 20685 is releasing a resource at time: 0s, 11372ns
+USER: Process: 20685 is releasing a resource at time: 0s, 11402ns
+USER: Process: 20685 is releasing a resource at time: 0s, 11450ns
+USER: Process: 20685 is releasing a resource at time: 0s, 11462ns
+USER: Process: 20685 is requesting a resource at time: 0s, 11480ns
+USER: Process: 20685 is releasing a resource at time: 0s, 11519ns
+USER: Process: 20685 is releasing a resource at time: 0s, 11536ns
+USER: Process: 20685 is requesting a resource at time: 0s, 11574ns
+USER: Process: 20685 is requesting a resource at time: 0s, 11598ns
+USER: Process: 20685 is requesting a resource at time: 0s, 11721ns
+USER: Process: 20685 is requesting a resource at time: 0s, 11832ns
+USER: Process: 20685 is requesting a resource at time: 0s, 11905ns
+USER: Process: 20685 is releasing a resource at time: 0s, 11966ns
+USER: Process: 20685 is releasing a resource at time: 0s, 12002ns
+USER: Process: 20685 is releasing a resource at time: 0s, 12062ns
+USER: Process: 20685 is requesting a resource at time: 0s, 12131ns
+USER: Process: 20685 is requesting a resource at time: 0s, 12155ns
+OSS: Displaying Resource Table
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   9   5   5   10  4   3   4   10  10  4   6   1   5   5   9   1   5   6   5   2   
+OSS: Resources In Use:    0   4   0   0   1   0   3   5   0   2   0   1   0   0   0   0   2   0   0   0   
+OSS: Resources Remaining: 9   1   5   10  3   3   1   5   10  2   6   0   5   5   9   1   3   6   5   2   

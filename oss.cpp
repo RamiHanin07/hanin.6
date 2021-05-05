@@ -46,6 +46,7 @@ struct processes{
     int availableResources[20];
 };
 
+
 struct mesg_buffer{
     long mesg_type;
     char mesg_text[100];
@@ -65,18 +66,28 @@ struct mesg_buffer{
     int mesg_rqIndex;
     int mesg_ptNumber;
     int mesg_isItRead;
+    int mesg_requestIndex;
+    int mesg_requestResources;
+    bool mesg_request;
+    int mesg_releaseIndex;
+    int mesg_resourceIndex;
+    int mesg_releaseResources;
+    bool mesg_released;
 } message;
 
 int shmidClock;
 int shmidProc;
 int shmidResources;
+int shmidRemaining;
 int msgid;
 int msgidTwo;
 int *resourceTable;
+int *remainingTable;
+
 
 void signalHandler(int signal);
 
-void displayRTable();
+void displayRTable(processes *pTable);
 
 void signalHandler(int signal){
 
@@ -88,22 +99,33 @@ void signalHandler(int signal){
     else if(signal == 1)
         cout << "Process Terminated" << endl;
 
-    // msgctl(msgid, IPC_RMID, NULL);
-    // msgctl(msgidTwo, IPC_RMID,NULL);
-    // shmctl(shmidClock, IPC_RMID, NULL);
-    // shmctl(shmidProc, IPC_RMID, NULL);
+    msgctl(msgid, IPC_RMID, NULL);
+    msgctl(msgidTwo, IPC_RMID,NULL);
+    shmctl(shmidClock, IPC_RMID, NULL);
+    shmctl(shmidProc, IPC_RMID, NULL);
+    shmctl(shmidResources, IPC_RMID, NULL);
+    shmctl(shmidRemaining, IPC_RMID, NULL);
     exit(signal);
 }
 
 int main(int argc, char* argv[]){
     struct processes *pTable;
     struct simClock *clock;
-    cout << "test" << endl;
+    signal(SIGINT, signalHandler);
+    signal(SIGALRM, signalHandler);
+    int totalTimeTilExpire = 5;
+    alarm(totalTimeTilExpire);
+    // cout << "test" << endl;
     int sizeMem = 1024;
     key_t keyClock = 6666;
     ofstream log("log.txt");
     log.close();
     srand(time(NULL));
+    int maxTimeBetweenNewProcsNS = 500;
+    int totalProcesses = 0;
+    int totalTerminated = 0;
+    int maxSystemTimeSpent = 15;
+    int billion = 1000000000;
 
     //Set UP Message Queues
     key_t messageKey = ftok("pog", 67);
@@ -141,6 +163,7 @@ int main(int argc, char* argv[]){
         return 1;
     }
 
+    //Allocate Shared Memory of Resources
     key_t keyResources = 8888;
 
     shmidResources = shmget(keyResources, sizeof(resourceTable), 0644|IPC_CREAT);
@@ -149,8 +172,23 @@ int main(int argc, char* argv[]){
         return 1;
     }
 
-    resourceTable = (int *)shmat(shmidProc,NULL,0);
+    resourceTable = (int *)shmat(shmidResources,NULL,0);
     if(resourceTable == (void*) -1){
+        perror("Shared memory attach");
+        return 1;
+    }
+
+    //Allocate Shared Memory of Resources Remaining
+    key_t keyRemaining = 9999;
+
+    shmidRemaining = shmget(keyRemaining, sizeof(remainingTable), 0644|IPC_CREAT);
+    if(shmidRemaining == -1) {
+        perror("Shared memory");
+        return 1;
+    }
+
+    remainingTable = (int *)shmat(shmidRemaining,NULL,0);
+    if(remainingTable == (void*) -1){
         perror("Shared memory attach");
         return 1;
     }
@@ -166,20 +204,115 @@ int main(int argc, char* argv[]){
     for(int i = 0; i < 20; i++){
         randResources = rand()% MAXRESOURCES + 1;
         resourceTable[i] = randResources;
+        remainingTable[i] = randResources;
     }
     resourceTable[20] = -1;
+    remainingTable[20] = -1;
 
     // //Output resource table after generation
     // for(int i = 0; i < 21; i++){
     //     // cout << resourceTable[i] << " ; " << i << endl;
     // }
-    displayRTable();
+    displayRTable(pTable);
 
 
 
+    //Generate Child Processses
+    char buffer[50] = "";
+    char fileName[10] = "test";
+    int interval = 0;
+    for(int i = 0 ; i < 1; i++){
+        interval = rand()% maxTimeBetweenNewProcsNS + 1;
+        totalProcesses++;
+        if(fork() == 0){
+            pTable[i].pid = getpid();
+            pTable[i].timeStartedSec = clock->sec;
+            pTable[i].timeStartedNS = clock->nano;
+            log.open("log.txt",ios::app);
+            log << "OSS: Generating process with PID " << getpid() << " at time: " << clock->sec << " s : " << clock->nano << "ns \n";
+            log.close();
+            execl("./user", buffer);
+        }
+    }
+
+    int increment;
+    
+    while(totalTerminated < totalProcesses){
+        if(msgrcv(msgid, &message, sizeof(message), 1, IPC_NOWAIT) == -1){
+            //If there is no message, just keep adding clock
+            interval = rand() % maxSystemTimeSpent + 1;
+            clock->nano+= interval;
+            if(clock->nano >= billion){
+                clock->nano = clock->nano - billion;
+                clock->sec++;
+            }
+        }
+        //If there is a message, do everything else
+        else{
+            interval = rand() % maxSystemTimeSpent + 1;
+            clock->nano+= interval;
+            if(clock->nano >= billion){
+                clock->nano = clock->nano - billion;
+                clock->sec++;
+            }
+            //If the process terminated
+            if(message.mesg_terminated == 1){
+                cout << "terminating" << endl;
+                totalTerminated++;
+            }
+            //On request resources, allocate resources
+            else if(message.mesg_request == true){
+                cout << "message was a request" << endl;
+                cout << message.mesg_requestResources << " requestResources " << endl;
+                cout << message.mesg_requestIndex << " requestIndex" << endl;
+                if(remainingTable[message.mesg_requestIndex] >= message.mesg_requestResources){
+                    cout << "enough resources for request" << endl;
+                    remainingTable[message.mesg_requestIndex] = (remainingTable[message.mesg_requestIndex] - message.mesg_requestResources);
+                    cout << remainingTable[message.mesg_requestIndex] << " ; rT remaining" << endl;
+                    for(int i = 0; i < 18; i++){
+                        if(pTable[i].pid == message.mesg_pid){
+                            // cout << i << " ; index" << endl;
+                            pTable[i].availableResources[message.mesg_requestIndex] = message.mesg_requestResources;
+                        }
+                    }
+                }
+                else{
+                    cout << "not enough resources for request" << endl;
+                    cout << "entering blocked queue until those resources are available" << endl;
+                    //Implement Blocked Queue Thanks
+                }
+            }
+            else if(message.mesg_request == false){
+                if(message.mesg_released == true){
+                    cout << "message was a release" << endl;
+                    cout << message.mesg_releaseIndex << " releaseIndex" << endl;
+                    cout << message.mesg_resourceIndex << " resourceIndex" << endl;
+                    cout << message.mesg_releaseResources << " releaseResources" << endl;
+                }
+                else{
+                    cout << "had no resources to deallocate" << endl;
+                }
+
+            }
+        }
+    }
+
+    // cout << clock->nano << "ns" << endl;
+    // cout << clock->sec << "s" << endl;
+    // cout << message.mesg_text << endl;
+
+
+    wait(NULL);
+    displayRTable(pTable);
+    msgctl(msgid, IPC_RMID, NULL);
+    msgctl(msgidTwo, IPC_RMID,NULL);
+    shmctl(shmidClock, IPC_RMID, NULL);
+    shmctl(shmidProc, IPC_RMID, NULL);
+    shmctl(shmidResources, IPC_RMID, NULL);
+    shmctl(shmidRemaining, IPC_RMID, NULL);
 }
 
-void displayRTable(){
+void displayRTable(processes *pTable){
 
     //Display to Console
     for(int i = 0; i < 20; i++){
@@ -213,12 +346,28 @@ void displayRTable(){
         }
     }
     log << endl;
-    log << "OSS: Remaining Resources: ";
+    log << "OSS: Maximum Resources:   ";
     for(int i = 0; i < 20; i++){
         if(resourceTable[i] < 10)
             log << resourceTable[i] << "   ";
         else
             log << resourceTable[i] << "  ";
+    }
+    log << endl;
+    log << "OSS: Resources In Use:    ";
+    for(int i = 0; i < 20; i++){
+        if(pTable[0].availableResources[i] < 10)
+            log << pTable[0].availableResources[i] << "   ";
+        else 
+            log << pTable[0].availableResources[i] << "  ";
+    }
+    log << endl;
+    log << "OSS: Resources Remaining: ";
+    for(int i = 0; i < 20; i++){
+        if(remainingTable[i] < 10)
+            log << remainingTable[i] << "   ";
+        else 
+            log << remainingTable[i] << "  ";
     }
     log << endl;
     log.close();
