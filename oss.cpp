@@ -126,6 +126,7 @@ int main(int argc, char* argv[]){
     int totalTerminated = 0;
     int maxSystemTimeSpent = 15;
     int billion = 1000000000;
+    int maxTimeBetweenProcesses = 500;
 
     //Set UP Message Queues
     key_t messageKey = ftok("pog", 67);
@@ -206,6 +207,10 @@ int main(int argc, char* argv[]){
         resourceTable[i] = randResources;
         remainingTable[i] = randResources;
     }
+
+    for(int i = 0; i < 18; i++){
+        pTable[i].pid = -1;
+    }
     resourceTable[20] = -1;
     remainingTable[20] = -1;
 
@@ -213,7 +218,7 @@ int main(int argc, char* argv[]){
     // for(int i = 0; i < 21; i++){
     //     // cout << resourceTable[i] << " ; " << i << endl;
     // }
-    displayRTable(pTable);
+    
 
 
 
@@ -221,8 +226,13 @@ int main(int argc, char* argv[]){
     char buffer[50] = "";
     char fileName[10] = "test";
     int interval = 0;
-    for(int i = 0 ; i < 1; i++){
-        interval = rand()% maxTimeBetweenNewProcsNS + 1;
+    for(int i = 0 ; i < 2; i++){
+        interval = rand()% maxTimeBetweenProcesses + 1;
+        clock->nano+= interval;
+            if(clock->nano >= billion){
+                clock->nano = clock->nano - billion;
+                clock->sec++;
+        }
         totalProcesses++;
         if(fork() == 0){
             pTable[i].pid = getpid();
@@ -235,8 +245,10 @@ int main(int argc, char* argv[]){
         }
     }
 
+    sleep(1);
     int increment;
     
+    int displayCheck = 0;
     while(totalTerminated < totalProcesses){
         if(msgrcv(msgid, &message, sizeof(message), 1, IPC_NOWAIT) == -1){
             //If there is no message, just keep adding clock
@@ -250,14 +262,34 @@ int main(int argc, char* argv[]){
         //If there is a message, do everything else
         else{
             interval = rand() % maxSystemTimeSpent + 1;
+            displayCheck += interval;
             clock->nano+= interval;
             if(clock->nano >= billion){
                 clock->nano = clock->nano - billion;
                 clock->sec++;
             }
+            if(displayCheck >= 100){
+                displayRTable(pTable);
+                displayCheck = 0;
+            }
             //If the process terminated
             if(message.mesg_terminated == 1){
                 cout << "terminating" << endl;
+                log.open("log.txt", ios::app);
+                log << "OSS: Terminating Process: " << message.mesg_pid << " and releasing all allocated resources" << endl;
+                log.close();
+                for(int i = 0; i < 18; i++){
+                    if(pTable[i].pid == message.mesg_pid){
+                        pTable[i].pid = -1;
+                        for(int j = 0; j < 20; j++){
+                            if(pTable[i].availableResources[j] != 0){
+                                //Removing allocation
+                                remainingTable[j] += pTable[i].availableResources[j];
+                                pTable[i].availableResources[j] = 0;
+                            }
+                        }
+                    }
+                }
                 totalTerminated++;
             }
             //On request resources, allocate resources
@@ -288,6 +320,11 @@ int main(int argc, char* argv[]){
                     cout << message.mesg_releaseIndex << " releaseIndex" << endl;
                     cout << message.mesg_resourceIndex << " resourceIndex" << endl;
                     cout << message.mesg_releaseResources << " releaseResources" << endl;
+                    // displayRTable(pTable);
+                    //Releasing Specified Amount of Resources from Index
+                    pTable[message.mesg_releaseIndex].availableResources[message.mesg_resourceIndex] -= message.mesg_releaseResources;
+                    remainingTable[message.mesg_resourceIndex] += message.mesg_releaseResources;
+                    // displayRTable(pTable);
                 }
                 else{
                     cout << "had no resources to deallocate" << endl;
@@ -335,6 +372,7 @@ void displayRTable(processes *pTable){
 
     //Log to Logfile
     ofstream log("log.txt", ios::app);
+    log << endl;
     log << "OSS: Displaying Resource Table" << endl;
     log << "OSS: Resource Index:      ";
     for(int i = 0; i < 20; i++){
@@ -354,12 +392,28 @@ void displayRTable(processes *pTable){
             log << resourceTable[i] << "  ";
     }
     log << endl;
-    log << "OSS: Resources In Use:    ";
-    for(int i = 0; i < 20; i++){
-        if(pTable[0].availableResources[i] < 10)
-            log << pTable[0].availableResources[i] << "   ";
-        else 
-            log << pTable[0].availableResources[i] << "  ";
+    log << "OSS: ------------------Resources In Use------------------";
+    log << endl;
+    int totalProcesses = 0;
+    for(int i = 0; i < 18; i++){
+        if(pTable[i].pid != -1){
+            totalProcesses++;
+        }
+    }
+    for(int j = 0; j < totalProcesses; j++){
+        if(pTable[j].pid != -1){
+            log << "OSS: Process: " << pTable[j].pid << ":      ";
+            for(int i = 0; i < 20; i++){
+                if(pTable[j].availableResources[i] < 10)
+                    log << pTable[j].availableResources[i] << "   ";
+                else 
+                    log << pTable[j].availableResources[i] << "  ";
+            }
+            log << endl;
+        }
+    }
+    for(int i = 0 ; i < 20; i++){
+        log << "------";
     }
     log << endl;
     log << "OSS: Resources Remaining: ";

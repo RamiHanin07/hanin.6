@@ -211,108 +211,138 @@ int main(int argc, char* argv[]){
     // cout << endl;
 
     // cout << "before while" << endl;
+    int nextCheckNano = 0;
+    int nextCheckSec = 0;
+    int termCheck = 0;
+    static int OUTOFONEHUND = 100;
     while(terminate == false){
-        message.mesg_type = 1;
-        static int RANDREQUEST = 7;
-        int doIDoAnything = rand() % RANDREQUEST + 1;
-        static int OUTOFONEHUND = 100;
-        int doIRequest = rand() % OUTOFONEHUND + 1;
-        // cout << doIDoAnything << " ; doIDoAnything" << endl;
-        // cout << doIRequest << " ; doIRequest" << endl;
-        strcpy(message.mesg_text, "No Request");
-        if(doIDoAnything == RANDREQUEST){
-            // cout << "enter request" << endl;
-            //Request if less than 50
-            if(doIRequest < 50){
-                // cout << "requesting resource" << endl;
-                strcpy(message.mesg_text, "Request");
-                message.mesg_request = true;
-                log.open("log.txt", ios::app);
-                log << "USER: Process: " << getpid() << " is requesting a resource at time: " << clock->sec << "s, " << clock->nano << "ns" << endl;
-                log.close();
-                // cout << "after log" <<endl;
-                int requestMax = 20;
-                int requestRand = rand() % ((requestMax - 1) + 1);
-                // cout << requestRand << " requestRand" << endl;
-                // cout << "before resourceTable" << endl;
-                int resourceMax = resourceTable[requestRand];
-                // cout << resourceTable[requestRand] << " table" << endl;
-                // cout << resourceMax << " resourceMax" <<endl;
-                // cout << "after resourceTable" << endl;
-                if(resourceMax == 0){
-                    for(int i = 0; i < 20; i++){
-                        cout << resourceTable[i] << " ";
+        if(clock->nano >= nextCheckNano || clock->sec > nextCheckSec){
+            message.mesg_type = 1;
+            static int RANDREQUEST = 7;
+            int doIDoAnything = rand() % RANDREQUEST + 1;
+            int doIRequest = rand() % OUTOFONEHUND + 1;
+            // cout << doIDoAnything << " ; doIDoAnything" << endl;
+            // cout << doIRequest << " ; doIRequest" << endl;
+            strcpy(message.mesg_text, "No Request");
+            if(doIDoAnything == RANDREQUEST){
+                // cout << "enter request" << endl;
+                //Request if less than 50
+                if(doIRequest < 50){
+                    // cout << "requesting resource" << endl;
+                    strcpy(message.mesg_text, "Request");
+                    message.mesg_request = true;
+                    log.open("log.txt", ios::app);
+                    log << "USER: Process: " << getpid() << " is requesting a resource at time: " << clock->sec << "s, " << clock->nano << "ns" << endl;
+                    log.close();
+                    // cout << "after log" <<endl;
+                    int requestMax = 20;
+                    int requestRand = rand() % ((requestMax - 1) + 1);
+                    // cout << requestRand << " requestRand" << endl;
+                    // cout << "before resourceTable" << endl;
+                    int resourceMax = resourceTable[requestRand];
+                    // cout << resourceTable[requestRand] << " table" << endl;
+                    // cout << resourceMax << " resourceMax" <<endl;
+                    // cout << "after resourceTable" << endl;
+                    if(resourceMax == 0){
+                        for(int i = 0; i < 20; i++){
+                            cout << resourceTable[i] << " ";
+                        }
+                        cout << endl;
                     }
-                    cout << endl;
+                    int resourceRand = rand() % resourceMax + 1;
+                    // cout << "after variables" << endl;
+                    message.mesg_requestIndex = requestRand;
+                    message.mesg_requestResources = resourceRand;
+                    // cout << "end request" << endl;
                 }
-                int resourceRand = rand() % resourceMax + 1;
-                // cout << "after variables" << endl;
-                message.mesg_requestIndex = requestRand;
-                message.mesg_requestResources = resourceRand;
-                // cout << "end request" << endl;
-            }
-            //Release if more than 50
-            else{
-                cout << "releasing resource" << endl;
-                strcpy(message.mesg_text, "Release");
-                message.mesg_request = false;
-                log.open("log.txt", ios::app);
-                log << "USER: Process: " << getpid() << " is releasing a resource at time: " << clock->sec << "s, " << clock->nano << "ns" << endl;
-                log.close();
-                
-                int processIndex;
-                //Find which index in the processTable is this process
-                for(int i = 0; i < 18; i++){
-                    if(pTable[i].pid == getpid()){
-                        processIndex = i;
-                    }
-                }
-                //Randomly find resources it has allocated and release some of them.
-
-                int emptyResources = 0;
-                for(int i = 0; i < 20; i++){
-                    if(pTable[processIndex].availableResources[i] == 0){
-                        emptyResources++;
-                    }
-                }
-                
-                cout << emptyResources << " ;empty resources" << endl;
-                //If there is some amount of resources available to be unallocated
-                if(emptyResources != 20){
-                    bool deallocated = false;
-                    //Keep searching random indexes until you find one that isn't empty
-                    while(deallocated == false){
-                        int indexMax = 20;
-                        int randIndex = rand() % ((indexMax - 1) + 1);
-                        //Once you've found one that isn't empty, remove a random amount of its resources
-                        if(pTable[processIndex].availableResources[randIndex] != 0){
-                            int resourceMax = pTable[processIndex].availableResources[randIndex];
-                            int randResources = rand() % resourceMax + 1;
-                            deallocated = true;
-                            message.mesg_releaseIndex = processIndex;
-                            message.mesg_resourceIndex = randIndex;
-                            message.mesg_releaseResources = randResources;
-                            message.mesg_released = true;
+                //Release if more than 50
+                else{
+                    cout << "releasing resource" << endl;
+                    strcpy(message.mesg_text, "Release");
+                    message.mesg_request = false;
+                    log.open("log.txt", ios::app);
+                    log << "USER: Process: " << getpid() << " is releasing a resource at time: " << clock->sec << "s, " << clock->nano << "ns" << endl;
+                    log.close();
+                    
+                    int processIndex;
+                    //Find which index in the processTable is this process
+                    for(int i = 0; i < 18; i++){
+                        if(pTable[i].pid == getpid()){
+                            processIndex = i;
                         }
                     }
-                }
-                else{
-                    cout << "no resources currently in use" << endl;
-                }
-            }
-            // cout << "before msgsnd" << endl;
-            msgsnd(msgid, &message, sizeof(message), 0);
-        }
+                    //Randomly find resources it has allocated and release some of them.
 
-        if(increment > 100){
-            terminate = true;
+                    int emptyResources = 0;
+                    for(int i = 0; i < 20; i++){
+                        if(pTable[processIndex].availableResources[i] == 0){
+                            emptyResources++;
+                        }
+                    }
+                    
+                    cout << emptyResources << " ;empty resources" << endl;
+                    //If there is some amount of resources available to be unallocated
+                    if(emptyResources != 20){
+                        bool deallocated = false;
+                        //Keep searching random indexes until you find one that isn't empty
+                        while(deallocated == false){
+                            int indexMax = 20;
+                            int randIndex = rand() % ((indexMax - 1) + 1);
+                            //Once you've found one that isn't empty, remove a random amount of its resources
+                            if(pTable[processIndex].availableResources[randIndex] != 0){
+                                int resourceMax = pTable[processIndex].availableResources[randIndex];
+                                int randResources = rand() % resourceMax + 1;
+                                if(randResources < 0){
+                                    randResources = 0;
+                                }
+                                deallocated = true;
+                                message.mesg_releaseIndex = processIndex;
+                                message.mesg_resourceIndex = randIndex;
+                                message.mesg_releaseResources = randResources;
+                                message.mesg_released = true;
+                            }
+                        }
+                    }
+                    else{
+                        cout << "no resources currently in use" << endl;
+                    }
+                }
+                // cout << "before msgsnd" << endl;
+
+                int nextCheckNSMax = 200;
+                interval = rand() % nextCheckNSMax + 1;
+                nextCheckNano = clock->nano + interval;
+                nextCheckSec = clock->sec;
+                msgsnd(msgid, &message, sizeof(message), 0);
+            }
         }
-        increment++;
-        interval = rand() % maxSystemTimeSpent + 1;
-        clock->nano+= interval;
-        if(clock->nano >= billion){
-                clock->nano = clock->nano - billion;
-                clock->sec++;
+        else{
+            // log.open("log.txt", ios::app);
+            // log << "USER: Not enough time has passed to check again" <<endl;
+            // log.close();
+            // if(increment > 10000){
+            // terminate = true;
+            // }
+            // increment++;
+            interval = rand() % maxSystemTimeSpent + 1;
+            termCheck += interval;
+            if(termCheck >= 250){
+                // cout << "checking termination" << endl;
+                int terminateChance = 5;
+                int doITerminate = rand() % OUTOFONEHUND + 1;
+                if(doITerminate < terminateChance){
+                    terminate = true;
+                    log.open("log.txt", ios::app);
+                    log << "USER: Process: " << getpid() << " has randomly terminated at time: " << clock->sec << "s, " << clock->nano << "ns" << endl;
+                    log.close();
+                }
+            termCheck = 0;
+            }
+            clock->nano+= interval;
+            if(clock->nano >= billion){
+                    clock->nano = clock->nano - billion;
+                    clock->sec++;
+            }
         }
     }
         //Actually terminating
