@@ -1,0 +1,20 @@
+Most similar to project 5 than Project 4, thank god.
+
+1. Have a resource vector that has 20 different resources.
+2. Initialize the resources randomly from 1-10, each element of vector is randomly initialized.
+3. In this project, child processes will request some resources, or release some resources.
+
+
+Deadlocks:
+Run this algorithm every 1 second in the system.
+Using deadlock detection. (watch this video)
+Periodically, the system will run deadlock detection algorithm.
+If a deadlock is found, the OSS will force one of the deadlocked child processes to terminate, over and over until a deadlock is gone.
+
+
+Every process needs a vector that has all the resources it currently has. This vector should probably be 20 elements long too.
+There should also be a remaining vector, that keeps track of how many remaining resources are available in the resource element.
+
+Use a nonblocking receieve type message queue in OSS that checks to see if theres a message from a child. If there isn't it will increment the clock in a while loop.
+If it receieves a message, it will check to see if it can grant the request from the child process.
+If it cannot, say not enough resources remaining to fulfill a request, that child process will be blocked until those resources come available.
