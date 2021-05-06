@@ -87,7 +87,7 @@ int *remainingTable;
 
 void signalHandler(int signal);
 
-void displayRTable(processes *pTable);
+void displayRTable(processes *pTable, simClock *clock);
 
 void signalHandler(int signal){
 
@@ -226,7 +226,7 @@ int main(int argc, char* argv[]){
     char buffer[50] = "";
     char fileName[10] = "test";
     int interval = 0;
-    for(int i = 0 ; i < 2; i++){
+    for(int i = 0 ; i < 10; i++){
         interval = rand()% maxTimeBetweenProcesses + 1;
         clock->nano+= interval;
             if(clock->nano >= billion){
@@ -269,7 +269,7 @@ int main(int argc, char* argv[]){
                 clock->sec++;
             }
             if(displayCheck >= 100){
-                displayRTable(pTable);
+                displayRTable(pTable, clock);
                 displayCheck = 0;
             }
             //If the process terminated
@@ -294,17 +294,18 @@ int main(int argc, char* argv[]){
             }
             //On request resources, allocate resources
             else if(message.mesg_request == true){
-                cout << "message was a request" << endl;
-                cout << message.mesg_requestResources << " requestResources " << endl;
-                cout << message.mesg_requestIndex << " requestIndex" << endl;
+                // cout << "message was a request" << endl;
+                // cout << message.mesg_requestResources << " requestResources " << endl;
+                // cout << message.mesg_requestIndex << " requestIndex" << endl;
+                // cout << remainingTable[message.mesg_requestIndex] << " remainingTable before" << endl;
                 if(remainingTable[message.mesg_requestIndex] >= message.mesg_requestResources){
-                    cout << "enough resources for request" << endl;
-                    remainingTable[message.mesg_requestIndex] = (remainingTable[message.mesg_requestIndex] - message.mesg_requestResources);
-                    cout << remainingTable[message.mesg_requestIndex] << " ; rT remaining" << endl;
+                    // cout << "enough resources for request" << endl;
+                    remainingTable[message.mesg_requestIndex] -= message.mesg_requestResources;
+                    // cout << remainingTable[message.mesg_requestIndex] << " ; rT after remaining" << endl;
                     for(int i = 0; i < 18; i++){
                         if(pTable[i].pid == message.mesg_pid){
                             // cout << i << " ; index" << endl;
-                            pTable[i].availableResources[message.mesg_requestIndex] = message.mesg_requestResources;
+                            pTable[i].availableResources[message.mesg_requestIndex] += message.mesg_requestResources;
                         }
                     }
                 }
@@ -316,17 +317,33 @@ int main(int argc, char* argv[]){
             }
             else if(message.mesg_request == false){
                 if(message.mesg_released == true){
-                    cout << "message was a release" << endl;
+                    // cout << "message was a release" << endl;
                     cout << message.mesg_releaseIndex << " releaseIndex" << endl;
                     cout << message.mesg_resourceIndex << " resourceIndex" << endl;
                     cout << message.mesg_releaseResources << " releaseResources" << endl;
                     // displayRTable(pTable);
                     //Releasing Specified Amount of Resources from Index
-                    pTable[message.mesg_releaseIndex].availableResources[message.mesg_resourceIndex] -= message.mesg_releaseResources;
-                    remainingTable[message.mesg_resourceIndex] += message.mesg_releaseResources;
+                    if((pTable[message.mesg_releaseIndex].availableResources[message.mesg_resourceIndex] - message.mesg_releaseResources) < 0){
+                        log.open("log.txt", ios::app);
+                        log << "OSS: Trying to remove too many resources from Process: " << message.mesg_pid << " index: " << message.mesg_releaseIndex << endl;
+                        log.close();
+                    }
+                    else{
+                        // log.open("log.txt",ios::app);
+                        // log << pTable[message.mesg_releaseIndex].availableResources[message.mesg_resourceIndex] << " processTable availableResources before" << endl;
+                        // log << message.mesg_releaseResources << " ; removing this much from ^" << endl;
+                        pTable[message.mesg_releaseIndex].availableResources[message.mesg_resourceIndex] -= message.mesg_releaseResources;
+                        // log << remainingTable[message.mesg_resourceIndex] << " remainingTable before addition of released resources" << endl;
+                        remainingTable[message.mesg_resourceIndex] += message.mesg_releaseResources;
+                        // log << remainingTable[message.mesg_resourceIndex] << " remainingTable after addition of released resources" << endl;
+                        // log.close();
+                        
+                    }
+                    
                     // displayRTable(pTable);
                 }
                 else{
+                    cout << "message was a release" << endl;
                     cout << "had no resources to deallocate" << endl;
                 }
 
@@ -340,7 +357,7 @@ int main(int argc, char* argv[]){
 
 
     wait(NULL);
-    displayRTable(pTable);
+    displayRTable(pTable, clock);
     msgctl(msgid, IPC_RMID, NULL);
     msgctl(msgidTwo, IPC_RMID,NULL);
     shmctl(shmidClock, IPC_RMID, NULL);
@@ -349,7 +366,7 @@ int main(int argc, char* argv[]){
     shmctl(shmidRemaining, IPC_RMID, NULL);
 }
 
-void displayRTable(processes *pTable){
+void displayRTable(processes *pTable, simClock *clock){
 
     //Display to Console
     for(int i = 0; i < 20; i++){
@@ -373,7 +390,7 @@ void displayRTable(processes *pTable){
     //Log to Logfile
     ofstream log("log.txt", ios::app);
     log << endl;
-    log << "OSS: Displaying Resource Table" << endl;
+    log << "OSS: Displaying Resource Table at time: " << clock->sec << " s : " << clock->nano << "ns \n";
     log << "OSS: Resource Index:      ";
     for(int i = 0; i < 20; i++){
         if(i < 10){

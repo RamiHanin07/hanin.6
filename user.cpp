@@ -257,12 +257,9 @@ int main(int argc, char* argv[]){
                 }
                 //Release if more than 50
                 else{
-                    cout << "releasing resource" << endl;
+                    // cout << "releasing r mesource" << endl;
                     strcpy(message.mesg_text, "Release");
                     message.mesg_request = false;
-                    log.open("log.txt", ios::app);
-                    log << "USER: Process: " << getpid() << " is releasing a resource at time: " << clock->sec << "s, " << clock->nano << "ns" << endl;
-                    log.close();
                     
                     int processIndex;
                     //Find which index in the processTable is this process
@@ -283,15 +280,21 @@ int main(int argc, char* argv[]){
                     cout << emptyResources << " ;empty resources" << endl;
                     //If there is some amount of resources available to be unallocated
                     if(emptyResources != 20){
+                        cout << "has resources" << endl;
                         bool deallocated = false;
                         //Keep searching random indexes until you find one that isn't empty
                         while(deallocated == false){
                             int indexMax = 20;
                             int randIndex = rand() % ((indexMax - 1) + 1);
                             //Once you've found one that isn't empty, remove a random amount of its resources
-                            if(pTable[processIndex].availableResources[randIndex] != 0){
+                            if(pTable[processIndex].availableResources[randIndex] > 0){
+                                // log.open("log.txt", ios::app);
+                                // log << "found position with resources" << endl;
+                                // log << pTable[processIndex].availableResources[randIndex] << " current resources in position: " << randIndex << endl;
                                 int resourceMax = pTable[processIndex].availableResources[randIndex];
                                 int randResources = rand() % resourceMax + 1;
+                                // log << randResources << " ; randResources" << endl;
+                                // log.close();
                                 if(randResources < 0){
                                     randResources = 0;
                                 }
@@ -300,6 +303,9 @@ int main(int argc, char* argv[]){
                                 message.mesg_resourceIndex = randIndex;
                                 message.mesg_releaseResources = randResources;
                                 message.mesg_released = true;
+                                log.open("log.txt", ios::app);
+                                log << "USER: Process: " << getpid() << " is releasing a resource at time: " << clock->sec << "s, " << clock->nano << "ns" << endl;
+                                log.close();
                             }
                         }
                     }

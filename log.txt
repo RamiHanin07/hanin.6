@@ -1,92 +1,936 @@
 OSS: Beginning Process
-OSS: Generating process with PID 25542 at time: 0 s : 729ns 
-OSS: Generating process with PID 25543 at time: 0 s : 729ns 
-USER: Process: 25543 is releasing a resource at time: 0s, 729ns
-USER: Process: 25542 is requesting a resource at time: 0s, 729ns
-USER: Process: 25543 is releasing a resource at time: 0s, 919ns
-USER: Process: 25542 is releasing a resource at time: 0s, 919ns
-USER: Process: 25543 is releasing a resource at time: 0s, 965ns
-USER: Process: 25542 is releasing a resource at time: 0s, 1169ns
-USER: Process: 25543 is requesting a resource at time: 0s, 1223ns
-USER: Process: 25542 is releasing a resource at time: 0s, 1368ns
-USER: Process: 25543 is requesting a resource at time: 0s, 1368ns
-USER: Process: 25543 is releasing a resource at time: 0s, 1460ns
-USER: Process: 25542 is requesting a resource at time: 0s, 1460ns
-USER: Process: 25542 is requesting a resource at time: 0s, 1504ns
-USER: Process: 25543 is releasing a resource at time: 0s, 1504ns
-USER: Process: 25542 is releasing a resource at time: 0s, 1691ns
-USER: Process: 25543 is requesting a resource at time: 0s, 1729ns
-USER: Process: 25542 is releasing a resource at time: 0s, 1858ns
-USER: Process: 25543 is releasing a resource at time: 0s, 1858ns
-USER: Process: 25542 is releasing a resource at time: 0s, 2048ns
-USER: Process: 25543 is requesting a resource at time: 0s, 2048ns
-USER: Process: 25543 is requesting a resource at time: 0s, 2080ns
-USER: Process: 25542 is releasing a resource at time: 0s, 2317ns
-USER: Process: 25543 is requesting a resource at time: 0s, 2317ns
-USER: Process: 25542 is requesting a resource at time: 0s, 2512ns
-USER: Process: 25543 is releasing a resource at time: 0s, 2512ns
-USER: Process: 25542 is releasing a resource at time: 0s, 2698ns
-USER: Process: 25543 is requesting a resource at time: 0s, 2825ns
-USER: Process: 25542 is requesting a resource at time: 0s, 2949ns
-USER: Process: 25543 is requesting a resource at time: 0s, 2949ns
-USER: Process: 25543 is requesting a resource at time: 0s, 3062ns
-USER: Process: 25542 is releasing a resource at time: 0s, 3062ns
-USER: Process: 25543 is requesting a resource at time: 0s, 3250ns
-USER: Process: 25542 is releasing a resource at time: 0s, 3504ns
-USER: Process: 25543 is requesting a resource at time: 0s, 3504ns
-USER: Process: 25543 has randomly terminated at time: 0s, 3610ns
-USER: Process: 25542 is requesting a resource at time: 0s, 3610ns
-USER: Process: 25542 is releasing a resource at time: 0s, 3763ns
-USER: Process: 25542 is releasing a resource at time: 0s, 3952ns
-USER: Process: 25542 is releasing a resource at time: 0s, 4002ns
-USER: Process: 25542 is requesting a resource at time: 0s, 4022ns
-USER: Process: 25542 is requesting a resource at time: 0s, 4216ns
-USER: Process: 25542 is releasing a resource at time: 0s, 4269ns
-USER: Process: 25542 is requesting a resource at time: 0s, 4403ns
-USER: Process: 25542 is requesting a resource at time: 0s, 4510ns
-USER: Process: 25542 is releasing a resource at time: 0s, 4660ns
-USER: Process: 25542 is requesting a resource at time: 0s, 4832ns
-USER: Process: 25542 is releasing a resource at time: 0s, 4960ns
-USER: Process: 25542 is requesting a resource at time: 0s, 5072ns
-USER: Process: 25542 is requesting a resource at time: 0s, 5268ns
-USER: Process: 25542 is releasing a resource at time: 0s, 5384ns
-USER: Process: 25542 is releasing a resource at time: 0s, 5569ns
-USER: Process: 25542 is releasing a resource at time: 0s, 5710ns
-USER: Process: 25542 is releasing a resource at time: 0s, 5870ns
-USER: Process: 25542 is requesting a resource at time: 0s, 5888ns
-USER: Process: 25542 has randomly terminated at time: 0s, 6061ns
+OSS: Generating process with PID 5191 at time: 0 s : 1216ns 
+OSS: Generating process with PID 5192 at time: 0 s : 1216ns 
+OSS: Generating process with PID 5193 at time: 0 s : 1412ns 
+OSS: Generating process with PID 5195 at time: 0 s : 2036ns 
+OSS: Generating process with PID 5194 at time: 0 s : 2397ns 
+USER: Process: 5191 is requesting a resource at time: 0s, 2397ns
+USER: Process: 5195 is requesting a resource at time: 0s, 2662ns
+USER: Process: 5191 is requesting a resource at time: 0s, 2916ns
+USER: Process: 5191 is requesting a resource at time: 0s, 3776ns
+USER: Process: 5195 is requesting a resource at time: 0s, 3776ns
+USER: Process: 5195 is requesting a resource at time: 0s, 4233ns
+USER: Process: 5191 is requesting a resource at time: 0s, 4376ns
+USER: Process: 5195 is requesting a resource at time: 0s, 4948ns
+USER: Process: 5191 is requesting a resource at time: 0s, 4948ns
+USER: Process: 5191 is requesting a resource at time: 0s, 5066ns
+USER: Process: 5191 is requesting a resource at time: 0s, 5285ns
+USER: Process: 5192 is requesting a resource at time: 0s, 5087ns
+USER: Process: 5195 is requesting a resource at time: 0s, 5451ns
+USER: Process: 5191 is requesting a resource at time: 0s, 5451ns
+USER: Process: 5195 is requesting a resource at time: 0s, 5585ns
+USER: Process: 5191 is requesting a resource at time: 0s, 5585ns
+USER: Process: 5192 is requesting a resource at time: 0s, 5585ns
+USER: Process: 5192 is requesting a resource at time: 0s, 5723ns
+USER: Process: 5192 is requesting a resource at time: 0s, 6129ns
+USER: Process: 5195 is requesting a resource at time: 0s, 6418ns
+USER: Process: 5195 is requesting a resource at time: 0s, 6535ns
+USER: Process: 5195 is requesting a resource at time: 0s, 6742ns
+USER: Process: 5195 is requesting a resource at time: 0s, 7256ns
+USER: Process: 5191 is requesting a resource at time: 0s, 7425ns
+USER: Process: 5191 is requesting a resource at time: 0s, 7675ns
+USER: Process: 5195 is requesting a resource at time: 0s, 8017ns
+USER: Process: 5192 is requesting a resource at time: 0s, 8017ns
+USER: Process: 5191 is requesting a resource at time: 0s, 8017ns
+USER: Process: 5195 is requesting a resource at time: 0s, 8296ns
+USER: Process: 5195 is requesting a resource at time: 0s, 8553ns
+USER: Process: 5192 is requesting a resource at time: 0s, 8553ns
+USER: Process: 5191 is requesting a resource at time: 0s, 9016ns
+USER: Process: 5195 is requesting a resource at time: 0s, 9136ns
+USER: Process: 5191 is requesting a resource at time: 0s, 9269ns
+USER: Process: 5195 is requesting a resource at time: 0s, 9269ns
+USER: Process: 5191 is requesting a resource at time: 0s, 9597ns
+USER: Process: 5194 is requesting a resource at time: 0s, 9597ns
+OSS: Generating process with PID 5196 at time: 0 s : 9597ns 
+OSS: Generating process with PID 5197 at time: 0 s : 9597ns 
+OSS: Generating process with PID 5198 at time: 0 s : 9597ns 
+OSS: Generating process with PID 5199 at time: 0 s : 9597ns 
+USER: Process: 5193 is requesting a resource at time: 0s, 9597ns
+OSS: Generating process with PID 5200 at time: 0 s : 9597ns 
+USER: Process: 5198 is requesting a resource at time: 0s, 9597ns
+USER: Process: 5192 has randomly terminated at time: 0s, 9786ns
+USER: Process: 5195 is requesting a resource at time: 0s, 9786ns
+USER: Process: 5191 is releasing a resource at time: 0s, 9839ns
+USER: Process: 5195 is requesting a resource at time: 0s, 9975ns
+USER: Process: 5191 is requesting a resource at time: 0s, 10201ns
+USER: Process: 5195 is releasing a resource at time: 0s, 10357ns
+USER: Process: 5191 is requesting a resource at time: 0s, 10357ns
+USER: Process: 5195 is requesting a resource at time: 0s, 10569ns
+USER: Process: 5191 is releasing a resource at time: 0s, 10746ns
+USER: Process: 5195 is requesting a resource at time: 0s, 10746ns
+USER: Process: 5195 is requesting a resource at time: 0s, 11092ns
 
-OSS: Displaying Resource Table
+USER: Process: 5191 is releasing a resource at time: 0s, 11092ns
+OSS: Displaying Resource Table at time: 0 s : 11092ns 
 OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
-OSS: Maximum Resources:   10  1   7   7   9   3   10  8   8   7   6   6   2   6   8   5   5   9   5   5   
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
 OSS: ------------------Resources In Use------------------
-OSS: Process: 25542:      0   0   0   4   0   0   0   0   0   0   0   3   0   0   0   0   0   0   0   0   
-OSS: Process: 25543:      0   0   0   0   0   3   0   0   0   0   0   0   0   0   3   0   0   0   0   0   
+OSS: Process: 5191:      0   0   0   0   0   0   0   0   5   0   0   0   0   0   5   0   0   0   0   0   
+OSS: Process: 5192:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5193:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5194:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5195:      5   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5196:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5197:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5198:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5199:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5200:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
 ------------------------------------------------------------------------------------------------------------------------
-OSS: Resources Remaining: 10  1   7   3   9   0   10  8   8   7   6   3   2   6   5   5   5   9   5   5   
+OSS: Resources Remaining: 4   10  1   6   7   5   2   5   3   5   2   2   1   3   0   7   1   4   6   8   
+USER: Process: 5195 is requesting a resource at time: 0s, 11213ns
+USER: Process: 5193 is requesting a resource at time: 0s, 11222ns
+USER: Process: 5195 is releasing a resource at time: 0s, 11222ns
+USER: Process: 5195 is requesting a resource at time: 0s, 11446ns
+USER: Process: 5193 is requesting a resource at time: 0s, 11446ns
+USER: Process: 5195 is releasing a resource at time: 0s, 11504ns
+USER: Process: 5198 is requesting a resource at time: 0s, 11595ns
+USER: Process: 5195 is releasing a resource at time: 0s, 11595ns
 
-OSS: Displaying Resource Table
+OSS: Displaying Resource Table at time: 0 s : 11595ns 
 OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
-OSS: Maximum Resources:   10  1   7   7   9   3   10  8   8   7   6   6   2   6   8   5   5   9   5   5   
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
 OSS: ------------------Resources In Use------------------
-OSS: Process: 25542:      0   0   5   4   0   0   0   0   0   0   0   3   0   0   0   0   0   0   0   3   
-OSS: Process: 25543:      0   0   0   0   0   3   0   6   3   0   5   0   0   0   3   0   3   2   1   0   
+OSS: Process: 5191:      0   0   1   0   0   0   0   0   5   1   0   0   0   0   5   0   0   0   0   0   
+OSS: Process: 5192:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5193:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5194:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5195:      5   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   1   0   0   0   
+OSS: Process: 5196:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5197:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5198:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5199:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5200:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
 ------------------------------------------------------------------------------------------------------------------------
-OSS: Resources Remaining: 10  1   2   3   9   0   10  2   5   7   1   3   2   6   5   5   2   1   4   2   
-OSS: Terminating Process: 25543 and releasing all allocated resources
+OSS: Resources Remaining: 4   10  0   6   7   5   1   5   3   4   2   2   1   3   0   7   0   4   6   8   
+USER: Process: 5194 is requesting a resource at time: 0s, 11900ns
+USER: Process: 5195 is releasing a resource at time: 0s, 11901ns
+USER: Process: 5195 is requesting a resource at time: 0s, 12128ns
+USER: Process: 5200 is requesting a resource at time: 0s, 12128ns
+USER: Process: 5195 is requesting a resource at time: 0s, 12285ns
 
-OSS: Displaying Resource Table
+USER: Process: 5200 is requesting a resource at time: 0s, 12409ns
+USER: Process: 5195 is releasing a resource at time: 0s, 12409ns
+OSS: Displaying Resource Table at time: 0 s : 12409ns 
 OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
-OSS: Maximum Resources:   10  1   7   7   9   3   10  8   8   7   6   6   2   6   8   5   5   9   5   5   
+USER: Process: 5196 is requesting a resource at time: 0s, 12300ns
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
 OSS: ------------------Resources In Use------------------
-OSS: Process: 25542:      0   1   5   4   0   3   6   0   0   0   0   3   0   4   0   0   0   0   0   3   
+OSS: Process: 5191:      0   0   1   0   0   0   0   0   5   1   0   0   0   3   5   0   0   2   0   0   
+USER: Process: 5195 is releasing a resource at time: 0s, 12595ns
+OSS: Process: 5192:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   5   0   0   0   0   
+OSS: Process: 5193:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+USER: Process: 5200 is requesting a resource at time: 0s, 12751ns
+OSS: Process: 5194:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5195:      5   0   0   0   2   0   1   0   0   0   0   0   0   0   0   0   1   0   0   0   
+OSS: Process: 5196:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5197:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5198:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5199:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5200:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
 ------------------------------------------------------------------------------------------------------------------------
-OSS: Resources Remaining: 10  0   2   3   9   0   4   8   5   7   6   3   2   2   8   5   5   3   5   2   
-OSS: Terminating Process: 25542 and releasing all allocated resources
+OSS: Resources Remaining: 4   10  0   6   5   5   1   5   3   4   2   2   1   0   0   2   0   2   6   8   
+USER: Process: 5194 is requesting a resource at time: 0s, 12752ns
+USER: Process: 5195 is requesting a resource at time: 0s, 12957ns
+USER: Process: 5193 is requesting a resource at time: 0s, 13058ns
+USER: Process: 5195 is requesting a resource at time: 0s, 13058ns
+USER: Process: 5196 is requesting a resource at time: 0s, 13223ns
+USER: Process: 5191 is releasing a resource at time: 0s, 13422ns
+USER: Process: 5191 is releasing a resource at time: 0s, 13554ns
+USER: Process: 5191 is releasing a resource at time: 0s, 13582ns
+USER: Process: 5196 is requesting a resource at time: 0s, 13673ns
+USER: Process: 5191 is releasing a resource at time: 0s, 13673ns
 
-OSS: Displaying Resource Table
+OSS: Displaying Resource Table at time: 0 s : 13673ns 
 OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
-OSS: Maximum Resources:   10  1   7   7   9   3   10  8   8   7   6   6   2   6   8   5   5   9   5   5   
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 5191:      0   4   1   0   0   0   0   0   5   1   0   0   0   3   5   0   0   2   0   0   
+OSS: Process: 5192:      0   0   0   0   4   0   0   0   0   0   2   0   0   0   0   5   0   0   0   0   
+OSS: Process: 5193:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5194:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5195:      5   5   0   0   2   0   1   0   0   0   0   0   1   0   0   0   1   0   0   0   
+OSS: Process: 5196:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5197:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5198:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5199:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5200:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 4   1   0   6   1   5   1   5   3   4   0   2   0   0   0   2   0   2   6   8   
+USER: Process: 5195 is releasing a resource at time: 0s, 13675ns
+USER: Process: 5195 is requesting a resource at time: 0s, 13856ns
+USER: Process: 5195 is releasing a resource at time: 0s, 13952ns
+USER: Process: 5194 is requesting a resource at time: 0s, 13952ns
+USER: Process: 5195 is releasing a resource at time: 0s, 14108ns
+USER: Process: 5200 is requesting a resource at time: 0s, 14117ns
+USER: Process: 5200 is requesting a resource at time: 0s, 14173ns
+USER: Process: 5194 is requesting a resource at time: 0s, 14219ns
+USER: Process: 5194 is requesting a resource at time: 0s, 14510ns
+
+OSS: Displaying Resource Table at time: 0 s : 14510ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 5191:      0   4   1   0   0   0   0   0   5   1   0   0   0   3   5   0   0   2   0   0   
+OSS: Process: 5192:      0   0   0   0   4   0   0   0   0   0   2   0   0   0   0   5   0   0   0   0   
+OSS: Process: 5193:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5194:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5195:      5   5   0   0   2   0   2   0   0   0   0   0   1   0   0   1   1   0   0   0   
+OSS: Process: 5196:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5197:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5198:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5199:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5200:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 4   1   0   6   1   5   0   5   3   4   0   2   0   0   0   1   0   2   6   8   
+USER: Process: 5200 is requesting a resource at time: 0s, 14516ns
+USER: Process: 5200 is requesting a resource at time: 0s, 14533ns
+USER: Process: 5197 is requesting a resource at time: 0s, 14561ns
+USER: Process: 5194 has randomly terminated at time: 0s, 14651ns
+USER: Process: 5197 is requesting a resource at time: 0s, 14877ns
+USER: Process: 5196 is requesting a resource at time: 0s, 14887ns
+USER: Process: 5191 is releasing a resource at time: 0s, 14897ns
+USER: Process: 5191 is releasing a resource at time: 0s, 15088ns
+USER: Process: 5195 is requesting a resource at time: 0s, 15298ns
+USER: Process: 5199 is requesting a resource at time: 0s, 15088ns
+USER: Process: 5191 is releasing a resource at time: 0s, 15298ns
+
+OSS: Displaying Resource Table at time: 0 s : 15298ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 5191:      0   4   1   0   0   0   0   0   5   4   0   0   0   3   5   0   0   2   0   0   
+OSS: Process: 5192:      0   0   0   0   4   0   0   0   0   0   2   0   0   0   0   5   0   0   0   0   
+OSS: Process: 5193:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5194:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5195:      5   5   0   4   2   0   2   0   0   0   0   0   1   0   0   1   1   0   0   0   
+OSS: Process: 5196:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5197:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5198:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5199:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5200:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 4   1   0   2   1   5   0   5   3   1   0   2   0   0   0   1   0   2   6   8   
+USER: Process: 5195 is releasing a resource at time: 0s, 15505ns
+USER: Process: 5200 is requesting a resource at time: 0s, 15913ns
+USER: Process: 5200 is requesting a resource at time: 0s, 16270ns
+USER: Process: 5200 is requesting a resource at time: 0s, 16298ns
+USER: Process: 5200 is requesting a resource at time: 0s, 16504ns
+
+OSS: Displaying Resource Table at time: 0 s : 16504ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+USER: Process: 5195 is requesting a resource at time: 0s, 16311ns
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 5191:      2   4   1   0   0   0   0   0   5   4   0   0   0   3   5   0   0   2   0   0   
+OSS: Process: 5192:      0   0   0   0   4   0   0   0   0   0   2   0   0   0   0   5   0   0   3   0   
+OSS: Process: 5193:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5194:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5195:      5   5   0   4   2   0   2   0   0   0   0   0   1   0   0   1   1   0   0   0   
+OSS: Process: 5196:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5197:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5198:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5199:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5200:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 2   1   0   2   1   5   0   5   3   1   0   2   0   0   0   1   0   2   3   8   
+USER: Process: 5191 is releasing a resource at time: 0s, 16553ns
+USER: Process: 5195 is releasing a resource at time: 0s, 16558ns
+OSS: Terminating Process: 5192 and releasing all allocated resources
+USER: Process: 5191 is requesting a resource at time: 0s, 16611ns
+USER: Process: 5195 is requesting a resource at time: 0s, 16646ns
+USER: Process: 5191 is requesting a resource at time: 0s, 16689ns
+USER: Process: 5191 is releasing a resource at time: 0s, 16808ns
+USER: Process: 5197 is requesting a resource at time: 0s, 16817ns
+USER: Process: 5196 is requesting a resource at time: 0s, 16832ns
+USER: Process: 5200 is requesting a resource at time: 0s, 16882ns
+USER: Process: 5200 is requesting a resource at time: 0s, 16973ns
+
+OSS: Displaying Resource Table at time: 0 s : 16973ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 5191:      2   4   1   0   0   0   0   0   4   4   0   1   0   3   5   0   0   2   0   0   
+OSS: Process: 5193:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5194:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5195:      3   5   0   4   2   0   2   0   0   0   0   0   1   0   0   1   1   2   0   0   
+OSS: Process: 5196:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5197:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5198:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5199:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 4   1   0   2   5   5   0   5   4   1   2   1   0   0   0   6   0   0   6   8   
+USER: Process: 5191 is releasing a resource at time: 0s, 16979ns
+USER: Process: 5195 is requesting a resource at time: 0s, 16992ns
+USER: Process: 5191 is requesting a resource at time: 0s, 17133ns
+USER: Process: 5191 is requesting a resource at time: 0s, 17299ns
+USER: Process: 5191 is releasing a resource at time: 0s, 17328ns
+USER: Process: 5191 is requesting a resource at time: 0s, 17473ns
+USER: Process: 5195 is releasing a resource at time: 0s, 17478ns
+USER: Process: 5200 is requesting a resource at time: 0s, 17645ns
+OSS: Trying to remove too many resources from Process: 5195 index: 4
+USER: Process: 5196 is requesting a resource at time: 0s, 17811ns
+OSS: Trying to remove too many resources from Process: 5195 index: 4
+
+OSS: Displaying Resource Table at time: 0 s : 17955ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 5191:      2   4   1   0   0   0   0   0   4   4   0   1   0   3   2   0   0   2   0   0   
+OSS: Process: 5193:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5194:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5195:      3   5   0   4   2   0   2   0   0   0   0   0   1   0   0   1   0   2   2   0   
+OSS: Process: 5196:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5197:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5198:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5199:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 4   1   0   2   5   5   0   5   4   1   2   1   0   0   3   6   1   0   4   8   
+USER: Process: 5195 is requesting a resource at time: 0s, 17964ns
+USER: Process: 5200 is requesting a resource at time: 0s, 18094ns
+OSS: Trying to remove too many resources from Process: 5195 index: 4
+USER: Process: 5195 is releasing a resource at time: 0s, 18196ns
+USER: Process: 5200 is releasing a resource at time: 0s, 18424ns
+USER: Process: 5199 is requesting a resource at time: 0s, 18504ns
+USER: Process: 5195 is releasing a resource at time: 0s, 18664ns
+OSS: Trying to remove too many resources from Process: 5195 index: 4
+USER: Process: 5196 is requesting a resource at time: 0s, 18667ns
+USER: Process: 5200 is releasing a resource at time: 0s, 18788ns
+USER: Process: 5195 is releasing a resource at time: 0s, 18788ns
+
+OSS: Displaying Resource Table at time: 0 s : 18788ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 5191:      2   4   1   0   0   0   0   0   4   4   0   1   0   3   2   0   0   2   0   0   
+OSS: Process: 5193:      0   0   0   0   0   4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5194:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   4   0   0   0   0   
+OSS: Process: 5195:      3   5   0   4   2   0   2   0   0   0   0   0   1   0   0   1   0   2   2   0   
+OSS: Process: 5196:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5197:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5198:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5199:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 4   1   0   2   5   1   0   0   4   1   2   1   0   0   3   2   1   0   4   8   
+USER: Process: 5196 is requesting a resource at time: 0s, 18841ns
+USER: Process: 5196 is releasing a resource at time: 0s, 18982ns
+USER: Process: 5191 is releasing a resource at time: 0s, 18996ns
+USER: Process: 5196 is releasing a resource at time: 0s, 19117ns
+USER: Process: 5196 is releasing a resource at time: 0s, 19145ns
+USER: Process: 5200 is releasing a resource at time: 0s, 19156ns
+USER: Process: 5199 is requesting a resource at time: 0s, 19170ns
+OSS: Trying to remove too many resources from Process: 5191 index: 0
+USER: Process: 5200 is releasing a resource at time: 0s, 19249ns
+
+OSS: Displaying Resource Table at time: 0 s : 19249ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 5191:      2   1   1   0   0   0   0   0   4   3   0   1   0   3   0   0   0   2   0   0   
+OSS: Process: 5193:      0   0   0   0   0   4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5194:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   4   0   0   0   0   
+OSS: Process: 5195:      3   5   0   4   2   0   2   0   0   0   0   0   1   0   0   1   0   2   2   0   
+OSS: Process: 5196:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   2   0   0   0   0   0   
+OSS: Process: 5197:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5198:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5199:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 4   4   0   2   5   1   0   0   4   2   2   1   0   0   3   2   1   0   4   8   
+USER: Process: 5196 is releasing a resource at time: 0s, 19320ns
+USER: Process: 5191 is releasing a resource at time: 0s, 19400ns
+USER: Process: 5196 is releasing a resource at time: 0s, 19537ns
+USER: Process: 5196 is requesting a resource at time: 0s, 19712ns
+USER: Process: 5191 is requesting a resource at time: 0s, 19537ns
+USER: Process: 5191 is requesting a resource at time: 0s, 19974ns
+USER: Process: 5196 is releasing a resource at time: 0s, 19974ns
+USER: Process: 5191 is requesting a resource at time: 0s, 20127ns
+USER: Process: 5197 is requesting a resource at time: 0s, 20127ns
+USER: Process: 5191 is releasing a resource at time: 0s, 20475ns
+
+OSS: Displaying Resource Table at time: 0 s : 20578ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 5191:      2   1   1   0   0   0   0   0   4   3   0   1   0   3   0   0   0   2   0   0   
+OSS: Process: 5193:      0   0   0   0   0   4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5194:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   4   0   0   0   0   
+OSS: Process: 5195:      3   0   0   4   0   0   2   0   0   0   0   0   1   0   0   1   1   2   2   0   
+OSS: Process: 5196:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   2   0   0   0   0   0   
+OSS: Process: 5197:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5198:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5199:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 4   9   0   2   7   1   0   0   4   2   2   1   0   0   3   2   0   0   4   8   
+USER: Process: 5199 has randomly terminated at time: 0s, 20608ns
+USER: Process: 5197 is requesting a resource at time: 0s, 20690ns
+USER: Process: 5191 is requesting a resource at time: 0s, 20729ns
+USER: Process: 5191 is requesting a resource at time: 0s, 20809ns
+USER: Process: 5191 is requesting a resource at time: 0s, 21175ns
+USER: Process: 5197 is requesting a resource at time: 0s, 21188ns
+USER: Process: 5191 is requesting a resource at time: 0s, 21300ns
+
+OSS: Displaying Resource Table at time: 0 s : 21300ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 5191:      2   1   0   0   0   0   0   0   4   3   0   1   0   3   0   0   0   2   0   0   
+OSS: Process: 5193:      0   0   0   0   0   4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5194:      0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   4   0   0   0   0   
+OSS: Process: 5195:      3   0   0   4   0   0   2   0   0   0   0   0   1   0   0   1   1   2   2   0   
+OSS: Process: 5196:      0   0   0   0   0   0   0   0   0   0   0   1   0   0   2   0   0   0   0   0   
+OSS: Process: 5197:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5198:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5199:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 4   9   1   2   7   0   0   0   4   2   2   0   0   0   3   2   0   0   4   8   
+USER: Process: 5200 is releasing a resource at time: 0s, 21309ns
+USER: Process: 5197 has randomly terminated at time: 0s, 21368ns
+OSS: Trying to remove too many resources from Process: 5195 index: 4
+USER: Process: 5200 is requesting a resource at time: 0s, 21394ns
+OSS: Trying to remove too many resources from Process: 5191 index: 0
+USER: Process: 5196 is releasing a resource at time: 0s, 21417ns
+USER: Process: 5200 is releasing a resource at time: 0s, 21671ns
+USER: Process: 5196 is releasing a resource at time: 0s, 21677ns
+USER: Process: 5200 is releasing a resource at time: 0s, 21905ns
+USER: Process: 5196 is releasing a resource at time: 0s, 21916ns
+USER: Process: 5200 is releasing a resource at time: 0s, 22269ns
+
+USER: Process: 5196 is releasing a resource at time: 0s, 22269ns
+OSS: Displaying Resource Table at time: 0 s : 22269ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 5191:      2   1   0   0   0   0   0   0   4   1   0   1   0   3   0   0   0   2   0   0   
+OSS: Process: 5193:      0   0   0   0   0   4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5194:      0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   4   0   0   0   0   
+OSS: Process: 5195:      3   0   0   4   0   0   2   0   0   0   0   0   1   0   0   1   1   2   2   0   
+OSS: Process: 5196:      0   0   0   0   0   0   0   0   0   0   0   1   0   0   2   0   0   0   0   0   
+OSS: Process: 5197:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5198:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5199:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 4   9   1   2   7   0   0   0   4   4   2   0   0   0   3   2   0   0   4   8   
+USER: Process: 5191 is releasing a resource at time: 0s, 22284ns
+OSS: Terminating Process: 5194 and releasing all allocated resources
+USER: Process: 5196 is requesting a resource at time: 0s, 22285ns
+USER: Process: 5196 is requesting a resource at time: 0s, 22405ns
+USER: Process: 5200 is releasing a resource at time: 0s, 22405ns
+OSS: Trying to remove too many resources from Process: 5191 index: 0
+USER: Process: 5191 is releasing a resource at time: 0s, 22447ns
+OSS: Trying to remove too many resources from Process: 5191 index: 0
+USER: Process: 5196 is releasing a resource at time: 0s, 22447ns
+USER: Process: 5196 is requesting a resource at time: 0s, 22612ns
+USER: Process: 5200 is requesting a resource at time: 0s, 22797ns
+USER: Process: 5196 is releasing a resource at time: 0s, 22798ns
+USER: Process: 5200 is requesting a resource at time: 0s, 23171ns
+USER: Process: 5196 is releasing a resource at time: 0s, 23175ns
+USER: Process: 5200 is requesting a resource at time: 0s, 23430ns
+USER: Process: 5196 is requesting a resource at time: 0s, 23445ns
+
+USER: Process: 5200 is releasing a resource at time: 0s, 23563ns
+OSS: Displaying Resource Table at time: 0 s : 23563ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 5191:      2   1   0   0   0   0   0   0   4   1   0   1   0   3   0   0   0   2   0   0   
+OSS: Process: 5193:      0   0   0   0   0   4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5195:      3   0   0   4   0   0   1   0   0   0   0   0   0   0   0   1   1   2   2   0   
+OSS: Process: 5196:      0   0   0   0   0   0   0   0   0   0   0   1   0   0   2   0   0   0   0   3   
+OSS: Process: 5197:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5198:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 4   9   1   2   7   1   1   0   4   2   2   0   1   0   3   6   0   0   4   5   
+USER: Process: 5191 is releasing a resource at time: 0s, 23743ns
+USER: Process: 5196 is releasing a resource at time: 0s, 23744ns
+USER: Process: 5196 is requesting a resource at time: 0s, 23930ns
+OSS: Trying to remove too many resources from Process: 5191 index: 0
+USER: Process: 5191 is releasing a resource at time: 0s, 24048ns
+USER: Process: 5196 is requesting a resource at time: 0s, 24048ns
+USER: Process: 5196 is requesting a resource at time: 0s, 24176ns
+USER: Process: 5191 is releasing a resource at time: 0s, 24352ns
+USER: Process: 5196 is releasing a resource at time: 0s, 24530ns
+USER: Process: 5191 is releasing a resource at time: 0s, 24541ns
+USER: Process: 5196 is releasing a resource at time: 0s, 24699ns
+USER: Process: 5191 is requesting a resource at time: 0s, 24699ns
+USER: Process: 5196 is requesting a resource at time: 0s, 24854ns
+USER: Process: 5191 is requesting a resource at time: 0s, 24854ns
+USER: Process: 5196 is requesting a resource at time: 0s, 24888ns
+
+OSS: Displaying Resource Table at time: 0 s : 24888ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 5191:      2   1   0   0   0   0   0   0   4   1   0   0   1   0   0   0   0   2   0   0   
+OSS: Process: 5193:      0   0   0   0   0   4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5195:      3   0   0   4   0   0   1   0   0   0   0   0   0   0   0   1   1   2   2   0   
+OSS: Process: 5196:      0   0   0   0   0   0   0   0   0   0   0   1   0   0   2   0   0   0   0   3   
+OSS: Process: 5197:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5198:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 4   9   1   2   7   1   1   0   4   2   1   1   0   3   3   6   0   0   0   5   
+USER: Process: 5200 is releasing a resource at time: 0s, 24891ns
+USER: Process: 5196 is releasing a resource at time: 0s, 24910ns
+USER: Process: 5200 is requesting a resource at time: 0s, 25080ns
+USER: Process: 5196 is releasing a resource at time: 0s, 25101ns
+USER: Process: 5200 is requesting a resource at time: 0s, 25335ns
+USER: Process: 5196 is releasing a resource at time: 0s, 25349ns
+USER: Process: 5200 is requesting a resource at time: 0s, 25472ns
+USER: Process: 5196 is requesting a resource at time: 0s, 25497ns
+USER: Process: 5200 is releasing a resource at time: 0s, 25687ns
+
+USER: Process: 5196 is releasing a resource at time: 0s, 25687ns
+OSS: Displaying Resource Table at time: 0 s : 25793ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+USER: Process: 5196 is requesting a resource at time: 0s, 25948ns
+USER: Process: 5200 is releasing a resource at time: 0s, 25948ns
+OSS: Process: 5191:      2   1   0   0   0   0   0   0   4   1   0   0   1   0   0   0   0   2   0   0   
+OSS: Process: 5193:      0   0   0   0   0   4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5195:      3   0   0   4   0   0   1   0   0   0   0   0   0   0   0   0   1   2   2   0   
+OSS: Process: 5196:      0   0   0   0   0   0   0   0   0   0   0   1   0   0   2   0   0   0   0   3   
+OSS: Process: 5197:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5198:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 4   9   0   2   6   1   1   0   4   2   1   1   0   3   0   7   0   0   0   5   
+OSS: Trying to remove too many resources from Process: 5195 index: 4
+USER: Process: 5196 is requesting a resource at time: 0s, 26103ns
+OSS: Trying to remove too many resources from Process: 5195 index: 4
+USER: Process: 5198 is requesting a resource at time: 0s, 26104ns
+USER: Process: 5196 is requesting a resource at time: 0s, 26278ns
+USER: Process: 5196 is releasing a resource at time: 0s, 26457ns
+USER: Process: 5196 is releasing a resource at time: 0s, 26538ns
+USER: Process: 5196 is releasing a resource at time: 0s, 26651ns
+USER: Process: 5196 is requesting a resource at time: 0s, 26768ns
+USER: Process: 5196 is releasing a resource at time: 0s, 26843ns
+OSS: Trying to remove too many resources from Process: 5200 index: 9
+USER: Process: 5191 is requesting a resource at time: 0s, 26853ns
+USER: Process: 5191 is requesting a resource at time: 0s, 26886ns
+USER: Process: 5191 has randomly terminated at time: 0s, 26891ns
+OSS: Trying to remove too many resources from Process: 5196 index: 5
+USER: Process: 5196 is requesting a resource at time: 0s, 26922ns
+OSS: Trying to remove too many resources from Process: 5196 index: 5
+USER: Process: 5196 is releasing a resource at time: 0s, 27031ns
+OSS: Trying to remove too many resources from Process: 5191 index: 0
+USER: Process: 5196 is releasing a resource at time: 0s, 27110ns
+OSS: Trying to remove too many resources from Process: 5196 index: 5
+USER: Process: 5196 is releasing a resource at time: 0s, 27133ns
+USER: Process: 5196 is releasing a resource at time: 0s, 27331ns
+USER: Process: 5200 is requesting a resource at time: 0s, 27331ns
+
+OSS: Displaying Resource Table at time: 0 s : 27331ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 5191:      1   1   0   0   0   0   0   0   4   1   0   0   1   0   0   0   0   2   0   0   
+OSS: Process: 5193:      0   0   0   0   0   4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5195:      3   0   0   4   0   0   1   0   0   0   0   0   0   0   0   0   1   2   2   0   
+OSS: Process: 5196:      0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   3   
+OSS: Process: 5197:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5198:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 5   9   0   2   6   1   1   5   4   2   1   1   0   3   2   7   0   0   0   5   
+USER: Process: 5196 is releasing a resource at time: 0s, 27413ns
+USER: Process: 5198 is requesting a resource at time: 0s, 27439ns
+USER: Process: 5196 has randomly terminated at time: 0s, 27439ns
+USER: Process: 5198 is requesting a resource at time: 0s, 27573ns
+OSS: Terminating Process: 5199 and releasing all allocated resources
+USER: Process: 5198 is requesting a resource at time: 0s, 27952ns
+OSS: Trying to remove too many resources from Process: 5191 index: 0
+USER: Process: 5200 is requesting a resource at time: 0s, 28047ns
+USER: Process: 5200 is requesting a resource at time: 0s, 28104ns
+USER: Process: 5200 is releasing a resource at time: 0s, 28232ns
+
+OSS: Displaying Resource Table at time: 0 s : 28316ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+USER: Process: 5200 is requesting a resource at time: 0s, 28372ns
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 5191:      1   1   0   0   7   0   0   0   4   1   0   0   1   0   0   0   0   2   0   0   
+USER: Process: 5200 is requesting a resource at time: 0s, 28409ns
+OSS: Process: 5193:      0   0   0   0   0   4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5195:      3   0   0   4   0   0   1   0   0   0   0   0   0   0   0   0   1   2   2   0   
+OSS: Process: 5196:      0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   3   
+OSS: Process: 5197:      0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+USER: Process: 5200 is releasing a resource at time: 0s, 28543ns
+OSS: Resources Remaining: 5   9   0   2   0   1   1   5   4   2   1   1   0   2   5   7   0   0   0   5   
+OSS: Trying to remove too many resources from Process: 5200 index: 9
+USER: Process: 5200 is requesting a resource at time: 0s, 28727ns
+OSS: Trying to remove too many resources from Process: 5200 index: 9
+USER: Process: 5200 is requesting a resource at time: 0s, 28780ns
+OSS: Terminating Process: 5197 and releasing all allocated resources
+USER: Process: 5200 is requesting a resource at time: 0s, 28815ns
+USER: Process: 5198 is requesting a resource at time: 0s, 28824ns
+OSS: Trying to remove too many resources from Process: 5196 index: 5
+USER: Process: 5200 is releasing a resource at time: 0s, 28964ns
+OSS: Trying to remove too many resources from Process: 5200 index: 9
+USER: Process: 5200 is releasing a resource at time: 0s, 29095ns
+USER: Process: 5200 is releasing a resource at time: 0s, 29167ns
+OSS: Trying to remove too many resources from Process: 5196 index: 5
+USER: Process: 5200 is requesting a resource at time: 0s, 29195ns
+OSS: Trying to remove too many resources from Process: 5200 index: 9
+USER: Process: 5200 is releasing a resource at time: 0s, 29372ns
+USER: Process: 5200 is requesting a resource at time: 0s, 29395ns
+OSS: Trying to remove too many resources from Process: 5196 index: 5
+USER: Process: 5200 is requesting a resource at time: 0s, 29412ns
+OSS: Trying to remove too many resources from Process: 5196 index: 5
+USER: Process: 5200 is releasing a resource at time: 0s, 29602ns
+OSS: Trying to remove too many resources from Process: 5200 index: 9
+USER: Process: 5200 is releasing a resource at time: 0s, 29732ns
+USER: Process: 5200 is releasing a resource at time: 0s, 29770ns
+
+OSS: Displaying Resource Table at time: 0 s : 29770ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+USER: Process: 5200 is requesting a resource at time: 0s, 29963ns
+OSS: ------------------Resources In Use------------------
+OSS: Process: 5191:      1   1   0   0   7   0   0   4   4   1   0   0   1   0   0   0   0   2   0   0   
+OSS: Process: 5193:      0   0   0   0   0   4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5195:      3   0   0   4   0   0   1   0   0   0   0   0   0   0   0   0   1   2   2   0   
+OSS: Process: 5196:      0   0   0   0   0   0   0   0   0   0   0   0   0   2   0   0   0   0   0   3   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 5   9   0   2   0   1   1   1   4   2   1   2   0   0   5   7   0   0   0   5   
+OSS: Trying to remove too many resources from Process: 5191 index: 0
+USER: Process: 5200 is requesting a resource at time: 0s, 30102ns
+OSS: Trying to remove too many resources from Process: 5196 index: 5
+USER: Process: 5200 is releasing a resource at time: 0s, 30181ns
+USER: Process: 5200 is requesting a resource at time: 0s, 30310ns
+OSS: Trying to remove too many resources from Process: 5200 index: 9
+USER: Process: 5200 is requesting a resource at time: 0s, 30449ns
+USER: Process: 5200 is releasing a resource at time: 0s, 30597ns
+OSS: Trying to remove too many resources from Process: 5196 index: 5
+USER: Process: 5200 is requesting a resource at time: 0s, 30733ns
+USER: Process: 5200 is releasing a resource at time: 0s, 30842ns
+USER: Process: 5200 is releasing a resource at time: 0s, 30953ns
+OSS: Trying to remove too many resources from Process: 5191 index: 0
+USER: Process: 5200 is releasing a resource at time: 0s, 30991ns
+OSS: Trying to remove too many resources from Process: 5196 index: 5
+USER: Process: 5200 is requesting a resource at time: 0s, 31119ns
+USER: Process: 5200 is requesting a resource at time: 0s, 31183ns
+
+USER: Process: 5200 has randomly terminated at time: 0s, 31190ns
+OSS: Displaying Resource Table at time: 0 s : 31190ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 5191:      1   0   0   0   7   0   0   4   4   1   0   0   1   0   0   0   0   2   0   0   
+OSS: Process: 5193:      0   0   0   0   0   4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5195:      3   0   0   4   0   0   1   0   0   0   0   0   0   0   0   0   1   2   2   0   
+OSS: Process: 5196:      0   9   0   1   0   0   0   0   0   0   0   0   0   2   0   0   0   0   0   2   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 5   1   0   1   0   1   1   1   4   2   1   2   0   0   5   7   0   0   0   6   
+USER: Process: 5195 is requesting a resource at time: 0s, 31214ns
+USER: Process: 5198 is requesting a resource at time: 0s, 31243ns
+USER: Process: 5198 is requesting a resource at time: 0s, 31427ns
+OSS: Trying to remove too many resources from Process: 5196 index: 5
+USER: Process: 5198 is requesting a resource at time: 0s, 31479ns
+OSS: Trying to remove too many resources from Process: 5191 index: 0
+USER: Process: 5198 is requesting a resource at time: 0s, 31585ns
+OSS: Trying to remove too many resources from Process: 5196 index: 5
+USER: Process: 5198 is requesting a resource at time: 0s, 31946ns
+OSS: Trying to remove too many resources from Process: 5200 index: 9
+USER: Process: 5198 is requesting a resource at time: 0s, 32056ns
+USER: Process: 5198 is requesting a resource at time: 0s, 32134ns
+
+USER: Process: 5198 is requesting a resource at time: 0s, 32165ns
+OSS: Displaying Resource Table at time: 0 s : 32165ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 5191:      1   0   0   0   7   0   0   4   4   0   0   0   1   0   0   4   0   0   0   0   
+OSS: Process: 5193:      0   0   0   0   0   4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5195:      3   0   0   4   0   0   1   0   0   0   0   0   0   0   0   0   1   2   2   0   
+OSS: Process: 5196:      0   9   0   1   0   0   0   0   4   3   0   0   0   2   0   0   0   0   0   2   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 5   1   0   1   0   1   1   1   0   0   1   2   0   0   5   3   0   2   0   6   
+OSS: Trying to remove too many resources from Process: 5196 index: 5
+USER: Process: 5198 is requesting a resource at time: 0s, 32191ns
+OSS: Trying to remove too many resources from Process: 5196 index: 5
+USER: Process: 5198 is requesting a resource at time: 0s, 32311ns
+USER: Process: 5198 is requesting a resource at time: 0s, 32398ns
+OSS: Trying to remove too many resources from Process: 5196 index: 5
+USER: Process: 5198 is requesting a resource at time: 0s, 32641ns
+USER: Process: 5198 is requesting a resource at time: 0s, 32817ns
+USER: Process: 5198 is requesting a resource at time: 0s, 32924ns
+
+OSS: Displaying Resource Table at time: 0 s : 33371ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+USER: Process: 5198 is requesting a resource at time: 0s, 33371ns
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 5191:      1   0   0   0   7   0   0   4   4   0   0   0   1   0   0   4   0   0   0   0   
+OSS: Process: 5193:      0   0   0   0   0   4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5195:      3   0   0   4   0   0   1   0   0   0   0   0   0   0   0   0   1   2   2   0   
+OSS: Process: 5196:      0   9   0   1   0   0   1   0   4   3   0   0   0   2   0   0   0   0   0   1   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 5   1   0   1   0   1   0   1   0   1   1   2   0   0   3   3   0   2   1   7   
+OSS: Trying to remove too many resources from Process: 5196 index: 5
+USER: Process: 5198 is requesting a resource at time: 0s, 33653ns
+OSS: Trying to remove too many resources from Process: 5196 index: 5
+OSS: Trying to remove too many resources from Process: 5196 index: 5
+USER: Process: 5198 is releasing a resource at time: 0s, 33869ns
+USER: Process: 5198 is requesting a resource at time: 0s, 33966ns
+USER: Process: 5198 is releasing a resource at time: 0s, 34137ns
+OSS: Terminating Process: 5191 and releasing all allocated resources
+OSS: Trying to remove too many resources from Process: 5196 index: 5
+USER: Process: 5198 is releasing a resource at time: 0s, 34337ns
+USER: Process: 5198 is requesting a resource at time: 0s, 34527ns
+USER: Process: 5198 is requesting a resource at time: 0s, 34564ns
+
+OSS: Displaying Resource Table at time: 0 s : 34750ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+USER: Process: 5198 is releasing a resource at time: 0s, 34750ns
+OSS: Process: 5193:      0   0   0   0   0   4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 5195:      3   0   0   4   0   0   1   0   0   0   0   0   0   0   0   0   1   2   2   0   
+------------------------------------------------------------------------------------------------------------------------
+USER: Process: 5198 is requesting a resource at time: 0s, 34875ns
+OSS: Resources Remaining: 6   1   0   1   7   0   0   5   4   1   1   2   1   0   3   6   0   2   1   7   
+USER: Process: 5198 is releasing a resource at time: 0s, 34920ns
+OSS: Trying to remove too many resources from Process: 5196 index: 5
+USER: Process: 5198 is releasing a resource at time: 0s, 35026ns
+OSS: Trying to remove too many resources from Process: 5196 index: 5
+USER: Process: 5198 is requesting a resource at time: 0s, 35086ns
+OSS: Trying to remove too many resources from Process: 5196 index: 5
+USER: Process: 5198 is releasing a resource at time: 0s, 35133ns
+USER: Process: 5198 is requesting a resource at time: 0s, 35326ns
+OSS: Trying to remove too many resources from Process: 5200 index: 9
+OSS: Trying to remove too many resources from Process: 5196 index: 5
+USER: Process: 5198 is releasing a resource at time: 0s, 35437ns
+USER: Process: 5198 is releasing a resource at time: 0s, 35480ns
+OSS: Terminating Process: 5196 and releasing all allocated resources
+USER: Process: 5198 is releasing a resource at time: 0s, 35556ns
+USER: Process: 5198 is requesting a resource at time: 0s, 35729ns
+USER: Process: 5198 is requesting a resource at time: 0s, 35911ns
+USER: Process: 5198 is requesting a resource at time: 0s, 36064ns
+
+OSS: Displaying Resource Table at time: 0 s : 36235ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+USER: Process: 5198 is releasing a resource at time: 0s, 36235ns
+OSS: Process: 5193:      0   0   0   0   0   4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 6   10  0   2   7   1   1   5   8   4   1   2   1   2   3   6   0   2   1   8   
+USER: Process: 5198 is releasing a resource at time: 0s, 36262ns
+USER: Process: 5198 is requesting a resource at time: 0s, 36318ns
+USER: Process: 5198 is requesting a resource at time: 0s, 36502ns
+USER: Process: 5198 is releasing a resource at time: 0s, 36711ns
+
+OSS: Displaying Resource Table at time: 0 s : 36905ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+USER: Process: 5198 is releasing a resource at time: 0s, 36905ns
+OSS: Process: 5193:      0   0   0   0   0   4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 6   10  0   2   7   1   1   5   8   2   2   0   0   2   3   2   0   2   1   6   
+USER: Process: 5198 is requesting a resource at time: 0s, 37023ns
+USER: Process: 5198 is releasing a resource at time: 0s, 37208ns
+USER: Process: 5198 is releasing a resource at time: 0s, 37287ns
+OSS: Trying to remove too many resources from Process: 5200 index: 9
+USER: Process: 5198 is releasing a resource at time: 0s, 37464ns
+USER: Process: 5198 is releasing a resource at time: 0s, 37586ns
+USER: Process: 5198 is requesting a resource at time: 0s, 37611ns
+OSS: Trying to remove too many resources from Process: 5200 index: 9
+USER: Process: 5198 is requesting a resource at time: 0s, 37639ns
+USER: Process: 5198 is releasing a resource at time: 0s, 37728ns
+
+USER: Process: 5198 is releasing a resource at time: 0s, 37885ns
+OSS: Displaying Resource Table at time: 0 s : 37885ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 5193:      0   0   0   0   0   4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+USER: Process: 5198 is releasing a resource at time: 0s, 37934ns
+OSS: Resources Remaining: 6   10  1   2   7   1   1   5   4   2   2   0   0   3   3   2   0   2   4   1   
+USER: Process: 5198 is requesting a resource at time: 0s, 38045ns
+OSS: Trying to remove too many resources from Process: 5200 index: 9
+USER: Process: 5198 has randomly terminated at time: 0s, 38082ns
+OSS: Trying to remove too many resources from Process: 5200 index: 9
+OSS: Trying to remove too many resources from Process: 5200 index: 9
+OSS: Trying to remove too many resources from Process: 5200 index: 9
+OSS: Trying to remove too many resources from Process: 5200 index: 9
+OSS: Trying to remove too many resources from Process: 5200 index: 9
+
+OSS: Displaying Resource Table at time: 0 s : 38193ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 5193:      0   0   0   0   0   4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 6   10  1   2   6   1   1   5   4   2   2   0   0   3   3   2   0   2   4   1   
+OSS: Trying to remove too many resources from Process: 5200 index: 9
+OSS: Terminating Process: 5200 and releasing all allocated resources
+OSS: Trying to remove too many resources from Process: 5195 index: 4
+
+OSS: Displaying Resource Table at time: 0 s : 38304ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 5193:      0   0   0   0   0   5   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 6   10  1   2   7   0   1   2   8   5   0   2   0   0   0   4   0   2   4   8   
+USER: Process: 5195 is requesting a resource at time: 0s, 38372ns
+USER: Process: 5195 is requesting a resource at time: 0s, 38493ns
+USER: Process: 5195 is requesting a resource at time: 0s, 38506ns
+USER: Process: 5195 is requesting a resource at time: 0s, 38532ns
+
+OSS: Displaying Resource Table at time: 0 s : 38728ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 5193:      0   0   0   0   0   5   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 6   10  0   2   7   0   1   2   5   1   0   2   0   0   0   4   0   2   4   6   
+
+OSS: Displaying Resource Table at time: 0 s : 38828ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 5193:      0   0   0   0   0   5   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 6   10  0   2   7   0   1   2   5   1   0   2   0   0   0   7   0   2   4   6   
+OSS: Trying to remove too many resources from Process: 5198 index: 7
+OSS: Trying to remove too many resources from Process: 5198 index: 7
+OSS: Trying to remove too many resources from Process: 5198 index: 7
+OSS: Trying to remove too many resources from Process: 5198 index: 7
+OSS: Trying to remove too many resources from Process: 5198 index: 7
+OSS: Trying to remove too many resources from Process: 5198 index: 7
+OSS: Trying to remove too many resources from Process: 5198 index: 7
+
+OSS: Displaying Resource Table at time: 0 s : 38933ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 5193:      0   0   0   0   0   5   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 6   10  0   2   3   0   1   2   5   1   0   2   0   0   0   7   0   2   4   5   
+OSS: Trying to remove too many resources from Process: 5198 index: 7
+OSS: Trying to remove too many resources from Process: 5198 index: 7
+OSS: Trying to remove too many resources from Process: 5198 index: 7
+OSS: Trying to remove too many resources from Process: 5198 index: 7
+OSS: Trying to remove too many resources from Process: 5198 index: 7
+OSS: Trying to remove too many resources from Process: 5198 index: 7
+OSS: Trying to remove too many resources from Process: 5198 index: 7
+
+OSS: Displaying Resource Table at time: 0 s : 39042ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 5193:      0   0   0   0   0   5   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 6   10  0   1   3   0   1   2   0   1   0   2   1   0   0   7   0   2   4   5   
+OSS: Trying to remove too many resources from Process: 5198 index: 7
+OSS: Trying to remove too many resources from Process: 5198 index: 7
+OSS: Trying to remove too many resources from Process: 5198 index: 7
+OSS: Terminating Process: 5198 and releasing all allocated resources
+USER: Process: 5193 is releasing a resource at time: 0s, 50311ns
+USER: Process: 5193 is requesting a resource at time: 0s, 50514ns
+USER: Process: 5193 is requesting a resource at time: 0s, 50623ns
+
+OSS: Displaying Resource Table at time: 0 s : 50637ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+USER: Process: 5193 is releasing a resource at time: 0s, 50637ns
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+USER: Process: 5193 is requesting a resource at time: 0s, 50787ns
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 6   5   1   2   7   3   1   5   6   5   2   2   1   3   5   6   0   2   4   8   
+USER: Process: 5193 is requesting a resource at time: 0s, 50930ns
+USER: Process: 5193 is releasing a resource at time: 0s, 51000ns
+USER: Process: 5193 is requesting a resource at time: 0s, 51121ns
+OSS: Trying to remove too many resources from Process: 5193 index: 2
+USER: Process: 5193 is releasing a resource at time: 0s, 51171ns
+USER: Process: 5193 is requesting a resource at time: 0s, 51204ns
+USER: Process: 5193 is releasing a resource at time: 0s, 51348ns
+USER: Process: 5193 is requesting a resource at time: 0s, 51581ns
+USER: Process: 5193 is releasing a resource at time: 0s, 51661ns
+USER: Process: 5193 is releasing a resource at time: 0s, 51887ns
+
+OSS: Displaying Resource Table at time: 0 s : 51899ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+USER: Process: 5193 is releasing a resource at time: 0s, 51899ns
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 6   5   1   2   7   5   1   5   6   5   2   2   0   3   5   5   0   2   4   8   
+USER: Process: 5193 is releasing a resource at time: 0s, 52042ns
+OSS: Trying to remove too many resources from Process: 5193 index: 2
+USER: Process: 5193 is releasing a resource at time: 0s, 52078ns
+USER: Process: 5193 is requesting a resource at time: 0s, 52141ns
+OSS: Trying to remove too many resources from Process: 5193 index: 2
+USER: Process: 5193 is releasing a resource at time: 0s, 52341ns
+OSS: Trying to remove too many resources from Process: 5193 index: 2
+USER: Process: 5193 is releasing a resource at time: 0s, 52410ns
+USER: Process: 5193 is requesting a resource at time: 0s, 52497ns
+OSS: Trying to remove too many resources from Process: 5193 index: 2
+USER: Process: 5193 is requesting a resource at time: 0s, 52641ns
+OSS: Trying to remove too many resources from Process: 5193 index: 2
+USER: Process: 5193 is releasing a resource at time: 0s, 52690ns
+USER: Process: 5193 is requesting a resource at time: 0s, 52729ns
+USER: Process: 5193 is releasing a resource at time: 0s, 52854ns
+USER: Process: 5193 is releasing a resource at time: 0s, 52938ns
+USER: Process: 5193 is requesting a resource at time: 0s, 53036ns
+
+USER: Process: 5193 is requesting a resource at time: 0s, 53226ns
+OSS: Displaying Resource Table at time: 0 s : 53226ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
 OSS: ------------------Resources In Use------------------
 ------------------------------------------------------------------------------------------------------------------------
-OSS: Resources Remaining: 10  1   7   7   9   3   10  8   5   7   6   6   2   6   8   5   5   3   5   5   
+OSS: Resources Remaining: 6   5   1   2   7   5   0   3   6   5   2   2   1   3   5   6   0   2   4   0   
+USER: Process: 5193 is releasing a resource at time: 0s, 53240ns
+USER: Process: 5193 is releasing a resource at time: 0s, 53345ns
+USER: Process: 5193 is requesting a resource at time: 0s, 53384ns
+USER: Process: 5193 is requesting a resource at time: 0s, 53470ns
+OSS: Trying to remove too many resources from Process: 5193 index: 2
+USER: Process: 5193 is releasing a resource at time: 0s, 53638ns
+USER: Process: 5193 is releasing a resource at time: 0s, 53777ns
+USER: Process: 5193 is requesting a resource at time: 0s, 53952ns
+USER: Process: 5193 is releasing a resource at time: 0s, 54094ns
+USER: Process: 5193 is releasing a resource at time: 0s, 54183ns
+USER: Process: 5193 has randomly terminated at time: 0s, 54288ns
+OSS: Terminating Process: 5193 and releasing all allocated resources
+USER: Process: 5195 is releasing a resource at time: 0s, 55291ns
+USER: Process: 5195 is releasing a resource at time: 0s, 55488ns
+
+OSS: Displaying Resource Table at time: 0 s : 55488ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+USER: Process: 5195 is requesting a resource at time: 0s, 55557ns
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 6   5   1   2   7   5   1   5   6   5   2   2   1   3   5   6   0   2   4   8   
+USER: Process: 5195 is releasing a resource at time: 0s, 55699ns
+USER: Process: 5195 is releasing a resource at time: 0s, 55876ns
+USER: Process: 5195 is releasing a resource at time: 0s, 55963ns
+USER: Process: 5195 is requesting a resource at time: 0s, 56111ns
+USER: Process: 5195 is requesting a resource at time: 0s, 56339ns
+USER: Process: 5195 is releasing a resource at time: 0s, 56498ns
+USER: Process: 5195 is releasing a resource at time: 0s, 56624ns
+USER: Process: 5195 is requesting a resource at time: 0s, 56854ns
+USER: Process: 5195 is releasing a resource at time: 0s, 57108ns
+USER: Process: 5195 is releasing a resource at time: 0s, 57231ns
+USER: Process: 5195 is releasing a resource at time: 0s, 57405ns
+USER: Process: 5195 is requesting a resource at time: 0s, 57568ns
+USER: Process: 5195 is requesting a resource at time: 0s, 57728ns
+
+USER: Process: 5195 is requesting a resource at time: 0s, 57878ns
+OSS: Displaying Resource Table at time: 0 s : 57878ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+USER: Process: 5195 has randomly terminated at time: 0s, 57933ns
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 7   5   1   5   7   5   2   5   8   5   2   2   1   3   5   7   1   4   5   1   
+OSS: Terminating Process: 5195 and releasing all allocated resources
+
+OSS: Displaying Resource Table at time: 0 s : 57970ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
+OSS: ------------------Resources In Use------------------
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 9   10  1   6   7   5   2   5   8   5   2   2   1   3   5   7   1   4   6   8   
