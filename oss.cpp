@@ -75,6 +75,13 @@ struct mesg_buffer{
     bool mesg_released;
 } message;
 
+struct blocked{
+    int index;
+    int resources;
+    int pid;
+    bool deadlocked;
+};
+
 int shmidClock;
 int shmidProc;
 int shmidResources;
@@ -86,6 +93,10 @@ int *remainingTable;
 
 
 void signalHandler(int signal);
+
+void deadLockRecovery(blocked blockedQueue[18], processes *pTable, int *remainingTable);
+
+int checkBlockedQueue(blocked blockedQueue[18], processes *pTable, int *remainingTable);
 
 void displayRTable(processes *pTable, simClock *clock);
 
@@ -111,6 +122,7 @@ void signalHandler(int signal){
 int main(int argc, char* argv[]){
     struct processes *pTable;
     struct simClock *clock;
+    struct blocked blockedQueue[18];
     signal(SIGINT, signalHandler);
     signal(SIGALRM, signalHandler);
     int totalTimeTilExpire = 5;
@@ -130,9 +142,9 @@ int main(int argc, char* argv[]){
 
     //Set UP Message Queues
     key_t messageKey = ftok("pog", 67);
-    // key_t messageKeyTwo = ftok("home", 68);
+    key_t messageKeyTwo = ftok("home", 68);
     msgid = msgget(messageKey, 0666|IPC_CREAT);
-    // msgidTwo = msgget(messageKeyTwo, 0666|IPC_CREAT); 
+    msgidTwo = msgget(messageKeyTwo, 0666|IPC_CREAT); 
 
 
     
@@ -210,6 +222,7 @@ int main(int argc, char* argv[]){
 
     for(int i = 0; i < 18; i++){
         pTable[i].pid = -1;
+        blockedQueue[i].pid = -1;
     }
     resourceTable[20] = -1;
     remainingTable[20] = -1;
@@ -226,7 +239,7 @@ int main(int argc, char* argv[]){
     char buffer[50] = "";
     char fileName[10] = "test";
     int interval = 0;
-    for(int i = 0 ; i < 10; i++){
+    for(int i = 0 ; i < 18; i++){
         interval = rand()% maxTimeBetweenProcesses + 1;
         clock->nano+= interval;
             if(clock->nano >= billion){
@@ -249,6 +262,7 @@ int main(int argc, char* argv[]){
     int increment;
     
     int displayCheck = 0;
+    int deadlockCheck = 0;
     while(totalTerminated < totalProcesses){
         if(msgrcv(msgid, &message, sizeof(message), 1, IPC_NOWAIT) == -1){
             //If there is no message, just keep adding clock
@@ -263,18 +277,28 @@ int main(int argc, char* argv[]){
         else{
             interval = rand() % maxSystemTimeSpent + 1;
             displayCheck += interval;
+            deadlockCheck += interval;
             clock->nano+= interval;
             if(clock->nano >= billion){
                 clock->nano = clock->nano - billion;
                 clock->sec++;
             }
-            if(displayCheck >= 100){
+            //Display
+            if(displayCheck >= 500){
                 displayRTable(pTable, clock);
                 displayCheck = 0;
             }
+            //Deadlock Detection
+            if(deadlockCheck >= 10000){
+                // log.open("log.txt", ios::app);
+                // log << "deadlockCheck" << endl;
+                // log.close();
+                deadLockRecovery(blockedQueue, pTable, remainingTable);
+                deadlockCheck = 0;
+            }
             //If the process terminated
             if(message.mesg_terminated == 1){
-                cout << "terminating" << endl;
+                // cout << "terminating" << endl;
                 log.open("log.txt", ios::app);
                 log << "OSS: Terminating Process: " << message.mesg_pid << " and releasing all allocated resources" << endl;
                 log.close();
@@ -308,25 +332,71 @@ int main(int argc, char* argv[]){
                             pTable[i].availableResources[message.mesg_requestIndex] += message.mesg_requestResources;
                         }
                     }
+                    log.open("log.txt", ios::app);
+                    log << "OSS: Process: " << message.mesg_pid << " has requested resource: " << message.mesg_requestResources << " from index: " << message.mesg_requestIndex << " at time: " << clock->sec << " s : " << clock->nano << "ns \n";
+                    log.close();
                 }
                 else{
-                    cout << "not enough resources for request" << endl;
-                    cout << "entering blocked queue until those resources are available" << endl;
+                    log.open("log.txt", ios::app);
+                    log << "OSS: Process: " << message.mesg_pid << " has requested resource: " << message.mesg_requestResources << " from index: " << message.mesg_requestIndex << " at time: " << clock->sec << " s : " << clock->nano << "ns \n";
+                    log << "OSS: Not enough resources in index: " << message.mesg_requestIndex << " to allocate " << message.mesg_requestResources << " resources." << endl;
+                    log << "OSS: Process: " << message.mesg_pid << " is entering queue until resources are available" << endl;
+                    log.close();
+
+                    for(int i = 0; i < 18; i++){
+                        //If theres an open space in the blocked queue
+                        if(blockedQueue[i].pid == -1){
+                            blockedQueue[i].pid = message.mesg_pid;
+                            blockedQueue[i].resources = message.mesg_requestResources;
+                            blockedQueue[i].index = message.mesg_requestIndex;
+                            log.open("log.txt", ios::app);
+                            log << "OSS: Process: " << blockedQueue[i].pid << " has been placed in blocked queue index: " << i << " until " << blockedQueue[i].resources << " resources have come available in index: " << blockedQueue[i].index << endl;
+                            log.close();
+                            
+                            for(int k = 0; k < 18; k++){
+                                //If there is a pid inside of that blocked queue element
+                                if(blockedQueue[k].pid != -1){
+                                    if(blockedQueue[i].index == blockedQueue[k].index && blockedQueue[i].pid != blockedQueue[k].pid){
+                                        //If there are two blocked processes that need the same index, they're considered deadlocked.
+                                        blockedQueue[i].deadlocked = true;
+                                        blockedQueue[k].deadlocked = true;
+                                        log.open("log.txt", ios::app);
+                                        log << "OSS: Process: " << blockedQueue[i].pid << " is deadlocked with Process: " << blockedQueue[k].pid << " over resources at index: " << blockedQueue[i].index << endl;
+                                        log.close();
+                                    }
+                                }
+                            }
+                            //Get out of loop once a suitable destination has been found.
+                            message.mesg_type = blockedQueue[i].pid;
+                            message.mesg_blocked = true;
+                            strcpy(message.mesg_text, "Message Received");
+                            log.open("log.txt",ios::app);
+                            log << "MSG: sending message blocked: " << message.mesg_blocked << " to message type of process: " <<message.mesg_type << endl;
+                            log.close();
+                            msgsnd(msgid, &message, sizeof(message), 0);
+                            message.mesg_type = 1;
+
+                            i = 18;
+                        }
+                    }
+
+
+                    // cout << "entering blocked queue until those resources are available" << endl;
                     //Implement Blocked Queue Thanks
                 }
             }
             else if(message.mesg_request == false){
                 if(message.mesg_released == true){
                     // cout << "message was a release" << endl;
-                    cout << message.mesg_releaseIndex << " releaseIndex" << endl;
-                    cout << message.mesg_resourceIndex << " resourceIndex" << endl;
-                    cout << message.mesg_releaseResources << " releaseResources" << endl;
+                    // cout << message.mesg_releaseIndex << " releaseIndex" << endl;
+                    // cout << message.mesg_resourceIndex << " resourceIndex" << endl;
+                    // cout << message.mesg_releaseResources << " releaseResources" << endl;
                     // displayRTable(pTable);
                     //Releasing Specified Amount of Resources from Index
                     if((pTable[message.mesg_releaseIndex].availableResources[message.mesg_resourceIndex] - message.mesg_releaseResources) < 0){
-                        log.open("log.txt", ios::app);
-                        log << "OSS: Trying to remove too many resources from Process: " << message.mesg_pid << " index: " << message.mesg_releaseIndex << endl;
-                        log.close();
+                        // log.open("log.txt", ios::app);
+                        // log << "OSS: Trying to remove too many resources from Process: " << message.mesg_pid << " index: " << message.mesg_releaseIndex << endl;
+                        // log.close();
                     }
                     else{
                         // log.open("log.txt",ios::app);
@@ -337,14 +407,28 @@ int main(int argc, char* argv[]){
                         remainingTable[message.mesg_resourceIndex] += message.mesg_releaseResources;
                         // log << remainingTable[message.mesg_resourceIndex] << " remainingTable after addition of released resources" << endl;
                         // log.close();
-                        
+
+                        log.open("log.txt",ios::app);
+                        log << "OSS: Process: " << message.mesg_pid << " has released " << message.mesg_releaseResources << " from index: " << message.mesg_resourceIndex << " time: " << clock->sec << " s : " << clock->nano << "ns \n";
+                        log.close();
                     }
                     
                     // displayRTable(pTable);
+                    int blockCheck = checkBlockedQueue(blockedQueue, pTable, remainingTable);
+                    if(blockCheck != -1){
+                        log.open("log.txt", ios::app);
+                        log << "OSS: Unblocking Process: " << blockCheck << endl;
+                        log.close();
+                        message.mesg_type = blockCheck;
+                        message.mesg_blocked = false;
+                        msgsnd(msgid, &message, sizeof(message), 0);
+                        message.mesg_type = 1;
+                        
+                    }
                 }
                 else{
-                    cout << "message was a release" << endl;
-                    cout << "had no resources to deallocate" << endl;
+                    // cout << "message was a release" << endl;
+                    // cout << "had no resources to deallocate" << endl;
                 }
 
             }
@@ -369,22 +453,22 @@ int main(int argc, char* argv[]){
 void displayRTable(processes *pTable, simClock *clock){
 
     //Display to Console
-    for(int i = 0; i < 20; i++){
-        if(i < 10){
-            cout << i << "   ";
-        }
-        else{
-            cout << i << "  ";
-        }
-    }
-    cout << endl;
-    for(int i = 0; i < 20; i++){
-        if(resourceTable[i] < 10)
-            cout << resourceTable[i] << "   ";
-        else
-            cout << resourceTable[i] << "  ";
-    }
-    cout << endl;
+    // for(int i = 0; i < 20; i++){
+    //     if(i < 10){
+    //         cout << i << "   ";
+    //     }
+    //     else{
+    //         cout << i << "  ";
+    //     }
+    // }
+    // cout << endl;
+    // for(int i = 0; i < 20; i++){
+    //     if(resourceTable[i] < 10)
+    //         cout << resourceTable[i] << "   ";
+    //     else
+    //         cout << resourceTable[i] << "  ";
+    // }
+    // cout << endl;
 
 
     //Log to Logfile
@@ -411,24 +495,20 @@ void displayRTable(processes *pTable, simClock *clock){
     log << endl;
     log << "OSS: ------------------Resources In Use------------------";
     log << endl;
-    int totalProcesses = 0;
-    for(int i = 0; i < 18; i++){
-        if(pTable[i].pid != -1){
-            totalProcesses++;
-        }
-    }
-    for(int j = 0; j < totalProcesses; j++){
-        if(pTable[j].pid != -1){
-            log << "OSS: Process: " << pTable[j].pid << ":      ";
-            for(int i = 0; i < 20; i++){
-                if(pTable[j].availableResources[i] < 10)
-                    log << pTable[j].availableResources[i] << "   ";
-                else 
-                    log << pTable[j].availableResources[i] << "  ";
+
+        for(int k = 0; k < 18; k++){
+            if(pTable[k].pid != -1){
+                log << "OSS: Process: " << pTable[k].pid << ":      ";
+                for(int i = 0; i < 20; i++){
+                    if(pTable[k].availableResources[i] < 10)
+                        log << pTable[k].availableResources[i] << "   ";
+                    else 
+                        log << pTable[k].availableResources[i] << "  ";
+                }
+                log << endl;
             }
-            log << endl;
         }
-    }
+
     for(int i = 0 ; i < 20; i++){
         log << "------";
     }
@@ -442,4 +522,116 @@ void displayRTable(processes *pTable, simClock *clock){
     }
     log << endl;
     log.close();
+}
+
+int checkBlockedQueue(blocked blockedQueue[18], processes *pTable, int *remainingTable){
+
+    ofstream log("log.txt", ios::app);
+    // log << "checkBlockedQueue" << endl;
+    log.close();
+    int blockCheck = -1;
+    for(int i = 0; i < 18; i++){
+        //If the blockedQueue has a slot
+        if(blockedQueue[i].pid != -1){
+            //If the blockedQueue position isn't deadlocked with anyone.
+            if(blockedQueue[i].deadlocked != true){
+                //If the remainingTable has enough resource to give to the blockedQueue process
+                if(remainingTable[blockedQueue[i].index] >= blockedQueue[i].resources){
+                    blockCheck = blockedQueue[i].pid;
+                    for(int j = 0; j < 18; j++){
+                        //Find the correct pid in the process table
+                        if(pTable[j].pid == blockedQueue[i].pid){
+                            //Add to the pTable availableResources to add the new resources that have been unlocked
+                            pTable[j].availableResources[blockedQueue[i].index] += blockedQueue[i].resources;
+                            //Subtract from the remaining table the amount of resources that have been added.
+                            remainingTable[blockedQueue[i].index] -= blockedQueue[i].resources;
+                            log.open("log.txt",ios::app);
+                            log << "OSS: Process: " << pTable[j].pid << " has been removed from blockedQueue" << endl;
+                            blockedQueue[i].pid = -1;
+                            log.close();
+                            j = 18;
+                            i = 18;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    // for(int i = 0; i < 18; i++){
+    //     log.open("log.txt", ios::app);
+    //     if(pTable[i].pid == blockCheck){
+    //         log << pTable[i].pid << " pTablePid index " << i << endl;
+    //         log << blockCheck << " blockCheck pid" << endl;
+    //     }
+    //     log.close();
+    // }
+
+    return blockCheck;
+}
+
+void deadLockRecovery(blocked blockedQueue[18], processes *pTable, int *remainingTable){
+    //Find deadlocked processes, and kill one of them. Then check to see if there is still deadlocked.
+    bool deadlockRemains = true;
+    ofstream log("log.txt", ios::app);
+    log << "OSS: Checking Deadlocks" << endl;
+    log.close();
+    while(deadlockRemains == true){
+        int terminateProcessIndex = 0;
+
+        //Terminate Process that currently are deadlocked
+        for(int i = 0; i < 20; i++){
+            //If there is a deadlock detected.
+            if(blockedQueue[i].deadlocked == true){
+                for(int j = 0; j < 20; j++){
+                    //If two processes are deadlocked with each other
+                    if(blockedQueue[i].index == blockedQueue[j].index){
+                        //And the process still exists
+                        if(blockedQueue[j].pid != -1){
+                            //Terminate the other process
+                            terminateProcessIndex = blockedQueue[j].pid;
+                            for(int k = 0; k <18; k++){
+                                if(pTable[k].pid == blockedQueue[j].pid){
+                                    pTable[k].pid = -1;
+                                    for(int l = 0; l < 20; l++){
+                                        if(pTable[k].availableResources[l] != 0){
+                                            //Removing allocation
+                                            remainingTable[l] += pTable[k].availableResources[l];
+
+                                            pTable[k].availableResources[l] = 0;
+                                        }
+                                    }
+                                }
+                            }
+                            i = 20;
+                            blockedQueue[j].pid = -1;
+                            message.mesg_type = terminateProcessIndex;
+                            message.mesg_terminateNow = true;
+                            log.open("log.txt", ios::app);
+                            log << "OSS: Process " << terminateProcessIndex << " has been terminated to clear a deadlock" << endl;
+                            log.close();
+                            msgsnd(msgid, &message, sizeof(message), 0);
+                        }
+                    }
+                }
+                blockedQueue[i].deadlocked = false;
+                deadlockRemains = false;
+            }
+        }
+
+        //Check to see if there are still deadlocks to clear
+        for(int i = 0; i < 20; i++){
+            if(blockedQueue[i].deadlocked == true){
+                deadlockRemains = true;
+            }
+        }
+        //Check to see if there are still deadlocks
+    }
+
+    log.open("log.txt", ios::app);
+    log << "OSS: No Deadlocks Detected" << endl;
+    log.close();
+    
+    message.mesg_type = 1;
 }
