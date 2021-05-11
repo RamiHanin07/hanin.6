@@ -73,6 +73,7 @@ struct mesg_buffer{
     int mesg_resourceIndex;
     int mesg_releaseResources;
     bool mesg_released;
+    bool mesg_terminateRandom;
 } message;
 
 struct blocked{
@@ -92,9 +93,19 @@ int *resourceTable;
 int *remainingTable;
 
 
+//Statistics Variables
+int instantRequests = 0;
+int delayedRequests = 0;
+int deadlockTerminations = 0;
+int randomTerminations = 0;
+int deadlockRunTimes = 0;
+int percentageDeadlockTermination = 0;
+
+void displayStats();
+
 void signalHandler(int signal);
 
-void deadLockRecovery(blocked blockedQueue[18], processes *pTable, int *remainingTable);
+void deadLockRecovery(blocked blockedQueue[18], processes *pTable, int *remainingTable, int &totalTerminated);
 
 int checkBlockedQueue(blocked blockedQueue[18], processes *pTable, int *remainingTable);
 
@@ -103,10 +114,13 @@ void displayRTable(processes *pTable, simClock *clock);
 void signalHandler(int signal){
 
     //Basic signal handler
+    // cout << "OSS: " << signal  << endl;
     if(signal == 2)
         cout << "Interrupt Signal Received" <<endl;
-    else if(signal == 20)
+    else if(signal == 14){
         cout << "Exceeded Time, Terminating Program" <<endl;
+        displayStats();
+    }
     else if(signal == 1)
         cout << "Process Terminated" << endl;
 
@@ -261,8 +275,8 @@ int main(int argc, char* argv[]){
     sleep(1);
     int increment;
     
-    int displayCheck = 0;
-    int deadlockCheck = 0;
+    int displayCheck = instantRequests + 20;
+    int deadlockCheck = clock->nano + 10000;
     while(totalTerminated < totalProcesses){
         if(msgrcv(msgid, &message, sizeof(message), 1, IPC_NOWAIT) == -1){
             //If there is no message, just keep adding clock
@@ -276,7 +290,7 @@ int main(int argc, char* argv[]){
         //If there is a message, do everything else
         else{
             interval = rand() % maxSystemTimeSpent + 1;
-            displayCheck += interval;
+            // displayCheck += interval;
             deadlockCheck += interval;
             clock->nano+= interval;
             if(clock->nano >= billion){
@@ -284,17 +298,27 @@ int main(int argc, char* argv[]){
                 clock->sec++;
             }
             //Display
-            if(displayCheck >= 500){
+            if(displayCheck <= instantRequests){
                 displayRTable(pTable, clock);
-                displayCheck = 0;
+                displayCheck = instantRequests + 20;
+            }
+            else{
+                // log.open("log.txt", ios::app);
+                // log << "Current displayCheck: " << displayCheck << endl;
+                // log << "Current instantRequests: " << instantRequests << endl;
+                // log.close();
             }
             //Deadlock Detection
-            if(deadlockCheck >= 10000){
-                // log.open("log.txt", ios::app);
-                // log << "deadlockCheck" << endl;
-                // log.close();
-                deadLockRecovery(blockedQueue, pTable, remainingTable);
-                deadlockCheck = 0;
+            if(deadlockCheck <= clock->nano){
+                log.open("log.txt", ios::app);
+                log << "Current deadlockCheck: " << deadlockCheck << endl;
+                log << "Current time ns: " << clock->nano << endl;
+                log.close();
+                deadLockRecovery(blockedQueue, pTable, remainingTable, totalTerminated);
+                deadlockCheck = clock->nano + 10000;
+                log.open("log.txt",ios::app);
+                log << "Next deadlockCheck: " << deadlockCheck << endl;
+                log.close();
             }
             //If the process terminated
             if(message.mesg_terminated == 1){
@@ -302,6 +326,9 @@ int main(int argc, char* argv[]){
                 log.open("log.txt", ios::app);
                 log << "OSS: Terminating Process: " << message.mesg_pid << " and releasing all allocated resources" << endl;
                 log.close();
+                if(message.mesg_terminateRandom == true){
+                    randomTerminations++;
+                }
                 for(int i = 0; i < 18; i++){
                     if(pTable[i].pid == message.mesg_pid){
                         pTable[i].pid = -1;
@@ -335,6 +362,7 @@ int main(int argc, char* argv[]){
                     log.open("log.txt", ios::app);
                     log << "OSS: Process: " << message.mesg_pid << " has requested resource: " << message.mesg_requestResources << " from index: " << message.mesg_requestIndex << " at time: " << clock->sec << " s : " << clock->nano << "ns \n";
                     log.close();
+                    instantRequests++;
                 }
                 else{
                     log.open("log.txt", ios::app);
@@ -373,7 +401,7 @@ int main(int argc, char* argv[]){
                             log.open("log.txt",ios::app);
                             log << "MSG: sending message blocked: " << message.mesg_blocked << " to message type of process: " <<message.mesg_type << endl;
                             log.close();
-                            msgsnd(msgid, &message, sizeof(message), 0);
+                            msgsnd(msgid, &message, sizeof(message), IPC_NOWAIT);
                             message.mesg_type = 1;
 
                             i = 18;
@@ -411,6 +439,7 @@ int main(int argc, char* argv[]){
                         log.open("log.txt",ios::app);
                         log << "OSS: Process: " << message.mesg_pid << " has released " << message.mesg_releaseResources << " from index: " << message.mesg_resourceIndex << " time: " << clock->sec << " s : " << clock->nano << "ns \n";
                         log.close();
+                        instantRequests++;
                     }
                     
                     // displayRTable(pTable);
@@ -433,15 +462,20 @@ int main(int argc, char* argv[]){
 
             }
         }
-    }
+    };
 
     // cout << clock->nano << "ns" << endl;
     // cout << clock->sec << "s" << endl;
     // cout << message.mesg_text << endl;
 
 
-    wait(NULL);
+    
     displayRTable(pTable, clock);
+
+    //Stats time
+    displayStats();
+    wait(NULL);
+
     msgctl(msgid, IPC_RMID, NULL);
     msgctl(msgidTwo, IPC_RMID,NULL);
     shmctl(shmidClock, IPC_RMID, NULL);
@@ -547,6 +581,7 @@ int checkBlockedQueue(blocked blockedQueue[18], processes *pTable, int *remainin
                             remainingTable[blockedQueue[i].index] -= blockedQueue[i].resources;
                             log.open("log.txt",ios::app);
                             log << "OSS: Process: " << pTable[j].pid << " has been removed from blockedQueue" << endl;
+                            delayedRequests++;
                             blockedQueue[i].pid = -1;
                             log.close();
                             j = 18;
@@ -571,34 +606,33 @@ int checkBlockedQueue(blocked blockedQueue[18], processes *pTable, int *remainin
     return blockCheck;
 }
 
-void deadLockRecovery(blocked blockedQueue[18], processes *pTable, int *remainingTable){
+void deadLockRecovery(blocked blockedQueue[18], processes *pTable, int *remainingTable, int &totalTerminated){
     //Find deadlocked processes, and kill one of them. Then check to see if there is still deadlocked.
+    deadlockRunTimes++;
     bool deadlockRemains = true;
     ofstream log("log.txt", ios::app);
     log << "OSS: Checking Deadlocks" << endl;
     log.close();
+    int terminateProcessIndex = 0;
     while(deadlockRemains == true){
-        int terminateProcessIndex = 0;
-
         //Terminate Process that currently are deadlocked
-        for(int i = 0; i < 20; i++){
+        for(int i = 0; i < 18; i++){
             //If there is a deadlock detected.
             if(blockedQueue[i].deadlocked == true){
-                for(int j = 0; j < 20; j++){
+                for(int j = 0; j < 18; j++){
                     //If two processes are deadlocked with each other
                     if(blockedQueue[i].index == blockedQueue[j].index){
                         //And the process still exists
                         if(blockedQueue[j].pid != -1){
                             //Terminate the other process
                             terminateProcessIndex = blockedQueue[j].pid;
-                            for(int k = 0; k <18; k++){
+                            for(int k = 0; k < 18; k++){
                                 if(pTable[k].pid == blockedQueue[j].pid){
                                     pTable[k].pid = -1;
                                     for(int l = 0; l < 20; l++){
                                         if(pTable[k].availableResources[l] != 0){
                                             //Removing allocation
                                             remainingTable[l] += pTable[k].availableResources[l];
-
                                             pTable[k].availableResources[l] = 0;
                                         }
                                     }
@@ -611,6 +645,8 @@ void deadLockRecovery(blocked blockedQueue[18], processes *pTable, int *remainin
                             log.open("log.txt", ios::app);
                             log << "OSS: Process " << terminateProcessIndex << " has been terminated to clear a deadlock" << endl;
                             log.close();
+                            deadlockTerminations++;
+                            totalTerminated++;
                             msgsnd(msgid, &message, sizeof(message), 0);
                         }
                     }
@@ -622,16 +658,36 @@ void deadLockRecovery(blocked blockedQueue[18], processes *pTable, int *remainin
 
         //Check to see if there are still deadlocks to clear
         for(int i = 0; i < 20; i++){
+            if(blockedQueue[i].deadlocked == false){
+                deadlockRemains = false;
+            }
             if(blockedQueue[i].deadlocked == true){
                 deadlockRemains = true;
             }
         }
         //Check to see if there are still deadlocks
-    }
+    };
 
     log.open("log.txt", ios::app);
     log << "OSS: No Deadlocks Detected" << endl;
     log.close();
     
     message.mesg_type = 1;
+    return;
+}
+
+void displayStats(){
+    ofstream log("log.txt",ios::app);
+    log.close();
+
+    log.open("log.txt",ios::app);
+    log << "OSS: |-----------------Statistics--------------|" << endl;
+    log << "OSS: Total Requests Completed Instantly: " << instantRequests << endl;
+    log << "OSS: Total Requests Completed Delayed: " << delayedRequests << endl;
+    log << "OSS: Total Deadlock Terminations: " << deadlockTerminations << endl;
+    log << "OSS: Total Random Terminiations: " << randomTerminations << endl;
+    log << "OSS: Total Times Deadlock Algorithm Ran: " << deadlockRunTimes << endl;
+    log.close();
+
+    return;
 }

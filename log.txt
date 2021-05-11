@@ -1,53 +1,1394 @@
 OSS: Beginning Process
-OSS: Generating process with PID 16410 at time: 0 s : 597ns 
-OSS: Generating process with PID 16411 at time: 0 s : 1090ns 
-OSS: Generating process with PID 16412 at time: 0 s : 1126ns 
-OSS: Generating process with PID 16414 at time: 0 s : 1604ns 
-OSS: Generating process with PID 16415 at time: 0 s : 2816ns 
-OSS: Generating process with PID 16413 at time: 0 s : 3932ns 
-OSS: Generating process with PID 16417 at time: 0 s : 9301ns 
-OSS: Generating process with PID 16418 at time: 0 s : 9301ns 
-OSS: Generating process with PID 16419 at time: 0 s : 9301ns 
-OSS: Generating process with PID 16416 at time: 0 s : 9301ns 
-OSS: Generating process with PID 16421 at time: 0 s : 9301ns 
-OSS: Generating process with PID 16423 at time: 0 s : 9301ns 
-OSS: Generating process with PID 16422 at time: 0 s : 9301ns 
-OSS: Generating process with PID 16427 at time: 0 s : 9301ns 
-OSS: Generating process with PID 16420 at time: 0 s : 9301ns 
-OSS: Generating process with PID 16425 at time: 0 s : 9301ns 
-OSS: Generating process with PID 16426 at time: 0 s : 9301ns 
-OSS: Generating process with PID 16424 at time: 0 s : 9301ns 
-OSS: Process: 16412 has requested resource: 1 from index: 11 at time: 0 s : 9303ns 
-OSS: Process: 16412 has requested resource: 1 from index: 12 at time: 0 s : 9339ns 
-OSS: Process: 16412 has requested resource: 6 from index: 8 at time: 0 s : 9437ns 
-OSS: Process: 16410 has requested resource: 1 from index: 11 at time: 0 s : 9494ns 
-OSS: Process: 16412 has requested resource: 5 from index: 6 at time: 0 s : 9542ns 
-OSS: Process: 16412 has requested resource: 5 from index: 1 at time: 0 s : 9567ns 
-OSS: Process: 16412 has requested resource: 6 from index: 7 at time: 0 s : 9596ns 
-OSS: Process: 16410 has requested resource: 1 from index: 12 at time: 0 s : 9651ns 
+OSS: Generating process with PID 24654 at time: 0 s : 771ns 
+OSS: Generating process with PID 24655 at time: 0 s : 1137ns 
+OSS: Generating process with PID 24656 at time: 0 s : 5022ns 
+OSS: Generating process with PID 24657 at time: 0 s : 5022ns 
+OSS: Generating process with PID 24664 at time: 0 s : 5022ns 
+OSS: Generating process with PID 24659 at time: 0 s : 10649ns 
+OSS: Generating process with PID 24668 at time: 0 s : 10649ns 
+OSS: Generating process with PID 24658 at time: 0 s : 10649ns 
+OSS: Generating process with PID 24663 at time: 0 s : 10649ns 
+OSS: Generating process with PID 24660 at time: 0 s : 10649ns 
+OSS: Generating process with PID 24662 at time: 0 s : 10649ns 
+OSS: Generating process with PID 24666 at time: 0 s : 10649ns 
+OSS: Generating process with PID 24669 at time: 0 s : 10649ns 
+OSS: Generating process with PID 24661 at time: 0 s : 10649ns 
+OSS: Generating process with PID 24665 at time: 0 s : 10649ns 
+OSS: Generating process with PID 24671 at time: 0 s : 10649ns 
+OSS: Generating process with PID 24667 at time: 0 s : 10649ns 
+OSS: Generating process with PID 24670 at time: 0 s : 10649ns 
+OSS: Process: 24654 has requested resource: 2 from index: 5 at time: 0 s : 10773ns 
+OSS: Process: 24654 has requested resource: 1 from index: 10 at time: 0 s : 10851ns 
+OSS: Process: 24655 has requested resource: 1 from index: 10 at time: 0 s : 10862ns 
+OSS: Not enough resources in index: 10 to allocate 1 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24655 has been placed in blocked queue index: 0 until 1 resources have come available in index: 10
+MSG: sending message blocked: 1 to message type of process: 24655
+OSS: Process: 24654 has requested resource: 1 from index: 18 at time: 0 s : 10896ns 
+OSS: Process: 24655 has requested resource: 3 from index: 2 at time: 0 s : 10972ns 
+OSS: Process: 24654 has requested resource: 1 from index: 0 at time: 0 s : 11014ns 
+OSS: Process: 24655 has requested resource: 1 from index: 8 at time: 0 s : 11072ns 
+OSS: Process: 24654 has requested resource: 2 from index: 11 at time: 0 s : 11144ns 
+OSS: Process: 24654 has requested resource: 1 from index: 0 at time: 0 s : 11196ns 
+OSS: Not enough resources in index: 0 to allocate 1 resources.
+OSS: Process: 24654 is entering queue until resources are available
+OSS: Process: 24654 has been placed in blocked queue index: 1 until 1 resources have come available in index: 0
+MSG: sending message blocked: 1 to message type of process: 24654
+OSS: Process: 24655 has requested resource: 1 from index: 10 at time: 0 s : 11262ns 
+OSS: Not enough resources in index: 10 to allocate 1 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24655 has been placed in blocked queue index: 2 until 1 resources have come available in index: 10
+MSG: sending message blocked: 1 to message type of process: 24655
+OSS: Process: 24654 has requested resource: 5 from index: 14 at time: 0 s : 11364ns 
+OSS: Process: 24655 has requested resource: 5 from index: 16 at time: 0 s : 11384ns 
+OSS: Process: 24655 has requested resource: 1 from index: 0 at time: 0 s : 11497ns 
+OSS: Not enough resources in index: 0 to allocate 1 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24655 has been placed in blocked queue index: 3 until 1 resources have come available in index: 0
+OSS: Process: 24655 is deadlocked with Process: 24654 over resources at index: 0
+MSG: sending message blocked: 1 to message type of process: 24655
+OSS: Process: 24655 has requested resource: 2 from index: 17 at time: 0 s : 11651ns 
+OSS: Process: 24655 has requested resource: 4 from index: 8 at time: 0 s : 11746ns 
+OSS: Process: 24655 has requested resource: 2 from index: 19 at time: 0 s : 11835ns 
+OSS: Process: 24654 has requested resource: 1 from index: 0 at time: 0 s : 11849ns 
+OSS: Not enough resources in index: 0 to allocate 1 resources.
+OSS: Process: 24654 is entering queue until resources are available
+OSS: Process: 24654 has been placed in blocked queue index: 4 until 1 resources have come available in index: 0
+OSS: Process: 24654 is deadlocked with Process: 24655 over resources at index: 0
+MSG: sending message blocked: 1 to message type of process: 24654
+OSS: Process: 24655 has requested resource: 1 from index: 0 at time: 0 s : 12009ns 
+OSS: Not enough resources in index: 0 to allocate 1 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24655 has been placed in blocked queue index: 5 until 1 resources have come available in index: 0
+OSS: Process: 24655 is deadlocked with Process: 24654 over resources at index: 0
+OSS: Process: 24655 is deadlocked with Process: 24654 over resources at index: 0
+MSG: sending message blocked: 1 to message type of process: 24655
+OSS: Process: 24654 has requested resource: 4 from index: 1 at time: 0 s : 12113ns 
+User: Receieved Message
+OSS: Process: 24654 has requested resource: 6 from index: 8 at time: 0 s : 12178ns 
+OSS: Not enough resources in index: 8 to allocate 6 resources.
+User: Process: 24655 is blocked
+OSS: Process: 24654 is entering queue until resources are available
+OSS: Process: 24654 has been placed in blocked queue index: 6 until 6 resources have come available in index: 8
+MSG: sending message blocked: 1 to message type of process: 24654
+OSS: Process: 24654 has requested resource: 2 from index: 19 at time: 0 s : 12436ns 
+OSS: Not enough resources in index: 19 to allocate 2 resources.
+OSS: Process: 24654 is entering queue until resources are available
+OSS: Process: 24654 has been placed in blocked queue index: 7 until 2 resources have come available in index: 19
+MSG: sending message blocked: 1 to message type of process: 24654
+OSS: Process: 24655 has requested resource: 8 from index: 12 at time: 0 s : 12506ns 
+OSS: Process: 24654 has requested resource: 6 from index: 3 at time: 0 s : 12547ns 
+User: Receieved Message
+OSS: Process: 24654 has requested resource: 1 from index: 7 at time: 0 s : 12610ns 
+User: Process: 24654 is blocked
+OSS: Process: 24654 has requested resource: 1 from index: 6 at time: 0 s : 12654ns 
+OSS: Process: 24654 has requested resource: 2 from index: 18 at time: 0 s : 12678ns 
+OSS: Process: 24654 has requested resource: 2 from index: 18 at time: 0 s : 12758ns 
+OSS: Not enough resources in index: 18 to allocate 2 resources.
+OSS: Process: 24654 is entering queue until resources are available
+OSS: Process: 24654 has been placed in blocked queue index: 8 until 2 resources have come available in index: 18
+MSG: sending message blocked: 1 to message type of process: 24654
+OSS: Process: 24654 has requested resource: 1 from index: 4 at time: 0 s : 12768ns 
+OSS: Process: 24655 has requested resource: 3 from index: 2 at time: 0 s : 12795ns 
+OSS: Not enough resources in index: 2 to allocate 3 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24655 has been placed in blocked queue index: 9 until 3 resources have come available in index: 2
+MSG: sending message blocked: 1 to message type of process: 24655
+OSS: Process: 24654 has requested resource: 1 from index: 6 at time: 0 s : 12818ns 
+OSS: Not enough resources in index: 6 to allocate 1 resources.
+OSS: Process: 24654 is entering queue until resources are available
+OSS: Process: 24654 has been placed in blocked queue index: 10 until 1 resources have come available in index: 6
+MSG: sending message blocked: 1 to message type of process: 24654
+USER: Process: 24659 has randomly terminated at time: 0s, 12795ns
+OSS: Process: 24655 has requested resource: 3 from index: 2 at time: 0 s : 12862ns 
+OSS: Not enough resources in index: 2 to allocate 3 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24655 has been placed in blocked queue index: 11 until 3 resources have come available in index: 2
+MSG: sending message blocked: 1 to message type of process: 24655
+OSS: Process: 24657 has requested resource: 1 from index: 7 at time: 0 s : 12880ns 
+OSS: Not enough resources in index: 7 to allocate 1 resources.
+OSS: Process: 24657 is entering queue until resources are available
+OSS: Process: 24657 has been placed in blocked queue index: 12 until 1 resources have come available in index: 7
+MSG: sending message blocked: 1 to message type of process: 24657
+OSS: Process: 24654 has requested resource: 2 from index: 15 at time: 0 s : 12885ns 
+
+OSS: Displaying Resource Table at time: 0 s : 12889ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   1   4   4   7   10  7   1   1   7   4   1   2   8   7   6   5   5   9   3   2   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 24654:      1   4   0   6   1   2   1   1   0   0   1   2   0   0   5   2   0   0   3   0   
+OSS: Process: 24655:      0   0   3   0   0   0   0   0   5   0   0   0   8   0   0   0   5   2   0   2   
+OSS: Process: 24656:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24657:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24658:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24659:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24660:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24661:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24662:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24663:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24664:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24665:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24666:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24667:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24668:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24669:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24670:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24671:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 0   0   1   1   9   5   0   0   2   4   0   0   0   7   1   3   0   7   0   0   
+OSS: Process: 24657 has requested resource: 3 from index: 16 at time: 0 s : 12889ns 
+OSS: Not enough resources in index: 16 to allocate 3 resources.
+OSS: Process: 24657 is entering queue until resources are available
+OSS: Process: 24657 has been placed in blocked queue index: 13 until 3 resources have come available in index: 16
+MSG: sending message blocked: 1 to message type of process: 24657
+OSS: Process: 24654 has requested resource: 1 from index: 18 at time: 0 s : 12931ns 
+OSS: Not enough resources in index: 18 to allocate 1 resources.
+OSS: Process: 24654 is entering queue until resources are available
+OSS: Process: 24654 has been placed in blocked queue index: 14 until 1 resources have come available in index: 18
+MSG: sending message blocked: 1 to message type of process: 24654
+OSS: Process: 24655 has requested resource: 3 from index: 14 at time: 0 s : 12939ns 
+OSS: Not enough resources in index: 14 to allocate 3 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24655 has been placed in blocked queue index: 15 until 3 resources have come available in index: 14
+MSG: sending message blocked: 1 to message type of process: 24655
+OSS: Process: 24654 has requested resource: 1 from index: 7 at time: 0 s : 12943ns 
+OSS: Not enough resources in index: 7 to allocate 1 resources.
+OSS: Process: 24654 is entering queue until resources are available
+OSS: Process: 24654 has been placed in blocked queue index: 16 until 1 resources have come available in index: 7
+OSS: Process: 24654 is deadlocked with Process: 24657 over resources at index: 7
+MSG: sending message blocked: 1 to message type of process: 24654
+OSS: Process: 24655 has requested resource: 5 from index: 5 at time: 0 s : 12954ns 
+OSS: Process: 24654 has requested resource: 5 from index: 17 at time: 0 s : 13016ns 
+OSS: Process: 24657 has requested resource: 3 from index: 1 at time: 0 s : 13040ns 
+OSS: Not enough resources in index: 1 to allocate 3 resources.
+OSS: Process: 24657 is entering queue until resources are available
+OSS: Process: 24657 has been placed in blocked queue index: 17 until 3 resources have come available in index: 1
+MSG: sending message blocked: 1 to message type of process: 24657
+OSS: Process: 24655 has requested resource: 1 from index: 10 at time: 0 s : 13069ns 
+OSS: Not enough resources in index: 10 to allocate 1 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24654 has requested resource: 4 from index: 12 at time: 0 s : 13134ns 
+OSS: Not enough resources in index: 12 to allocate 4 resources.
+OSS: Process: 24654 is entering queue until resources are available
+OSS: Process: 24664 has requested resource: 3 from index: 17 at time: 0 s : 13169ns 
+OSS: Not enough resources in index: 17 to allocate 3 resources.
+OSS: Process: 24664 is entering queue until resources are available
+OSS: Process: 24659 has requested resource: 5 from index: 13 at time: 0 s : 13184ns 
+OSS: Process: 24660 has requested resource: 1 from index: 7 at time: 0 s : 13192ns 
+OSS: Not enough resources in index: 7 to allocate 1 resources.
+OSS: Process: 24660 is entering queue until resources are available
+OSS: Process: 24655 has requested resource: 3 from index: 18 at time: 0 s : 13219ns 
+OSS: Not enough resources in index: 18 to allocate 3 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24671 has requested resource: 1 from index: 6 at time: 0 s : 13260ns 
+OSS: Not enough resources in index: 6 to allocate 1 resources.
+OSS: Process: 24671 is entering queue until resources are available
+OSS: Process: 24659 has requested resource: 6 from index: 8 at time: 0 s : 13331ns 
+OSS: Not enough resources in index: 8 to allocate 6 resources.
+OSS: Process: 24659 is entering queue until resources are available
+OSS: Process: 24654 has requested resource: 7 from index: 17 at time: 0 s : 13370ns 
+OSS: Not enough resources in index: 17 to allocate 7 resources.
+OSS: Process: 24654 is entering queue until resources are available
+OSS: Process: 24655 has requested resource: 2 from index: 11 at time: 0 s : 13404ns 
+OSS: Not enough resources in index: 11 to allocate 2 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24654 has released 2 from index: 5 time: 0 s : 13475ns 
+OSS: Process: 24654 has released 1 from index: 18 time: 0 s : 13531ns 
+OSS: Process: 24654 has been removed from blockedQueue
+OSS: Unblocking Process: 24654
+User: Process: 24654 has been unblocked
+OSS: Process: 24655 has released 2 from index: 2 time: 0 s : 13639ns 
+User: Process: 24654 has escaped blocked whileloop
+OSS: Process: 24655 has been removed from blockedQueue
+OSS: Unblocking Process: 24655
+User: Process: 24655 has been unblocked
+User: Process: 24655 has escaped blocked whileloop
+OSS: Process: 24659 has requested resource: 1 from index: 8 at time: 0 s : 13827ns 
+OSS: Process: 24655 has released 1 from index: 2 time: 0 s : 13875ns 
+OSS: Process: 24665 has requested resource: 1 from index: 10 at time: 0 s : 13926ns 
+OSS: Not enough resources in index: 10 to allocate 1 resources.
+OSS: Process: 24665 is entering queue until resources are available
+OSS: Process: 24665 has been placed in blocked queue index: 9 until 1 resources have come available in index: 10
+OSS: Process: 24665 is deadlocked with Process: 24655 over resources at index: 10
+OSS: Process: 24665 is deadlocked with Process: 24655 over resources at index: 10
+MSG: sending message blocked: 1 to message type of process: 24665
+OSS: Process: 24655 has released 2 from index: 2 time: 0 s : 14195ns 
+OSS: Process: 24655 has been removed from blockedQueue
+OSS: Unblocking Process: 24655
+OSS: Process: 24665 has requested resource: 6 from index: 14 at time: 0 s : 14353ns 
+OSS: Not enough resources in index: 14 to allocate 6 resources.
+User: Receieved Message
+OSS: Process: 24665 is entering queue until resources are available
+OSS: Process: 24665 has been placed in blocked queue index: 11 until 6 resources have come available in index: 14
+OSS: Process: 24665 is deadlocked with Process: 24655 over resources at index: 14
+MSG: sending message blocked: 1 to message type of process: 24665
+OSS: Process: 24659 has requested resource: 1 from index: 15 at time: 0 s : 14454ns 
+OSS: Process: 24655 has released 2 from index: 2 time: 0 s : 14488ns 
+OSS: Process: 24659 has requested resource: 1 from index: 6 at time: 0 s : 14587ns 
+OSS: Not enough resources in index: 6 to allocate 1 resources.
+OSS: Process: 24659 is entering queue until resources are available
+OSS: Process: 24659 has been placed in blocked queue index: 14 until 1 resources have come available in index: 6
+OSS: Process: 24659 is deadlocked with Process: 24654 over resources at index: 6
+MSG: sending message blocked: 1 to message type of process: 24659
+OSS: Process: 24655 has released 2 from index: 2 time: 0 s : 14828ns 
+OSS: Process: 24659 has requested resource: 7 from index: 13 at time: 0 s : 14973ns 
+OSS: Not enough resources in index: 13 to allocate 7 resources.
+OSS: Process: 24659 is entering queue until resources are available
+OSS: Process: 24665 has requested resource: 5 from index: 17 at time: 0 s : 15013ns 
+OSS: Not enough resources in index: 17 to allocate 5 resources.
+OSS: Process: 24665 is entering queue until resources are available
+OSS: Process: 24655 has requested resource: 4 from index: 1 at time: 0 s : 15163ns 
+OSS: Not enough resources in index: 1 to allocate 4 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24659 has requested resource: 1 from index: 0 at time: 0 s : 15266ns 
+OSS: Not enough resources in index: 0 to allocate 1 resources.
+OSS: Process: 24659 is entering queue until resources are available
+OSS: Process: 24655 has requested resource: 3 from index: 14 at time: 0 s : 15347ns 
+OSS: Not enough resources in index: 14 to allocate 3 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24655 has requested resource: 1 from index: 7 at time: 0 s : 15421ns 
+OSS: Not enough resources in index: 7 to allocate 1 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24665 has requested resource: 1 from index: 6 at time: 0 s : 15528ns 
+OSS: Not enough resources in index: 6 to allocate 1 resources.
+OSS: Process: 24665 is entering queue until resources are available
+OSS: Process: 24665 has requested resource: 3 from index: 4 at time: 0 s : 15571ns 
+OSS: Process: 24659 has requested resource: 1 from index: 7 at time: 0 s : 15609ns 
+OSS: Not enough resources in index: 7 to allocate 1 resources.
+OSS: Process: 24659 is entering queue until resources are available
+OSS: Process: 24665 has requested resource: 1 from index: 0 at time: 0 s : 15694ns 
+OSS: Not enough resources in index: 0 to allocate 1 resources.
+OSS: Process: 24665 is entering queue until resources are available
+OSS: Process: 24654 has requested resource: 10 from index: 4 at time: 0 s : 15748ns 
+OSS: Not enough resources in index: 4 to allocate 10 resources.
+OSS: Process: 24654 is entering queue until resources are available
+OSS: Process: 24659 has requested resource: 4 from index: 5 at time: 0 s : 15881ns 
+OSS: Not enough resources in index: 5 to allocate 4 resources.
+OSS: Process: 24659 is entering queue until resources are available
+OSS: Process: 24659 has requested resource: 2 from index: 11 at time: 0 s : 15994ns 
+OSS: Not enough resources in index: 11 to allocate 2 resources.
+OSS: Process: 24659 is entering queue until resources are available
+OSS: Process: 24659 has requested resource: 4 from index: 16 at time: 0 s : 16109ns 
+OSS: Not enough resources in index: 16 to allocate 4 resources.
+OSS: Process: 24659 is entering queue until resources are available
+OSS: Terminating Process: 24659 and releasing all allocated resources
+OSS: Process: 24663 has requested resource: 1 from index: 10 at time: 0 s : 16266ns 
+OSS: Not enough resources in index: 10 to allocate 1 resources.
+OSS: Process: 24663 is entering queue until resources are available
+OSS: Process: 24663 has requested resource: 1 from index: 0 at time: 0 s : 16327ns 
+OSS: Not enough resources in index: 0 to allocate 1 resources.
+OSS: Process: 24663 is entering queue until resources are available
+OSS: Process: 24663 has requested resource: 2 from index: 8 at time: 0 s : 16435ns 
+OSS: Process: 24663 has requested resource: 1 from index: 7 at time: 0 s : 16540ns 
+OSS: Not enough resources in index: 7 to allocate 1 resources.
+OSS: Process: 24663 is entering queue until resources are available
+OSS: Process: 24654 has requested resource: 7 from index: 12 at time: 0 s : 16589ns 
+OSS: Not enough resources in index: 12 to allocate 7 resources.
+OSS: Process: 24654 is entering queue until resources are available
+OSS: Process: 24663 has requested resource: 4 from index: 14 at time: 0 s : 16639ns 
+OSS: Not enough resources in index: 14 to allocate 4 resources.
+OSS: Process: 24663 is entering queue until resources are available
+OSS: Process: 24654 has requested resource: 2 from index: 13 at time: 0 s : 16765ns 
+OSS: Process: 24654 has requested resource: 3 from index: 16 at time: 0 s : 16779ns 
+OSS: Not enough resources in index: 16 to allocate 3 resources.
+OSS: Process: 24654 is entering queue until resources are available
+OSS: Process: 24654 has requested resource: 1 from index: 6 at time: 0 s : 16945ns 
+OSS: Not enough resources in index: 6 to allocate 1 resources.
+OSS: Process: 24654 is entering queue until resources are available
+OSS: Process: 24654 has released 2 from index: 15 time: 0 s : 17017ns 
+OSS: Process: 24655 has released 1 from index: 17 time: 0 s : 17056ns 
+OSS: Process: 24663 has requested resource: 2 from index: 8 at time: 0 s : 17091ns 
+OSS: Not enough resources in index: 8 to allocate 2 resources.
+OSS: Process: 24663 is entering queue until resources are available
+OSS: Process: 24654 has requested resource: 9 from index: 17 at time: 0 s : 17098ns 
+OSS: Not enough resources in index: 17 to allocate 9 resources.
+OSS: Process: 24654 is entering queue until resources are available
+OSS: Process: 24654 has released 3 from index: 17 time: 0 s : 17196ns 
+OSS: Process: 24654 has requested resource: 1 from index: 0 at time: 0 s : 17299ns 
+OSS: Not enough resources in index: 0 to allocate 1 resources.
+OSS: Process: 24654 is entering queue until resources are available
+OSS: Process: 24655 has requested resource: 4 from index: 17 at time: 0 s : 17361ns 
+OSS: Process: 24654 has requested resource: 3 from index: 16 at time: 0 s : 17435ns 
+OSS: Not enough resources in index: 16 to allocate 3 resources.
+OSS: Process: 24654 is entering queue until resources are available
+OSS: Process: 24663 has requested resource: 3 from index: 12 at time: 0 s : 17507ns 
+OSS: Not enough resources in index: 12 to allocate 3 resources.
+OSS: Process: 24663 is entering queue until resources are available
+OSS: Process: 24655 has released 1 from index: 5 time: 0 s : 17585ns 
+
+OSS: Displaying Resource Table at time: 0 s : 17706ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   1   4   4   7   10  7   1   1   7   4   1   2   8   7   6   5   5   9   3   2   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 24654:      1   4   0   6   1   0   1   1   0   0   1   2   0   2   5   0   0   2   3   0   
+OSS: Process: 24655:      0   0   0   0   0   4   0   0   5   0   0   0   8   0   0   0   5   5   0   2   
+OSS: Process: 24656:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24657:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24658:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24660:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24661:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24662:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24663:      0   0   0   0   0   0   0   0   2   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24664:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24665:      0   0   0   0   3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24666:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24667:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24668:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24669:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24670:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24671:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 0   0   4   1   6   3   0   0   0   4   0   0   0   5   1   5   0   2   0   0   
+OSS: Process: 24654 has requested resource: 3 from index: 9 at time: 0 s : 17871ns 
+OSS: Process: 24663 has requested resource: 1 from index: 1 at time: 0 s : 17932ns 
+OSS: Not enough resources in index: 1 to allocate 1 resources.
+OSS: Process: 24663 is entering queue until resources are available
+OSS: Process: 24654 has released 1 from index: 0 time: 0 s : 18001ns 
+OSS: Process: 24654 has released 1 from index: 6 time: 0 s : 18051ns 
+OSS: Process: 24655 has requested resource: 8 from index: 4 at time: 0 s : 18165ns 
+OSS: Not enough resources in index: 4 to allocate 8 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24654 has requested resource: 1 from index: 7 at time: 0 s : 18285ns 
+OSS: Not enough resources in index: 7 to allocate 1 resources.
+OSS: Process: 24654 is entering queue until resources are available
+OSS: Process: 24663 has requested resource: 4 from index: 3 at time: 0 s : 18352ns 
+OSS: Not enough resources in index: 3 to allocate 4 resources.
+OSS: Process: 24663 is entering queue until resources are available
+OSS: Process: 24654 has requested resource: 6 from index: 3 at time: 0 s : 18391ns 
+OSS: Not enough resources in index: 3 to allocate 6 resources.
+OSS: Process: 24654 is entering queue until resources are available
+OSS: Process: 24655 has requested resource: 3 from index: 4 at time: 0 s : 18423ns 
+OSS: Process: 24655 has requested resource: 1 from index: 8 at time: 0 s : 18457ns 
+OSS: Not enough resources in index: 8 to allocate 1 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24654 has released 1 from index: 7 time: 0 s : 18537ns 
+OSS: Process: 24655 has requested resource: 6 from index: 3 at time: 0 s : 18616ns 
+OSS: Not enough resources in index: 3 to allocate 6 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24663 has requested resource: 2 from index: 11 at time: 0 s : 18675ns 
+OSS: Not enough resources in index: 11 to allocate 2 resources.
+OSS: Process: 24663 is entering queue until resources are available
+OSS: Process: 24654 has released 3 from index: 18 time: 0 s : 18787ns 
+OSS: Process: 24654 has been removed from blockedQueue
+OSS: Unblocking Process: 24654
+User: Receieved Message
+OSS: Process: 24663 has requested resource: 1 from index: 6 at time: 0 s : 18892ns 
+OSS: Process: 24655 has released 2 from index: 17 time: 0 s : 18967ns 
+OSS: Process: 24655 has requested resource: 4 from index: 17 at time: 0 s : 19035ns 
+OSS: Process: 24654 has requested resource: 7 from index: 17 at time: 0 s : 19054ns 
+OSS: Not enough resources in index: 17 to allocate 7 resources.
+OSS: Process: 24654 is entering queue until resources are available
+OSS: Process: 24654 has been placed in blocked queue index: 8 until 7 resources have come available in index: 17
+MSG: sending message blocked: 1 to message type of process: 24654
+User: Receieved Message
+OSS: Process: 24655 has released 2 from index: 16 time: 0 s : 19164ns 
+User: Process: 24654 is blocked
+OSS: Process: 24654 has requested resource: 1 from index: 0 at time: 0 s : 19315ns 
+OSS: Process: 24654 has released 2 from index: 17 time: 0 s : 19364ns 
+OSS: Process: 24655 has requested resource: 2 from index: 11 at time: 0 s : 19426ns 
+OSS: Not enough resources in index: 11 to allocate 2 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24655 has requested resource: 2 from index: 18 at time: 0 s : 19469ns 
+OSS: Not enough resources in index: 18 to allocate 2 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24654 has requested resource: 4 from index: 3 at time: 0 s : 19544ns 
+OSS: Not enough resources in index: 3 to allocate 4 resources.
+OSS: Process: 24654 is entering queue until resources are available
+OSS: Process: 24655 has released 1 from index: 8 time: 0 s : 19591ns 
+OSS: Process: 24663 has released 1 from index: 8 time: 0 s : 19655ns 
+OSS: Process: 24654 has requested resource: 4 from index: 2 at time: 0 s : 19723ns 
+OSS: Process: 24655 has released 1 from index: 19 time: 0 s : 19729ns 
+OSS: Process: 24654 has released 4 from index: 1 time: 0 s : 19761ns 
+OSS: Process: 24657 has been removed from blockedQueue
+OSS: Unblocking Process: 24657
+OSS: Process: 24655 has released 1 from index: 5 time: 0 s : 19833ns 
+OSS: Process: 24663 has requested resource: 4 from index: 17 at time: 0 s : 19889ns 
+OSS: Not enough resources in index: 17 to allocate 4 resources.
+OSS: Process: 24663 is entering queue until resources are available
+OSS: Process: 24663 has been placed in blocked queue index: 17 until 4 resources have come available in index: 17
+OSS: Process: 24663 is deadlocked with Process: 24654 over resources at index: 17
+MSG: sending message blocked: 1 to message type of process: 24663
+USER: Process: 24655 has randomly terminated at time: 0s, 20014ns
+OSS: Process: 24654 has requested resource: 4 from index: 8 at time: 0 s : 20014ns 
+OSS: Not enough resources in index: 8 to allocate 4 resources.
+OSS: Process: 24654 is entering queue until resources are available
+OSS: Process: 24663 has requested resource: 2 from index: 8 at time: 0 s : 20037ns 
+User: Receieved Message
+OSS: Process: 24663 has released 2 from index: 8 time: 0 s : 20058ns 
+User: Process: 24663 is blocked
+
+OSS: Displaying Resource Table at time: 0 s : 20073ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   1   4   4   7   10  7   1   1   7   4   1   2   8   7   6   5   5   9   3   2   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 24654:      1   0   4   6   1   0   0   0   0   3   1   2   0   2   5   0   0   0   2   0   
+OSS: Process: 24655:      0   0   0   0   3   3   0   0   4   0   0   0   8   0   0   0   3   7   0   1   
+OSS: Process: 24656:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24657:      0   3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24658:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24660:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24661:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24662:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24663:      0   0   0   0   0   0   1   0   1   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24664:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24665:      0   0   0   0   3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24666:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24667:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24668:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24669:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24670:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24671:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 0   1   0   1   3   4   0   1   2   1   0   0   0   5   1   5   2   2   1   1   
+OSS: Process: 24654 has released 1 from index: 14 time: 0 s : 20073ns 
+OSS: Process: 24663 has released 1 from index: 8 time: 0 s : 20104ns 
+OSS: Process: 24655 has released 4 from index: 8 time: 0 s : 20159ns 
+OSS: Process: 24654 has been removed from blockedQueue
+OSS: Unblocking Process: 24654
+OSS: Process: 24655 has requested resource: 2 from index: 4 at time: 0 s : 20234ns 
+User: Process: 24654 has been unblocked
+User: Process: 24654 has escaped blocked whileloop
+OSS: Process: 24663 has requested resource: 1 from index: 1 at time: 0 s : 20298ns 
+OSS: Process: 24654 has requested resource: 4 from index: 2 at time: 0 s : 20348ns 
+OSS: Not enough resources in index: 2 to allocate 4 resources.
+OSS: Process: 24654 is entering queue until resources are available
+OSS: Process: 24654 has been placed in blocked queue index: 6 until 4 resources have come available in index: 2
+MSG: sending message blocked: 1 to message type of process: 24654
+User: Receieved Message
+OSS: Process: 24654 has released 1 from index: 0 time: 0 s : 20484ns 
+User: Process: 24654 is blocked
+OSS: Process: 24655 has released 1 from index: 16 time: 0 s : 20579ns 
+OSS: Process: 24657 has been removed from blockedQueue
+OSS: Unblocking Process: 24657
+OSS: Process: 24654 has requested resource: 3 from index: 8 at time: 0 s : 20632ns 
+OSS: Not enough resources in index: 8 to allocate 3 resources.
+OSS: Process: 24654 is entering queue until resources are available
+OSS: Process: 24654 has been placed in blocked queue index: 13 until 3 resources have come available in index: 8
+MSG: sending message blocked: 1 to message type of process: 24654
+OSS: Process: 24655 has released 2 from index: 12 time: 0 s : 20756ns 
+OSS: Process: 24654 has requested resource: 7 from index: 3 at time: 0 s : 20776ns 
+OSS: Not enough resources in index: 3 to allocate 7 resources.
+OSS: Process: 24654 is entering queue until resources are available
+OSS: Process: 24655 has requested resource: 2 from index: 2 at time: 0 s : 20850ns 
+OSS: Not enough resources in index: 2 to allocate 2 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24654 has released 1 from index: 11 time: 0 s : 20885ns 
+OSS: Process: 24655 has requested resource: 5 from index: 16 at time: 0 s : 20952ns 
+OSS: Not enough resources in index: 16 to allocate 5 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24655 has requested resource: 1 from index: 6 at time: 0 s : 21021ns 
+OSS: Not enough resources in index: 6 to allocate 1 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24663 has requested resource: 3 from index: 4 at time: 0 s : 21034ns 
+OSS: Not enough resources in index: 4 to allocate 3 resources.
+OSS: Process: 24663 is entering queue until resources are available
+OSS: Process: 24655 has requested resource: 2 from index: 2 at time: 0 s : 21048ns 
+OSS: Not enough resources in index: 2 to allocate 2 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24663 has requested resource: 1 from index: 10 at time: 0 s : 21160ns 
+OSS: Not enough resources in index: 10 to allocate 1 resources.
+OSS: Process: 24663 is entering queue until resources are available
+OSS: Process: 24663 has requested resource: 9 from index: 17 at time: 0 s : 21193ns 
+OSS: Not enough resources in index: 17 to allocate 9 resources.
+OSS: Process: 24663 is entering queue until resources are available
+OSS: Process: 24655 has released 2 from index: 5 time: 0 s : 21230ns 
+OSS: Process: 24654 has released 4 from index: 3 time: 0 s : 21282ns 
+OSS: Process: 24663 has requested resource: 6 from index: 4 at time: 0 s : 21297ns 
+OSS: Not enough resources in index: 4 to allocate 6 resources.
+OSS: Process: 24663 is entering queue until resources are available
+OSS: Process: 24655 has released 1 from index: 16 time: 0 s : 21299ns 
+OSS: Process: 24663 has requested resource: 1 from index: 0 at time: 0 s : 21305ns 
+OSS: Process: 24663 has requested resource: 1 from index: 0 at time: 0 s : 21343ns 
+OSS: Not enough resources in index: 0 to allocate 1 resources.
+OSS: Process: 24663 is entering queue until resources are available
+OSS: Process: 24654 has requested resource: 9 from index: 4 at time: 0 s : 21404ns 
+OSS: Not enough resources in index: 4 to allocate 9 resources.
+OSS: Process: 24654 is entering queue until resources are available
+OSS: Process: 24655 has requested resource: 1 from index: 11 at time: 0 s : 21464ns 
+OSS: Process: 24663 has requested resource: 1 from index: 17 at time: 0 s : 21487ns 
+OSS: Process: 24655 has requested resource: 2 from index: 9 at time: 0 s : 21551ns 
+OSS: Not enough resources in index: 9 to allocate 2 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24654 has requested resource: 1 from index: 19 at time: 0 s : 21561ns 
+OSS: Process: 24663 has released 1 from index: 6 time: 0 s : 21570ns 
+OSS: Process: 24655 has released 1 from index: 4 time: 0 s : 21624ns 
+OSS: Process: 24655 has requested resource: 3 from index: 12 at time: 0 s : 21678ns 
+OSS: Not enough resources in index: 12 to allocate 3 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24663 has requested resource: 2 from index: 16 at time: 0 s : 21702ns 
+OSS: Not enough resources in index: 16 to allocate 2 resources.
+OSS: Process: 24663 is entering queue until resources are available
+OSS: Process: 24655 has requested resource: 1 from index: 7 at time: 0 s : 21748ns 
+OSS: Process: 24655 has released 2 from index: 17 time: 0 s : 21775ns 
+
+OSS: Displaying Resource Table at time: 0 s : 21825ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   1   4   4   7   10  7   1   1   7   4   1   2   8   7   6   5   5   9   3   2   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 24654:      0   0   4   2   1   0   0   0   6   3   1   1   0   2   4   0   0   0   2   1   
+OSS: Process: 24655:      0   0   0   0   4   1   0   1   0   0   0   1   6   0   0   0   1   5   0   1   
+OSS: Process: 24656:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24657:      0   3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   3   0   0   0   
+OSS: Process: 24658:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24660:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24661:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24662:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24663:      1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   
+OSS: Process: 24664:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24665:      0   0   0   0   3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24666:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24667:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24668:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24669:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24670:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24671:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 0   0   0   5   2   6   1   0   1   1   0   0   2   5   2   5   1   3   1   0   
+OSS: Process: 24663 has requested resource: 1 from index: 0 at time: 0 s : 21985ns 
+OSS: Not enough resources in index: 0 to allocate 1 resources.
+OSS: Process: 24663 is entering queue until resources are available
+OSS: Process: 24655 has requested resource: 7 from index: 5 at time: 0 s : 22050ns 
+OSS: Not enough resources in index: 5 to allocate 7 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24655 has requested resource: 2 from index: 18 at time: 0 s : 22077ns 
+OSS: Not enough resources in index: 18 to allocate 2 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Terminating Process: 24655 and releasing all allocated resources
+OSS: Process: 24668 has requested resource: 1 from index: 6 at time: 0 s : 22201ns 
+OSS: Process: 24668 has requested resource: 9 from index: 4 at time: 0 s : 22245ns 
+OSS: Not enough resources in index: 4 to allocate 9 resources.
+OSS: Process: 24668 is entering queue until resources are available
+OSS: Process: 24668 has requested resource: 7 from index: 5 at time: 0 s : 22385ns 
+OSS: Process: 24668 has requested resource: 4 from index: 12 at time: 0 s : 22450ns 
+OSS: Process: 24668 has requested resource: 4 from index: 12 at time: 0 s : 22534ns 
+OSS: Process: 24668 has requested resource: 3 from index: 15 at time: 0 s : 22615ns 
+OSS: Process: 24668 has requested resource: 1 from index: 12 at time: 0 s : 22685ns 
 OSS: Not enough resources in index: 12 to allocate 1 resources.
-OSS: Process: 16410 is entering queue until resources are available
-OSS: Process: 16410 has been placed in blocked queue index: 0 until 1 resources have come available in index: 12
-MSG: sending message blocked: 1 to message type of process: 16410
-OSS: Process: 16412 has requested resource: 2 from index: 9 at time: 0 s : 9837ns 
-OSS: Process: 16412 has requested resource: 3 from index: 16 at time: 0 s : 9850ns 
-OSS: Process: 16410 has requested resource: 2 from index: 6 at time: 0 s : 9887ns 
-OSS: Not enough resources in index: 6 to allocate 2 resources.
-OSS: Process: 16410 is entering queue until resources are available
-OSS: Process: 16410 has been placed in blocked queue index: 1 until 2 resources have come available in index: 6
-MSG: sending message blocked: 1 to message type of process: 16410
-OSS: Process: 16415 has requested resource: 1 from index: 12 at time: 0 s : 10007ns 
-OSS: Not enough resources in index: 12 to allocate 1 resources.
-OSS: Process: 16415 is entering queue until resources are available
-OSS: Process: 16415 has been placed in blocked queue index: 2 until 1 resources have come available in index: 12
-OSS: Process: 16415 is deadlocked with Process: 16410 over resources at index: 12
-MSG: sending message blocked: 1 to message type of process: 16415
-USER: Process: 16411 has randomly terminated at time: 0s, 11781ns
-USER: Process: 16413 has randomly terminated at time: 0s, 20923ns
-USER: Process: 16418 has randomly terminated at time: 0s, 28743ns
-USER: Process: 16427 has randomly terminated at time: 0s, 39505ns
-USER: Process: 16416 has randomly terminated at time: 0s, 50969ns
-USER: Process: 16423 has randomly terminated at time: 0s, 56321ns
-USER: Process: 16420 has randomly terminated at time: 0s, 62832ns
-USER: Process: 16422 has randomly terminated at time: 0s, 64143ns
-USER: Process: 16424 has randomly terminated at time: 0s, 88232ns
+OSS: Process: 24668 is entering queue until resources are available
+OSS: Process: 24668 has requested resource: 5 from index: 17 at time: 0 s : 22705ns 
+OSS: Process: 24668 has requested resource: 1 from index: 7 at time: 0 s : 22851ns 
+OSS: Process: 24668 has requested resource: 1 from index: 6 at time: 0 s : 22853ns 
+OSS: Not enough resources in index: 6 to allocate 1 resources.
+OSS: Process: 24668 is entering queue until resources are available
+OSS: Process: 24668 has released 1 from index: 6 time: 0 s : 22884ns 
+OSS: Process: 24668 has released 1 from index: 12 time: 0 s : 22906ns 
+OSS: Process: 24668 has requested resource: 1 from index: 6 at time: 0 s : 22949ns 
+Current deadlockCheck: 22953
+Current time ns: 22988
+OSS: Checking Deadlocks
+OSS: Process 24655 has been terminated to clear a deadlock
+OSS: Process 24654 has been terminated to clear a deadlock
+OSS: Process 24655 has been terminated to clear a deadlock
+User: Process: 24654 has been unblocked
+OSS: Process 24654 has been terminated to clear a deadlock
+User: Process: 24654 has escaped blocked whileloop
+OSS: Process 24655 has been terminated to clear a deadlock
+OSS: No Deadlocks Detected
+Next deadlockCheck: 33302
+OSS: Process: 24668 has requested resource: 1 from index: 0 at time: 0 s : 23387ns 
+OSS: Not enough resources in index: 0 to allocate 1 resources.
+OSS: Process: 24668 is entering queue until resources are available
+OSS: Process: 24668 has been placed in blocked queue index: 0 until 1 resources have come available in index: 0
+MSG: sending message blocked: 1 to message type of process: 24668
+OSS: Process: 24668 has released 1 from index: 7 time: 0 s : 23437ns 
+OSS: Unblocking Process: 24654
+OSS: Process: 24668 has released 5 from index: 12 time: 0 s : 23452ns 
+OSS: Unblocking Process: 24654
+User: Receieved Message
+OSS: Process: 24668 has requested resource: 1 from index: 16 at time: 0 s : 23519ns 
+User: Process: 24668 is blocked
+OSS: Process: 24668 has released 1 from index: 15 time: 0 s : 23521ns 
+User: Process: 24668 has been unblocked
+User: Process: 24668 has escaped blocked whileloop
+OSS: Unblocking Process: 24654
+OSS: Process: 24668 has released 4 from index: 5 time: 0 s : 23568ns 
+OSS: Unblocking Process: 24654
+OSS: Process: 24664 has requested resource: 8 from index: 4 at time: 0 s : 23816ns 
+OSS: Not enough resources in index: 4 to allocate 8 resources.
+OSS: Process: 24664 is entering queue until resources are available
+OSS: Process: 24664 has been placed in blocked queue index: 1 until 8 resources have come available in index: 4
+MSG: sending message blocked: 1 to message type of process: 24664
+OSS: Process: 24658 has requested resource: 1 from index: 10 at time: 0 s : 24013ns 
+OSS: Process: 24658 has released 1 from index: 10 time: 0 s : 24064ns 
+OSS: Unblocking Process: 24654
+User: Receieved Message
+User: Process: 24664 is blocked
+OSS: Unblocking Process: 24654
+OSS: Process: 24658 has requested resource: 4 from index: 15 at time: 0 s : 24255ns 
+OSS: Not enough resources in index: 15 to allocate 4 resources.
+OSS: Process: 24658 is entering queue until resources are available
+OSS: Process: 24658 has been placed in blocked queue index: 3 until 4 resources have come available in index: 15
+MSG: sending message blocked: 1 to message type of process: 24658
+User: Receieved Message
+User: Process: 24658 is blocked
+User: Receieved Message
+User: Process: 24657 is blocked
+User: Process: 24657 has been unblocked
+User: Process: 24657 has escaped blocked whileloop
+User: Receieved Message
+Current deadlockCheck: 33415
+Current time ns: 45810
+OSS: Checking Deadlocks
+OSS: Process 24668 has been terminated to clear a deadlock
+OSS: No Deadlocks Detected
+Next deadlockCheck: 55810
+OSS: Process: 24655 has requested resource: 1 from index: 7 at time: 0 s : 45815ns 
+OSS: Process: 24655 has requested resource: 5 from index: 12 at time: 0 s : 45816ns 
+OSS: Process: 24655 has requested resource: 2 from index: 19 at time: 0 s : 45829ns 
+
+OSS: Displaying Resource Table at time: 0 s : 45841ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   1   4   4   7   10  7   1   1   7   4   1   2   8   7   6   5   5   9   3   2   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 24656:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24657:      0   3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   3   0   0   0   
+OSS: Process: 24658:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24660:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24661:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24662:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24663:      1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   
+OSS: Process: 24664:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24665:      0   0   0   0   3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24666:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24667:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24669:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24670:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24671:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 0   0   4   7   7   7   1   0   7   4   1   2   3   7   6   5   2   8   3   0   
+OSS: Process: 24655 has released 1 from index: 16 time: 0 s : 45841ns 
+OSS: Unblocking Process: 24654
+OSS: Process: 24655 has released 2 from index: 1 time: 0 s : 45849ns 
+OSS: Unblocking Process: 24654
+OSS: Process: 24655 has released 1 from index: 1 time: 0 s : 45862ns 
+OSS: Unblocking Process: 24654
+OSS: Unblocking Process: 24654
+OSS: Process: 24655 has released 2 from index: 16 time: 0 s : 45869ns 
+OSS: Unblocking Process: 24654
+OSS: Unblocking Process: 24654
+OSS: Unblocking Process: 24654
+OSS: Process: 24655 has requested resource: 1 from index: 7 at time: 0 s : 45889ns 
+OSS: Not enough resources in index: 7 to allocate 1 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24655 has been placed in blocked queue index: 0 until 1 resources have come available in index: 7
+OSS: Process: 24655 is deadlocked with Process: 24657 over resources at index: 7
+OSS: Process: 24655 is deadlocked with Process: 24654 over resources at index: 7
+MSG: sending message blocked: 1 to message type of process: 24655
+OSS: Process: 24655 has requested resource: 1 from index: 6 at time: 0 s : 45897ns 
+OSS: Process: 24655 has requested resource: 1 from index: 7 at time: 0 s : 45902ns 
+OSS: Not enough resources in index: 7 to allocate 1 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24655 has been placed in blocked queue index: 4 until 1 resources have come available in index: 7
+OSS: Process: 24655 is deadlocked with Process: 24657 over resources at index: 7
+OSS: Process: 24655 is deadlocked with Process: 24654 over resources at index: 7
+MSG: sending message blocked: 1 to message type of process: 24655
+OSS: Process: 24655 has requested resource: 2 from index: 19 at time: 0 s : 45913ns 
+OSS: Not enough resources in index: 19 to allocate 2 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24655 has been placed in blocked queue index: 5 until 2 resources have come available in index: 19
+OSS: Process: 24655 is deadlocked with Process: 24654 over resources at index: 19
+MSG: sending message blocked: 1 to message type of process: 24655
+OSS: Process: 24655 has requested resource: 2 from index: 14 at time: 0 s : 45917ns 
+OSS: Unblocking Process: 24654
+OSS: Unblocking Process: 24654
+OSS: Unblocking Process: 24654
+OSS: Unblocking Process: 24654
+OSS: Process: 24655 has requested resource: 1 from index: 2 at time: 0 s : 45960ns 
+OSS: Unblocking Process: 24654
+OSS: Unblocking Process: 24654
+OSS: Process: 24655 has requested resource: 1 from index: 11 at time: 0 s : 45989ns 
+OSS: Process: 24655 has requested resource: 1 from index: 19 at time: 0 s : 45998ns 
+OSS: Not enough resources in index: 19 to allocate 1 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Unblocking Process: 24654
+OSS: Unblocking Process: 24654
+OSS: Process: 24655 has requested resource: 1 from index: 16 at time: 0 s : 46022ns 
+OSS: Unblocking Process: 24654
+OSS: Unblocking Process: 24654
+OSS: Process: 24655 has requested resource: 1 from index: 0 at time: 0 s : 46048ns 
+OSS: Not enough resources in index: 0 to allocate 1 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Unblocking Process: 24654
+OSS: Process: 24656 has requested resource: 2 from index: 2 at time: 0 s : 46065ns 
+OSS: Process: 24655 has requested resource: 3 from index: 9 at time: 0 s : 46089ns 
+OSS: Process: 24655 has requested resource: 1 from index: 12 at time: 0 s : 46117ns 
+OSS: Unblocking Process: 24654
+OSS: Process: 24656 has requested resource: 4 from index: 2 at time: 0 s : 46156ns 
+OSS: Not enough resources in index: 2 to allocate 4 resources.
+OSS: Process: 24656 is entering queue until resources are available
+OSS: Unblocking Process: 24654
+OSS: Process: 24655 has requested resource: 3 from index: 1 at time: 0 s : 46197ns 
+OSS: Process: 24656 has requested resource: 2 from index: 16 at time: 0 s : 46222ns 
+OSS: Process: 24655 has requested resource: 1 from index: 10 at time: 0 s : 46236ns 
+OSS: Process: 24655 has requested resource: 1 from index: 7 at time: 0 s : 46274ns 
+OSS: Not enough resources in index: 7 to allocate 1 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Unblocking Process: 24654
+OSS: Process: 24656 has requested resource: 1 from index: 6 at time: 0 s : 46406ns 
+OSS: Not enough resources in index: 6 to allocate 1 resources.
+OSS: Process: 24656 is entering queue until resources are available
+OSS: Process: 24656 has requested resource: 1 from index: 18 at time: 0 s : 46413ns 
+OSS: Process: 24655 has requested resource: 6 from index: 8 at time: 0 s : 46431ns 
+OSS: Process: 24655 has requested resource: 1 from index: 10 at time: 0 s : 46462ns 
+OSS: Not enough resources in index: 10 to allocate 1 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24655 has requested resource: 4 from index: 9 at time: 0 s : 46570ns 
+OSS: Not enough resources in index: 9 to allocate 4 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24656 has requested resource: 5 from index: 5 at time: 0 s : 46620ns 
+OSS: Process: 24655 has requested resource: 1 from index: 18 at time: 0 s : 46633ns 
+OSS: Process: 24655 has requested resource: 2 from index: 2 at time: 0 s : 46672ns 
+OSS: Not enough resources in index: 2 to allocate 2 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24655 has requested resource: 5 from index: 4 at time: 0 s : 46743ns 
+
+OSS: Displaying Resource Table at time: 0 s : 46779ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   1   4   4   7   10  7   1   1   7   4   1   2   8   7   6   5   5   9   3   2   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 24656:      0   0   2   0   0   5   0   0   0   0   0   0   0   0   0   0   2   0   1   0   
+OSS: Process: 24657:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24658:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24660:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24661:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24662:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24663:      1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   
+OSS: Process: 24664:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24665:      0   0   0   0   3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24666:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24667:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24669:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24670:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24671:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 0   0   1   7   2   2   0   0   1   1   0   1   2   7   4   5   2   8   1   0   
+OSS: Process: 24669 has requested resource: 1 from index: 7 at time: 0 s : 46893ns 
+OSS: Not enough resources in index: 7 to allocate 1 resources.
+OSS: Process: 24669 is entering queue until resources are available
+OSS: Process: 24669 has requested resource: 1 from index: 10 at time: 0 s : 47021ns 
+OSS: Not enough resources in index: 10 to allocate 1 resources.
+OSS: Process: 24669 is entering queue until resources are available
+OSS: Process: 24669 has requested resource: 1 from index: 10 at time: 0 s : 47116ns 
+OSS: Not enough resources in index: 10 to allocate 1 resources.
+OSS: Process: 24669 is entering queue until resources are available
+OSS: Process: 24669 has requested resource: 1 from index: 0 at time: 0 s : 47396ns 
+OSS: Not enough resources in index: 0 to allocate 1 resources.
+OSS: Process: 24669 is entering queue until resources are available
+OSS: Process: 24669 has requested resource: 1 from index: 8 at time: 0 s : 47444ns 
+OSS: Process: 24669 has released 1 from index: 8 time: 0 s : 47543ns 
+OSS: Process: 24669 has requested resource: 1 from index: 10 at time: 0 s : 48232ns 
+OSS: Not enough resources in index: 10 to allocate 1 resources.
+OSS: Process: 24669 is entering queue until resources are available
+OSS: Process: 24669 has requested resource: 2 from index: 18 at time: 0 s : 48333ns 
+OSS: Not enough resources in index: 18 to allocate 2 resources.
+OSS: Process: 24669 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 1 from index: 0 at time: 0 s : 48847ns 
+OSS: Not enough resources in index: 0 to allocate 1 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 2 from index: 5 at time: 0 s : 49138ns 
+OSS: Process: 24669 has requested resource: 4 from index: 13 at time: 0 s : 49276ns 
+OSS: Process: 24669 has requested resource: 5 from index: 17 at time: 0 s : 49315ns 
+OSS: Process: 24662 has released 1 from index: 5 time: 0 s : 49349ns 
+OSS: Process: 24662 has requested resource: 1 from index: 18 at time: 0 s : 49418ns 
+OSS: Process: 24669 has requested resource: 2 from index: 19 at time: 0 s : 49516ns 
+OSS: Not enough resources in index: 19 to allocate 2 resources.
+OSS: Process: 24669 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 1 from index: 11 at time: 0 s : 49595ns 
+OSS: Process: 24669 has requested resource: 1 from index: 7 at time: 0 s : 49649ns 
+OSS: Not enough resources in index: 7 to allocate 1 resources.
+OSS: Process: 24669 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 1 from index: 6 at time: 0 s : 49693ns 
+OSS: Not enough resources in index: 6 to allocate 1 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24669 has requested resource: 6 from index: 14 at time: 0 s : 49774ns 
+OSS: Not enough resources in index: 14 to allocate 6 resources.
+OSS: Process: 24669 is entering queue until resources are available
+OSS: Process: 24669 has released 1 from index: 17 time: 0 s : 49923ns 
+OSS: Process: 24662 has released 1 from index: 11 time: 0 s : 50042ns 
+OSS: Process: 24669 has requested resource: 4 from index: 5 at time: 0 s : 50139ns 
+OSS: Not enough resources in index: 5 to allocate 4 resources.
+OSS: Process: 24669 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 4 from index: 16 at time: 0 s : 50220ns 
+OSS: Not enough resources in index: 16 to allocate 4 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24669 has requested resource: 1 from index: 13 at time: 0 s : 50286ns 
+OSS: Process: 24669 has requested resource: 3 from index: 18 at time: 0 s : 50323ns 
+OSS: Not enough resources in index: 18 to allocate 3 resources.
+OSS: Process: 24669 is entering queue until resources are available
+OSS: Process: 24669 has released 4 from index: 17 time: 0 s : 50395ns 
+OSS: Process: 24662 has requested resource: 1 from index: 11 at time: 0 s : 50457ns 
+OSS: Process: 24669 has requested resource: 2 from index: 11 at time: 0 s : 50897ns 
+OSS: Not enough resources in index: 11 to allocate 2 resources.
+OSS: Process: 24669 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 3 from index: 12 at time: 0 s : 50950ns 
+OSS: Not enough resources in index: 12 to allocate 3 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24669 has requested resource: 4 from index: 13 at time: 0 s : 51019ns 
+OSS: Not enough resources in index: 13 to allocate 4 resources.
+OSS: Process: 24669 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 3 from index: 18 at time: 0 s : 51080ns 
+OSS: Not enough resources in index: 18 to allocate 3 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24669 has released 4 from index: 13 time: 0 s : 51144ns 
+OSS: Process: 24662 has requested resource: 1 from index: 0 at time: 0 s : 51247ns 
+OSS: Not enough resources in index: 0 to allocate 1 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 6 from index: 17 at time: 0 s : 51301ns 
+OSS: Process: 24662 has requested resource: 1 from index: 0 at time: 0 s : 51331ns 
+OSS: Not enough resources in index: 0 to allocate 1 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24669 has requested resource: 5 from index: 16 at time: 0 s : 51348ns 
+OSS: Not enough resources in index: 16 to allocate 5 resources.
+OSS: Process: 24669 is entering queue until resources are available
+OSS: Process: 24669 has requested resource: 2 from index: 1 at time: 0 s : 51421ns 
+OSS: Not enough resources in index: 1 to allocate 2 resources.
+OSS: Process: 24669 is entering queue until resources are available
+OSS: Process: 24669 has requested resource: 4 from index: 9 at time: 0 s : 51571ns 
+OSS: Not enough resources in index: 9 to allocate 4 resources.
+OSS: Process: 24669 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 1 from index: 0 at time: 0 s : 51617ns 
+OSS: Not enough resources in index: 0 to allocate 1 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24669 has requested resource: 8 from index: 12 at time: 0 s : 51635ns 
+OSS: Not enough resources in index: 12 to allocate 8 resources.
+OSS: Process: 24669 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 1 from index: 10 at time: 0 s : 51668ns 
+OSS: Not enough resources in index: 10 to allocate 1 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 2 from index: 15 at time: 0 s : 51716ns 
+OSS: Process: 24669 has released 1 from index: 13 time: 0 s : 51778ns 
+OSS: Process: 24662 has released 6 from index: 17 time: 0 s : 51812ns 
+OSS: Process: 24669 has requested resource: 1 from index: 19 at time: 0 s : 52024ns 
+OSS: Not enough resources in index: 19 to allocate 1 resources.
+OSS: Process: 24669 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 1 from index: 19 at time: 0 s : 52090ns 
+OSS: Not enough resources in index: 19 to allocate 1 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has released 1 from index: 18 time: 0 s : 52112ns 
+OSS: Process: 24662 has requested resource: 1 from index: 11 at time: 0 s : 52211ns 
+OSS: Not enough resources in index: 11 to allocate 1 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has released 1 from index: 11 time: 0 s : 52269ns 
+
+OSS: Displaying Resource Table at time: 0 s : 52452ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   1   4   4   7   10  7   1   1   7   4   1   2   8   7   6   5   5   9   3   2   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 24656:      0   0   2   0   0   5   0   0   0   0   0   0   0   0   0   0   2   0   1   0   
+OSS: Process: 24657:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24658:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24660:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24661:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24662:      0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   2   0   0   0   0   
+OSS: Process: 24663:      1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   
+OSS: Process: 24664:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24665:      0   0   0   0   3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24666:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24667:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24669:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24670:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24671:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 0   0   1   7   2   1   0   0   1   1   0   1   2   7   4   3   2   8   1   0   
+OSS: Process: 24662 has released 1 from index: 5 time: 0 s : 52755ns 
+OSS: Process: 24662 has requested resource: 5 from index: 15 at time: 0 s : 52819ns 
+OSS: Not enough resources in index: 15 to allocate 5 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has released 2 from index: 15 time: 0 s : 52912ns 
+OSS: Process: 24662 has requested resource: 3 from index: 18 at time: 0 s : 53155ns 
+OSS: Not enough resources in index: 18 to allocate 3 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 1 from index: 2 at time: 0 s : 53326ns 
+OSS: Process: 24662 has requested resource: 1 from index: 14 at time: 0 s : 53380ns 
+OSS: Process: 24662 has released 1 from index: 2 time: 0 s : 53590ns 
+OSS: Process: 24662 has released 1 from index: 14 time: 0 s : 53657ns 
+OSS: Process: 24669 has requested resource: 5 from index: 8 at time: 0 s : 53686ns 
+OSS: Not enough resources in index: 8 to allocate 5 resources.
+OSS: Process: 24669 is entering queue until resources are available
+OSS: Process: 24669 has requested resource: 2 from index: 18 at time: 0 s : 53991ns 
+OSS: Not enough resources in index: 18 to allocate 2 resources.
+OSS: Process: 24669 is entering queue until resources are available
+OSS: Process: 24669 has requested resource: 1 from index: 10 at time: 0 s : 54189ns 
+OSS: Not enough resources in index: 10 to allocate 1 resources.
+OSS: Process: 24669 is entering queue until resources are available
+OSS: Process: 24669 has requested resource: 3 from index: 12 at time: 0 s : 54363ns 
+OSS: Not enough resources in index: 12 to allocate 3 resources.
+OSS: Process: 24669 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 3 from index: 5 at time: 0 s : 54403ns 
+OSS: Not enough resources in index: 5 to allocate 3 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24669 has requested resource: 9 from index: 17 at time: 0 s : 54875ns 
+OSS: Not enough resources in index: 17 to allocate 9 resources.
+OSS: Process: 24669 is entering queue until resources are available
+OSS: Process: 24669 has requested resource: 7 from index: 17 at time: 0 s : 55500ns 
+OSS: Process: 24662 has requested resource: 3 from index: 17 at time: 0 s : 55588ns 
+OSS: Not enough resources in index: 17 to allocate 3 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24669 has requested resource: 2 from index: 16 at time: 0 s : 55692ns 
+OSS: Process: 24669 has requested resource: 5 from index: 17 at time: 0 s : 55905ns 
+OSS: Not enough resources in index: 17 to allocate 5 resources.
+OSS: Process: 24669 is entering queue until resources are available
+OSS: Process: 24669 has requested resource: 1 from index: 0 at time: 0 s : 56064ns 
+OSS: Not enough resources in index: 0 to allocate 1 resources.
+OSS: Process: 24669 is entering queue until resources are available
+OSS: Process: 24669 has released 2 from index: 16 time: 0 s : 56208ns 
+OSS: Process: 24662 has requested resource: 2 from index: 11 at time: 0 s : 56298ns 
+OSS: Not enough resources in index: 11 to allocate 2 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24669 has released 2 from index: 17 time: 0 s : 56362ns 
+OSS: Process: 24669 has requested resource: 1 from index: 6 at time: 0 s : 56437ns 
+OSS: Not enough resources in index: 6 to allocate 1 resources.
+OSS: Process: 24669 is entering queue until resources are available
+OSS: Process: 24669 has requested resource: 4 from index: 16 at time: 0 s : 56474ns 
+OSS: Not enough resources in index: 16 to allocate 4 resources.
+OSS: Process: 24669 is entering queue until resources are available
+OSS: Process: 24669 has released 1 from index: 17 time: 0 s : 56570ns 
+OSS: Process: 24662 has requested resource: 1 from index: 12 at time: 0 s : 56629ns 
+OSS: Process: 24669 has released 3 from index: 17 time: 0 s : 56688ns 
+OSS: Process: 24662 has requested resource: 1 from index: 10 at time: 0 s : 56794ns 
+OSS: Not enough resources in index: 10 to allocate 1 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has released 1 from index: 12 time: 0 s : 56927ns 
+OSS: Process: 24669 has requested resource: 1 from index: 10 at time: 0 s : 56981ns 
+OSS: Not enough resources in index: 10 to allocate 1 resources.
+OSS: Process: 24669 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 5 from index: 5 at time: 0 s : 57063ns 
+OSS: Not enough resources in index: 5 to allocate 5 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24669 has requested resource: 4 from index: 12 at time: 0 s : 57099ns 
+OSS: Not enough resources in index: 12 to allocate 4 resources.
+OSS: Process: 24669 is entering queue until resources are available
+OSS: Process: 24669 has released 1 from index: 17 time: 0 s : 57172ns 
+OSS: Process: 24669 has requested resource: 3 from index: 13 at time: 0 s : 57270ns 
+OSS: Process: 24662 has requested resource: 1 from index: 0 at time: 0 s : 57285ns 
+OSS: Not enough resources in index: 0 to allocate 1 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24669 has requested resource: 7 from index: 13 at time: 0 s : 57394ns 
+OSS: Not enough resources in index: 13 to allocate 7 resources.
+OSS: Process: 24669 is entering queue until resources are available
+Current deadlockCheck: 57456
+Current time ns: 57501
+OSS: Checking Deadlocks
+OSS: Process 24655 has been terminated to clear a deadlock
+OSS: No Deadlocks Detected
+Next deadlockCheck: 67665
+OSS: Process: 24669 has released 1 from index: 13 time: 0 s : 57789ns 
+OSS: Process: 24669 has requested resource: 5 from index: 5 at time: 0 s : 57866ns 
+OSS: Not enough resources in index: 5 to allocate 5 resources.
+OSS: Process: 24669 is entering queue until resources are available
+OSS: Process: 24669 has been placed in blocked queue index: 0 until 5 resources have come available in index: 5
+MSG: sending message blocked: 1 to message type of process: 24669
+OSS: Process: 24669 has requested resource: 3 from index: 9 at time: 0 s : 58035ns 
+OSS: Not enough resources in index: 9 to allocate 3 resources.
+OSS: Process: 24669 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 1 from index: 0 at time: 0 s : 58095ns 
+OSS: Not enough resources in index: 0 to allocate 1 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24669 has released 1 from index: 13 time: 0 s : 58160ns 
+User: Receieved Message
+OSS: Process: 24669 has requested resource: 5 from index: 12 at time: 0 s : 58234ns 
+OSS: Not enough resources in index: 12 to allocate 5 resources.
+OSS: Process: 24669 is entering queue until resources are available
+User: Process: 24669 is blocked
+OSS: Process: 24662 has requested resource: 3 from index: 9 at time: 0 s : 58250ns 
+OSS: Not enough resources in index: 9 to allocate 3 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 2 from index: 8 at time: 0 s : 58475ns 
+OSS: Not enough resources in index: 8 to allocate 2 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 1 from index: 10 at time: 0 s : 58594ns 
+OSS: Not enough resources in index: 10 to allocate 1 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 7 from index: 13 at time: 0 s : 59016ns 
+OSS: Not enough resources in index: 13 to allocate 7 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 5 from index: 16 at time: 0 s : 59136ns 
+OSS: Not enough resources in index: 16 to allocate 5 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 3 from index: 1 at time: 0 s : 59187ns 
+OSS: Not enough resources in index: 1 to allocate 3 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 1 from index: 1 at time: 0 s : 59436ns 
+OSS: Not enough resources in index: 1 to allocate 1 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 1 from index: 11 at time: 0 s : 59507ns 
+OSS: Process: 24662 has requested resource: 2 from index: 11 at time: 0 s : 59684ns 
+OSS: Not enough resources in index: 11 to allocate 2 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has released 1 from index: 11 time: 0 s : 59773ns 
+
+OSS: Displaying Resource Table at time: 0 s : 59857ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   1   4   4   7   10  7   1   1   7   4   1   2   8   7   6   5   5   9   3   2   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 24656:      0   0   2   0   0   5   0   0   0   0   0   0   0   0   0   0   2   0   1   0   
+OSS: Process: 24657:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24658:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24660:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24661:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24662:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24663:      1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   
+OSS: Process: 24664:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24665:      0   0   0   0   3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24666:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24667:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24669:      0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   
+OSS: Process: 24670:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24671:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 0   0   1   7   2   2   0   0   1   1   0   1   2   6   4   5   2   8   1   0   
+OSS: Process: 24662 has requested resource: 4 from index: 16 at time: 0 s : 60072ns 
+OSS: Not enough resources in index: 16 to allocate 4 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 2 from index: 11 at time: 0 s : 60312ns 
+OSS: Not enough resources in index: 11 to allocate 2 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 1 from index: 10 at time: 0 s : 60613ns 
+OSS: Not enough resources in index: 10 to allocate 1 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 6 from index: 5 at time: 0 s : 60680ns 
+OSS: Not enough resources in index: 5 to allocate 6 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 5 from index: 15 at time: 0 s : 61011ns 
+OSS: Process: 24662 has released 5 from index: 15 time: 0 s : 61033ns 
+OSS: Process: 24662 has requested resource: 1 from index: 18 at time: 0 s : 61159ns 
+OSS: Process: 24662 has requested resource: 10 from index: 4 at time: 0 s : 61315ns 
+OSS: Not enough resources in index: 4 to allocate 10 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 6 from index: 8 at time: 0 s : 61517ns 
+OSS: Not enough resources in index: 8 to allocate 6 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has released 1 from index: 18 time: 0 s : 61620ns 
+OSS: Process: 24662 has requested resource: 6 from index: 5 at time: 0 s : 62150ns 
+OSS: Not enough resources in index: 5 to allocate 6 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 1 from index: 11 at time: 0 s : 62749ns 
+OSS: Process: 24662 has requested resource: 1 from index: 11 at time: 0 s : 62774ns 
+OSS: Not enough resources in index: 11 to allocate 1 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has released 1 from index: 11 time: 0 s : 63060ns 
+OSS: Process: 24662 has requested resource: 1 from index: 0 at time: 0 s : 63137ns 
+OSS: Not enough resources in index: 0 to allocate 1 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 6 from index: 5 at time: 0 s : 63333ns 
+OSS: Not enough resources in index: 5 to allocate 6 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 6 from index: 14 at time: 0 s : 63383ns 
+OSS: Not enough resources in index: 14 to allocate 6 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 7 from index: 12 at time: 0 s : 63711ns 
+OSS: Not enough resources in index: 12 to allocate 7 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 2 from index: 19 at time: 0 s : 63995ns 
+OSS: Not enough resources in index: 19 to allocate 2 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 1 from index: 15 at time: 0 s : 64161ns 
+OSS: Process: 24662 has requested resource: 1 from index: 6 at time: 0 s : 64373ns 
+OSS: Not enough resources in index: 6 to allocate 1 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has released 1 from index: 15 time: 0 s : 64529ns 
+OSS: Process: 24662 has requested resource: 6 from index: 17 at time: 0 s : 64886ns 
+OSS: Process: 24662 has released 3 from index: 17 time: 0 s : 65102ns 
+OSS: Process: 24662 has requested resource: 4 from index: 15 at time: 0 s : 65153ns 
+OSS: Process: 24662 has requested resource: 6 from index: 4 at time: 0 s : 65189ns 
+OSS: Not enough resources in index: 4 to allocate 6 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 2 from index: 11 at time: 0 s : 65405ns 
+OSS: Not enough resources in index: 11 to allocate 2 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has requested resource: 2 from index: 19 at time: 0 s : 65582ns 
+OSS: Not enough resources in index: 19 to allocate 2 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has released 4 from index: 15 time: 0 s : 65719ns 
+OSS: Process: 24662 has requested resource: 1 from index: 9 at time: 0 s : 65967ns 
+OSS: Process: 24662 has requested resource: 3 from index: 8 at time: 0 s : 66210ns 
+OSS: Not enough resources in index: 8 to allocate 3 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has released 1 from index: 9 time: 0 s : 66353ns 
+OSS: Process: 24662 has released 2 from index: 17 time: 0 s : 66503ns 
+OSS: Process: 24662 has requested resource: 1 from index: 17 at time: 0 s : 66560ns 
+OSS: Process: 24662 has requested resource: 2 from index: 14 at time: 0 s : 66845ns 
+OSS: Process: 24662 has requested resource: 2 from index: 18 at time: 0 s : 66913ns 
+OSS: Not enough resources in index: 18 to allocate 2 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has released 1 from index: 14 time: 0 s : 67003ns 
+OSS: Process: 24662 has requested resource: 1 from index: 11 at time: 0 s : 67031ns 
+OSS: Process: 24662 has requested resource: 6 from index: 8 at time: 0 s : 67101ns 
+OSS: Not enough resources in index: 8 to allocate 6 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has released 1 from index: 11 time: 0 s : 67217ns 
+
+OSS: Displaying Resource Table at time: 0 s : 67264ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   1   4   4   7   10  7   1   1   7   4   1   2   8   7   6   5   5   9   3   2   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 24656:      0   0   2   0   0   5   0   0   0   0   0   0   0   0   0   0   2   0   1   0   
+OSS: Process: 24657:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24658:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24660:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24661:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24662:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   2   0   0   
+OSS: Process: 24663:      1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   
+OSS: Process: 24664:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24665:      0   0   0   0   3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24666:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24667:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24669:      0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   
+OSS: Process: 24670:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24671:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 0   0   1   7   2   2   0   0   1   1   0   1   2   6   3   5   2   6   1   0   
+OSS: Process: 24662 has requested resource: 4 from index: 13 at time: 0 s : 67412ns 
+OSS: Process: 24662 has released 1 from index: 14 time: 0 s : 67471ns 
+OSS: Process: 24662 has released 2 from index: 13 time: 0 s : 67620ns 
+OSS: Process: 24662 has released 1 from index: 13 time: 0 s : 67809ns 
+OSS: Process: 24662 has requested resource: 1 from index: 0 at time: 0 s : 67991ns 
+OSS: Not enough resources in index: 0 to allocate 1 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has released 1 from index: 13 time: 0 s : 68248ns 
+Current deadlockCheck: 68326
+Current time ns: 68342
+OSS: Checking Deadlocks
+OSS: Process 24669 has been terminated to clear a deadlock
+OSS: No Deadlocks Detected
+User: Process: 24669 has been unblocked
+Next deadlockCheck: 78371
+User: Process: 24669 has escaped blocked whileloop
+OSS: Process: 24662 has requested resource: 1 from index: 10 at time: 0 s : 68431ns 
+OSS: Not enough resources in index: 10 to allocate 1 resources.
+OSS: Process: 24662 is entering queue until resources are available
+OSS: Process: 24662 has been placed in blocked queue index: 0 until 1 resources have come available in index: 10
+OSS: Process: 24662 is deadlocked with Process: 24655 over resources at index: 10
+OSS: Process: 24662 is deadlocked with Process: 24665 over resources at index: 10
+MSG: sending message blocked: 1 to message type of process: 24662
+OSS: Process: 24662 has requested resource: 2 from index: 14 at time: 0 s : 68543ns 
+OSS: Process: 24662 has requested resource: 2 from index: 13 at time: 0 s : 68556ns 
+User: Receieved Message
+User: Process: 24662 is blocked
+User: Process: 24662 has been unblocked
+User: Process: 24662 has escaped blocked whileloop
+OSS: Process: 24666 has requested resource: 2 from index: 16 at time: 0 s : 69027ns 
+OSS: Process: 24666 has released 2 from index: 16 time: 0 s : 69077ns 
+OSS: Process: 24671 has requested resource: 1 from index: 3 at time: 0 s : 69332ns 
+OSS: Process: 24666 has requested resource: 2 from index: 19 at time: 0 s : 69387ns 
+OSS: Not enough resources in index: 19 to allocate 2 resources.
+OSS: Process: 24666 is entering queue until resources are available
+OSS: Process: 24671 has requested resource: 2 from index: 1 at time: 0 s : 69458ns 
+OSS: Not enough resources in index: 1 to allocate 2 resources.
+OSS: Process: 24671 is entering queue until resources are available
+OSS: Process: 24671 has released 1 from index: 3 time: 0 s : 69530ns 
+OSS: Process: 24666 has requested resource: 5 from index: 4 at time: 0 s : 69807ns 
+OSS: Not enough resources in index: 4 to allocate 5 resources.
+OSS: Process: 24666 is entering queue until resources are available
+OSS: Process: 24671 has requested resource: 5 from index: 16 at time: 0 s : 69859ns 
+OSS: Not enough resources in index: 16 to allocate 5 resources.
+OSS: Process: 24671 is entering queue until resources are available
+OSS: Process: 24666 has requested resource: 2 from index: 19 at time: 0 s : 69946ns 
+OSS: Not enough resources in index: 19 to allocate 2 resources.
+OSS: Process: 24666 is entering queue until resources are available
+OSS: Process: 24666 has requested resource: 1 from index: 7 at time: 0 s : 70098ns 
+OSS: Not enough resources in index: 7 to allocate 1 resources.
+OSS: Process: 24666 is entering queue until resources are available
+OSS: Process: 24666 has requested resource: 7 from index: 17 at time: 0 s : 70558ns 
+OSS: Not enough resources in index: 17 to allocate 7 resources.
+OSS: Process: 24666 is entering queue until resources are available
+OSS: Process: 24666 has requested resource: 6 from index: 14 at time: 0 s : 70674ns 
+OSS: Not enough resources in index: 14 to allocate 6 resources.
+OSS: Process: 24666 is entering queue until resources are available
+OSS: Process: 24666 has requested resource: 2 from index: 19 at time: 0 s : 70777ns 
+OSS: Not enough resources in index: 19 to allocate 2 resources.
+OSS: Process: 24666 is entering queue until resources are available
+OSS: Process: 24666 has requested resource: 5 from index: 16 at time: 0 s : 71343ns 
+OSS: Not enough resources in index: 16 to allocate 5 resources.
+OSS: Process: 24666 is entering queue until resources are available
+OSS: Process: 24671 has requested resource: 3 from index: 2 at time: 0 s : 71451ns 
+OSS: Not enough resources in index: 2 to allocate 3 resources.
+OSS: Process: 24671 is entering queue until resources are available
+OSS: Process: 24666 has requested resource: 9 from index: 17 at time: 0 s : 71515ns 
+OSS: Not enough resources in index: 17 to allocate 9 resources.
+OSS: Process: 24666 is entering queue until resources are available
+OSS: Process: 24671 has requested resource: 1 from index: 18 at time: 0 s : 71779ns 
+OSS: Process: 24666 has requested resource: 2 from index: 19 at time: 0 s : 71846ns 
+OSS: Not enough resources in index: 19 to allocate 2 resources.
+OSS: Process: 24666 is entering queue until resources are available
+OSS: Process: 24671 has requested resource: 2 from index: 1 at time: 0 s : 71905ns 
+OSS: Not enough resources in index: 1 to allocate 2 resources.
+OSS: Process: 24671 is entering queue until resources are available
+OSS: Process: 24666 has requested resource: 3 from index: 9 at time: 0 s : 71998ns 
+OSS: Not enough resources in index: 9 to allocate 3 resources.
+OSS: Process: 24666 is entering queue until resources are available
+OSS: Process: 24671 has released 1 from index: 18 time: 0 s : 72101ns 
+OSS: Process: 24666 has requested resource: 1 from index: 2 at time: 0 s : 72198ns 
+OSS: Process: 24671 has requested resource: 3 from index: 18 at time: 0 s : 72273ns 
+OSS: Not enough resources in index: 18 to allocate 3 resources.
+OSS: Process: 24671 is entering queue until resources are available
+OSS: Process: 24666 has requested resource: 4 from index: 4 at time: 0 s : 72351ns 
+OSS: Not enough resources in index: 4 to allocate 4 resources.
+OSS: Process: 24666 is entering queue until resources are available
+OSS: Process: 24666 has released 1 from index: 2 time: 0 s : 72598ns 
+OSS: Process: 24666 has requested resource: 6 from index: 3 at time: 0 s : 72799ns 
+OSS: Process: 24671 has requested resource: 1 from index: 3 at time: 0 s : 72901ns 
+OSS: Process: 24666 has released 1 from index: 3 time: 0 s : 72965ns 
+OSS: Process: 24666 has released 1 from index: 3 time: 0 s : 73139ns 
+OSS: Process: 24666 has released 2 from index: 3 time: 0 s : 73152ns 
+
+OSS: Displaying Resource Table at time: 0 s : 73193ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   1   4   4   7   10  7   1   1   7   4   1   2   8   7   6   5   5   9   3   2   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 24656:      0   0   2   0   0   5   0   0   0   0   0   0   0   0   0   0   2   0   1   0   
+OSS: Process: 24657:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24658:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24660:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24661:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24662:      0   0   0   0   0   0   0   0   0   0   0   0   0   2   2   0   0   2   0   0   
+OSS: Process: 24663:      1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   
+OSS: Process: 24664:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24665:      0   0   0   0   3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24666:      0   0   0   2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24667:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24670:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24671:      0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 0   0   1   4   2   2   0   0   1   1   0   1   2   5   2   5   2   6   1   0   
+OSS: Process: 24666 has requested resource: 1 from index: 0 at time: 0 s : 73344ns 
+OSS: Not enough resources in index: 0 to allocate 1 resources.
+OSS: Process: 24666 is entering queue until resources are available
+OSS: Process: 24671 has requested resource: 1 from index: 12 at time: 0 s : 73391ns 
+OSS: Process: 24671 has requested resource: 3 from index: 12 at time: 0 s : 73426ns 
+OSS: Not enough resources in index: 12 to allocate 3 resources.
+OSS: Process: 24671 is entering queue until resources are available
+OSS: Process: 24666 has requested resource: 1 from index: 15 at time: 0 s : 73508ns 
+OSS: Process: 24671 has released 1 from index: 12 time: 0 s : 73563ns 
+OSS: Process: 24666 has requested resource: 3 from index: 16 at time: 0 s : 73644ns 
+OSS: Not enough resources in index: 16 to allocate 3 resources.
+OSS: Process: 24666 is entering queue until resources are available
+OSS: Process: 24671 has released 1 from index: 3 time: 0 s : 73717ns 
+OSS: Process: 24666 has requested resource: 1 from index: 6 at time: 0 s : 73750ns 
+OSS: Not enough resources in index: 6 to allocate 1 resources.
+OSS: Process: 24666 is entering queue until resources are available
+OSS: Process: 24666 has requested resource: 3 from index: 15 at time: 0 s : 73800ns 
+OSS: Process: 24666 has released 1 from index: 15 time: 0 s : 73954ns 
+OSS: Process: 24671 has requested resource: 8 from index: 17 at time: 0 s : 74055ns 
+OSS: Not enough resources in index: 17 to allocate 8 resources.
+OSS: Process: 24671 is entering queue until resources are available
+USER: Process: 24666 has randomly terminated at time: 0s, 74006ns
+OSS: Terminating Process: 24666 and releasing all allocated resources
+OSS: Process: 24671 has requested resource: 4 from index: 1 at time: 0 s : 74667ns 
+OSS: Not enough resources in index: 1 to allocate 4 resources.
+OSS: Process: 24671 is entering queue until resources are available
+OSS: Process: 24660 has requested resource: 6 from index: 17 at time: 0 s : 74724ns 
+OSS: Process: 24660 has released 4 from index: 17 time: 0 s : 74901ns 
+OSS: Process: 24660 has released 1 from index: 17 time: 0 s : 75042ns 
+OSS: Process: 24660 has requested resource: 3 from index: 17 at time: 0 s : 75180ns 
+OSS: Process: 24671 has requested resource: 5 from index: 16 at time: 0 s : 75206ns 
+OSS: Not enough resources in index: 16 to allocate 5 resources.
+OSS: Process: 24671 is entering queue until resources are available
+OSS: Process: 24660 has requested resource: 4 from index: 1 at time: 0 s : 75322ns 
+OSS: Not enough resources in index: 1 to allocate 4 resources.
+OSS: Process: 24660 is entering queue until resources are available
+OSS: Process: 24671 has requested resource: 5 from index: 15 at time: 0 s : 75387ns 
+OSS: Process: 24660 has released 3 from index: 17 time: 0 s : 75505ns 
+OSS: Process: 24671 has requested resource: 1 from index: 11 at time: 0 s : 75589ns 
+OSS: Process: 24671 has released 2 from index: 15 time: 0 s : 75647ns 
+OSS: Process: 24660 has released 1 from index: 17 time: 0 s : 75699ns 
+OSS: Process: 24660 has requested resource: 4 from index: 1 at time: 0 s : 77568ns 
+OSS: Not enough resources in index: 1 to allocate 4 resources.
+OSS: Process: 24660 is entering queue until resources are available
+OSS: Process: 24671 has released 1 from index: 15 time: 0 s : 77578ns 
+OSS: Process: 24670 has requested resource: 3 from index: 9 at time: 0 s : 77616ns 
+OSS: Not enough resources in index: 9 to allocate 3 resources.
+OSS: Process: 24670 is entering queue until resources are available
+OSS: Process: 24671 has released 1 from index: 11 time: 0 s : 77751ns 
+OSS: Process: 24655 has requested resource: 3 from index: 14 at time: 0 s : 77753ns 
+OSS: Not enough resources in index: 14 to allocate 3 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24671 has released 1 from index: 15 time: 0 s : 77807ns 
+OSS: Process: 24670 has requested resource: 1 from index: 11 at time: 0 s : 77855ns 
+OSS: Process: 24655 has requested resource: 2 from index: 9 at time: 0 s : 77875ns 
+OSS: Not enough resources in index: 9 to allocate 2 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24671 has requested resource: 3 from index: 1 at time: 0 s : 77913ns 
+OSS: Not enough resources in index: 1 to allocate 3 resources.
+OSS: Process: 24671 is entering queue until resources are available
+OSS: Process: 24670 has requested resource: 1 from index: 6 at time: 0 s : 77947ns 
+OSS: Not enough resources in index: 6 to allocate 1 resources.
+OSS: Process: 24670 is entering queue until resources are available
+OSS: Process: 24655 has requested resource: 2 from index: 19 at time: 0 s : 77958ns 
+OSS: Not enough resources in index: 19 to allocate 2 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24670 has requested resource: 6 from index: 8 at time: 0 s : 77976ns 
+OSS: Not enough resources in index: 8 to allocate 6 resources.
+OSS: Process: 24670 is entering queue until resources are available
+OSS: Process: 24660 has requested resource: 1 from index: 19 at time: 0 s : 78041ns 
+OSS: Not enough resources in index: 19 to allocate 1 resources.
+OSS: Process: 24660 is entering queue until resources are available
+OSS: Process: 24671 has requested resource: 1 from index: 18 at time: 0 s : 78104ns 
+
+OSS: Displaying Resource Table at time: 0 s : 78115ns 
+OSS: Resource Index:      0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  
+OSS: Maximum Resources:   1   4   4   7   10  7   1   1   7   4   1   2   8   7   6   5   5   9   3   2   
+OSS: ------------------Resources In Use------------------
+OSS: Process: 24656:      0   0   2   0   0   5   0   0   0   0   0   0   0   0   0   0   2   0   1   0   
+OSS: Process: 24657:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24658:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24660:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24661:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24662:      0   0   0   0   0   0   0   0   0   0   0   0   0   2   2   0   0   2   0   0   
+OSS: Process: 24663:      1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   
+OSS: Process: 24664:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24665:      0   0   0   0   3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24667:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   
+OSS: Process: 24670:      0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   
+OSS: Process: 24671:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   1   0   
+------------------------------------------------------------------------------------------------------------------------
+OSS: Resources Remaining: 0   0   1   7   2   2   0   0   1   1   0   0   2   5   2   4   2   6   0   0   
+OSS: Process: 24671 has requested resource: 6 from index: 14 at time: 0 s : 78289ns 
+OSS: Not enough resources in index: 14 to allocate 6 resources.
+OSS: Process: 24671 is entering queue until resources are available
+OSS: Process: 24660 has requested resource: 1 from index: 11 at time: 0 s : 78397ns 
+OSS: Not enough resources in index: 11 to allocate 1 resources.
+OSS: Process: 24660 is entering queue until resources are available
+OSS: Process: 24671 has requested resource: 2 from index: 1 at time: 0 s : 78458ns 
+OSS: Not enough resources in index: 1 to allocate 2 resources.
+OSS: Process: 24671 is entering queue until resources are available
+OSS: Process: 24671 has released 1 from index: 15 time: 0 s : 78489ns 
+OSS: Process: 24660 has requested resource: 2 from index: 15 at time: 0 s : 78592ns 
+OSS: Process: 24671 has requested resource: 2 from index: 2 at time: 0 s : 78605ns 
+OSS: Not enough resources in index: 2 to allocate 2 resources.
+OSS: Process: 24671 is entering queue until resources are available
+OSS: Process: 24671 has requested resource: 1 from index: 5 at time: 0 s : 78626ns 
+OSS: Process: 24655 has requested resource: 2 from index: 11 at time: 0 s : 78641ns 
+OSS: Not enough resources in index: 11 to allocate 2 resources.
+OSS: Process: 24655 is entering queue until resources are available
+OSS: Process: 24660 has requested resource: 6 from index: 3 at time: 0 s : 78670ns 
+OSS: Process: 24671 has requested resource: 1 from index: 0 at time: 0 s : 78717ns 
+OSS: Not enough resources in index: 0 to allocate 1 resources.
+OSS: Process: 24671 is entering queue until resources are available
+OSS: Process: 24671 has requested resource: 4 from index: 16 at time: 0 s : 78846ns 
+OSS: Not enough resources in index: 16 to allocate 4 resources.
+OSS: Process: 24671 is entering queue until resources are available
+OSS: Process: 24671 has requested resource: 2 from index: 12 at time: 0 s : 78849ns 
+OSS: Process: 24671 has requested resource: 5 from index: 4 at time: 0 s : 78868ns 
+OSS: Not enough resources in index: 4 to allocate 5 resources.
+OSS: Process: 24671 is entering queue until resources are available
+OSS: Process: 24671 has released 1 from index: 18 time: 0 s : 78871ns 
+USER: Process: 24671 has randomly terminated at time: 0s, 78849ns
+OSS: Process: 24671 has requested resource: 1 from index: 5 at time: 0 s : 78919ns 
+OSS: Terminating Process: 24671 and releasing all allocated resources
+Current deadlockCheck: 79593
+Current time ns: 101434
+OSS: Checking Deadlocks
+OSS: Process 24662 has been terminated to clear a deadlock
+OSS: |-----------------Statistics--------------|
+OSS: Total Requests Completed Instantly: 227
+OSS: Total Requests Completed Delayed: 7
+OSS: Total Deadlock Terminations: 9
+OSS: Total Random Terminiations: 4
+OSS: Total Times Deadlock Algorithm Ran: 5
+USER: Process: 24656 has randomly terminated at time: 0s, 111053ns
+USER: Process: 24670 has randomly terminated at time: 0s, 118419ns
+USER: Process: 24661 has randomly terminated at time: 0s, 125579ns
+USER: Process: 24660 has randomly terminated at time: 0s, 133335ns
+USER: Process: 24665 has randomly terminated at time: 0s, 133705ns
+USER: Process: 24667 has randomly terminated at time: 0s, 138290ns

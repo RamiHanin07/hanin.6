@@ -68,6 +68,8 @@ struct mesg_buffer{
     int mesg_resourceIndex;
     int mesg_releaseResources;
     bool mesg_released;
+    bool mesg_terminateRandom;
+    bool mesg_signal;
 } message;
 
 int shmidClock;
@@ -85,13 +87,13 @@ void signalHandler(int signal);
 void signalHandler(int signal){
 
     //Basic signal handler
+    // cout << "User: " << signal  << endl;
     if(signal == 2)
         cout << "Interrupt Signal Received" <<endl;
-    else if(signal == 20){
+    else if(signal == 14){
         cout << "Exceeded Time, Terminating Program" <<endl;
         // displayFrameTable(frameTable);
     }
-
     msgctl(msgid, IPC_RMID, NULL);
     msgctl(msgidTwo, IPC_RMID,NULL);
     shmctl(shmidClock, IPC_RMID, NULL);
@@ -218,6 +220,7 @@ int main(int argc, char* argv[]){
     while(terminate == false){
         message.mesg_blocked = false;
         if(msgrcv(msgid, &message, sizeof(message), getpid(), IPC_NOWAIT) == -1){
+            // perror("msgrcv");
             // log.open("log.txt", ios::app);
             // log << "NO MESSAGE" << endl;
             // log.close();
@@ -337,6 +340,7 @@ int main(int argc, char* argv[]){
                     int doITerminate = rand() % OUTOFONEHUND + 1;
                     if(doITerminate < terminateChance){
                         terminate = true;
+                        message.mesg_terminateRandom = true;
                         log.open("log.txt", ios::app);
                         log << "USER: Process: " << getpid() << " has randomly terminated at time: " << clock->sec << "s, " << clock->nano << "ns" << endl;
                         log.close();
@@ -368,10 +372,18 @@ int main(int argc, char* argv[]){
                         terminate = true;
                         message.mesg_blocked = false;
                     }
-                }
+                    if(message.mesg_blocked == false){
+                        log.open("log.txt",ios::app);
+                        log << "User: Process: " << getpid() << " has been unblocked" << endl;
+                        log.close();
+                    }
+                };
+                log.open("log.txt", ios::app);
+                log << "User: Process: " << getpid() << " has escaped blocked whileloop" << endl;
+                log.close();
             }
         }
-    }
+    };
         //Actually terminating
         message.mesg_terminated = 1;
         msgsnd(msgid, &message, sizeof(message), 0);
